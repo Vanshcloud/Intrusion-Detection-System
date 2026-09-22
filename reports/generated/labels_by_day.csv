@@ -1,0 +1,44 @@
+day,Label,Attempted Category,n
+friday,BENIGN,-1,288544
+friday,Botnet,-1,736
+friday,Botnet - Attempted,1,4067
+friday,DDoS,-1,95144
+friday,Portscan,-1,159066
+monday,BENIGN,-1,371624
+thursday,BENIGN,-1,288172
+thursday,Infiltration,-1,36
+thursday,Infiltration - Attempted,0,42
+thursday,Infiltration - Attempted,2,3
+thursday,Infiltration - Portscan,-1,71767
+thursday,Web Attack - Brute Force,-1,73
+thursday,Web Attack - Brute Force - Attempted,0,1214
+thursday,Web Attack - Brute Force - Attempted,2,7
+thursday,Web Attack - Brute Force - Attempted,4,71
+thursday,Web Attack - SQL Injection,-1,13
+thursday,Web Attack - SQL Injection - Attempted,0,1
+thursday,Web Attack - SQL Injection - Attempted,2,4
+thursday,Web Attack - XSS,-1,18
+thursday,Web Attack - XSS - Attempted,0,651
+thursday,Web Attack - XSS - Attempted,2,4
+tuesday,BENIGN,-1,315106
+tuesday,FTP-Patator,-1,3972
+tuesday,FTP-Patator - Attempted,0,10
+tuesday,FTP-Patator - Attempted,2,2
+tuesday,SSH-Patator,-1,2961
+tuesday,SSH-Patator - Attempted,3,27
+wednesday,BENIGN,-1,319120
+wednesday,DoS GoldenEye,-1,7567
+wednesday,DoS GoldenEye - Attempted,0,80
+wednesday,DoS Hulk,-1,158468
+wednesday,DoS Hulk - Attempted,0,579
+wednesday,DoS Hulk - Attempted,4,2
+wednesday,DoS Slowhttptest,-1,1740
+wednesday,DoS Slowhttptest - Attempted,0,563
+wednesday,DoS Slowhttptest - Attempted,4,1
+wednesday,DoS Slowhttptest - Attempted,6,2804
+wednesday,DoS Slowloris,-1,3859
+wednesday,DoS Slowloris - Attempted,0,1705
+wednesday,DoS Slowloris - Attempted,2,3
+wednesday,DoS Slowloris - Attempted,4,1
+wednesday,DoS Slowloris - Attempted,5,138
+wednesday,Heartbleed,-1,11

@@ -1,0 +1,20 @@
+{
+  "rows_in": 2099976,
+  "rows_removed_non_finite": 5,
+  "rows_out": 2099971,
+  "removed_rule": "Flow Bytes/s or Flow Packets/s not finite (all have Flow Duration == 0)",
+  "removed_flow_duration_values": {
+    "0": 5
+  },
+  "kept_flag_protocol0": 1510,
+  "kept_flag_protocol0_by_label": {
+    "BENIGN": 1508,
+    "Portscan": 2
+  },
+  "kept_flag_negative_header_length": 593,
+  "kept_flag_negative_header_length_by_label": {
+    "BENIGN": 585,
+    "Infiltration": 5,
+    "Heartbleed": 3
+  }
+}

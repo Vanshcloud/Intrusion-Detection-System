@@ -1,0 +1,180 @@
+protocol,partition,label_original,family,y_binary,is_attempted,n
+chrono,purged,BENIGN,BENIGN,0,False,2795
+chrono,purged,DDoS,DDoS,1,False,1029
+chrono,purged,DoS GoldenEye,DoS GoldenEye,1,False,988
+chrono,purged,DoS GoldenEye - Attempted,BENIGN,0,True,4
+chrono,purged,DoS Hulk,DoS Hulk,1,False,164
+chrono,purged,DoS Hulk - Attempted,BENIGN,0,True,375
+chrono,purged,DoS Slowhttptest,DoS Slowhttptest,1,False,376
+chrono,purged,DoS Slowhttptest - Attempted,BENIGN,0,True,319
+chrono,purged,DoS Slowloris,DoS Slowloris,1,False,598
+chrono,purged,DoS Slowloris - Attempted,BENIGN,0,True,5
+chrono,purged,FTP-Patator,FTP-Patator,1,False,16
+chrono,purged,FTP-Patator - Attempted,BENIGN,0,True,6
+chrono,purged,Infiltration - Portscan,Portscan,1,False,9
+chrono,purged,Portscan,Portscan,1,False,4
+chrono,purged,SSH-Patator,SSH-Patator,1,False,16
+chrono,purged,Web Attack - Brute Force,Web Attack - Brute Force,1,False,2
+chrono,purged,Web Attack - Brute Force - Attempted,BENIGN,0,True,6
+chrono,purged,Web Attack - SQL Injection - Attempted,BENIGN,0,True,2
+chrono,purged,Web Attack - XSS,Web Attack - XSS,1,False,2
+chrono,purged,Web Attack - XSS - Attempted,BENIGN,0,True,6
+chrono,test,BENIGN,BENIGN,0,False,474768
+chrono,test,Botnet,Botnet,1,False,221
+chrono,test,Botnet - Attempted,BENIGN,0,True,1220
+chrono,test,DDoS,DDoS,1,False,28543
+chrono,test,DoS GoldenEye,DoS GoldenEye,1,False,2270
+chrono,test,DoS GoldenEye - Attempted,BENIGN,0,True,24
+chrono,test,DoS Hulk,DoS Hulk,1,False,47540
+chrono,test,DoS Hulk - Attempted,BENIGN,0,True,174
+chrono,test,DoS Slowhttptest,DoS Slowhttptest,1,False,522
+chrono,test,DoS Slowhttptest - Attempted,BENIGN,0,True,1010
+chrono,test,DoS Slowloris,DoS Slowloris,1,False,1158
+chrono,test,DoS Slowloris - Attempted,BENIGN,0,True,554
+chrono,test,FTP-Patator,FTP-Patator,1,False,1192
+chrono,test,FTP-Patator - Attempted,BENIGN,0,True,4
+chrono,test,Heartbleed,Heartbleed,1,False,3
+chrono,test,Infiltration,Infiltration,1,False,11
+chrono,test,Infiltration - Attempted,BENIGN,0,True,14
+chrono,test,Infiltration - Portscan,Portscan,1,False,21530
+chrono,test,Portscan,Portscan,1,False,47720
+chrono,test,SSH-Patator,SSH-Patator,1,False,888
+chrono,test,SSH-Patator - Attempted,BENIGN,0,True,8
+chrono,test,Web Attack - Brute Force,Web Attack - Brute Force,1,False,22
+chrono,test,Web Attack - Brute Force - Attempted,BENIGN,0,True,388
+chrono,test,Web Attack - SQL Injection,Web Attack - SQL Injection,1,False,4
+chrono,test,Web Attack - SQL Injection - Attempted,BENIGN,0,True,2
+chrono,test,Web Attack - XSS,Web Attack - XSS,1,False,5
+chrono,test,Web Attack - XSS - Attempted,BENIGN,0,True,197
+chrono,train,BENIGN,BENIGN,0,False,884917
+chrono,train,Botnet,Botnet,1,False,412
+chrono,train,Botnet - Attempted,BENIGN,0,True,2278
+chrono,train,DDoS,DDoS,1,False,52760
+chrono,train,DoS GoldenEye,DoS GoldenEye,1,False,3980
+chrono,train,DoS GoldenEye - Attempted,BENIGN,0,True,44
+chrono,train,DoS Hulk,DoS Hulk,1,False,88675
+chrono,train,DoS Hulk - Attempted,BENIGN,0,True,32
+chrono,train,DoS Slowhttptest,DoS Slowhttptest,1,False,704
+chrono,train,DoS Slowhttptest - Attempted,BENIGN,0,True,1607
+chrono,train,DoS Slowloris,DoS Slowloris,1,False,1871
+chrono,train,DoS Slowloris - Attempted,BENIGN,0,True,1031
+chrono,train,FTP-Patator,FTP-Patator,1,False,2215
+chrono,train,FTP-Patator - Attempted,BENIGN,0,True,2
+chrono,train,Heartbleed,Heartbleed,1,False,6
+chrono,train,Infiltration,Infiltration,1,False,20
+chrono,train,Infiltration - Attempted,BENIGN,0,True,25
+chrono,train,Infiltration - Portscan,Portscan,1,False,40188
+chrono,train,Portscan,Portscan,1,False,89075
+chrono,train,SSH-Patator,SSH-Patator,1,False,1651
+chrono,train,SSH-Patator - Attempted,BENIGN,0,True,15
+chrono,train,Web Attack - Brute Force,Web Attack - Brute Force,1,False,40
+chrono,train,Web Attack - Brute Force - Attempted,BENIGN,0,True,720
+chrono,train,Web Attack - SQL Injection,Web Attack - SQL Injection,1,False,7
+chrono,train,Web Attack - SQL Injection - Attempted,BENIGN,0,True,1
+chrono,train,Web Attack - XSS,Web Attack - XSS,1,False,9
+chrono,train,Web Attack - XSS - Attempted,BENIGN,0,True,363
+chrono,val,BENIGN,BENIGN,0,False,220081
+chrono,val,Botnet,Botnet,1,False,103
+chrono,val,Botnet - Attempted,BENIGN,0,True,569
+chrono,val,DDoS,DDoS,1,False,12812
+chrono,val,DoS GoldenEye,DoS GoldenEye,1,False,329
+chrono,val,DoS GoldenEye - Attempted,BENIGN,0,True,8
+chrono,val,DoS Hulk,DoS Hulk,1,False,22089
+chrono,val,DoS Slowhttptest,DoS Slowhttptest,1,False,138
+chrono,val,DoS Slowhttptest - Attempted,BENIGN,0,True,432
+chrono,val,DoS Slowloris,DoS Slowloris,1,False,232
+chrono,val,DoS Slowloris - Attempted,BENIGN,0,True,257
+chrono,val,FTP-Patator,FTP-Patator,1,False,549
+chrono,val,Heartbleed,Heartbleed,1,False,2
+chrono,val,Infiltration,Infiltration,1,False,5
+chrono,val,Infiltration - Attempted,BENIGN,0,True,6
+chrono,val,Infiltration - Portscan,Portscan,1,False,10040
+chrono,val,Portscan,Portscan,1,False,22267
+chrono,val,SSH-Patator,SSH-Patator,1,False,406
+chrono,val,SSH-Patator - Attempted,BENIGN,0,True,4
+chrono,val,Web Attack - Brute Force,Web Attack - Brute Force,1,False,9
+chrono,val,Web Attack - Brute Force - Attempted,BENIGN,0,True,178
+chrono,val,Web Attack - SQL Injection,Web Attack - SQL Injection,1,False,2
+chrono,val,Web Attack - XSS,Web Attack - XSS,1,False,2
+chrono,val,Web Attack - XSS - Attempted,BENIGN,0,True,89
+random,test,BENIGN,BENIGN,0,False,474768
+random,test,Botnet,Botnet,1,False,221
+random,test,Botnet - Attempted,BENIGN,0,True,1220
+random,test,DDoS,DDoS,1,False,28543
+random,test,DoS GoldenEye,DoS GoldenEye,1,False,2270
+random,test,DoS GoldenEye - Attempted,BENIGN,0,True,24
+random,test,DoS Hulk,DoS Hulk,1,False,47540
+random,test,DoS Hulk - Attempted,BENIGN,0,True,174
+random,test,DoS Slowhttptest,DoS Slowhttptest,1,False,522
+random,test,DoS Slowhttptest - Attempted,BENIGN,0,True,1010
+random,test,DoS Slowloris,DoS Slowloris,1,False,1158
+random,test,DoS Slowloris - Attempted,BENIGN,0,True,554
+random,test,FTP-Patator,FTP-Patator,1,False,1192
+random,test,FTP-Patator - Attempted,BENIGN,0,True,4
+random,test,Heartbleed,Heartbleed,1,False,3
+random,test,Infiltration,Infiltration,1,False,11
+random,test,Infiltration - Attempted,BENIGN,0,True,14
+random,test,Infiltration - Portscan,Portscan,1,False,21530
+random,test,Portscan,Portscan,1,False,47720
+random,test,SSH-Patator,SSH-Patator,1,False,888
+random,test,SSH-Patator - Attempted,BENIGN,0,True,8
+random,test,Web Attack - Brute Force,Web Attack - Brute Force,1,False,22
+random,test,Web Attack - Brute Force - Attempted,BENIGN,0,True,388
+random,test,Web Attack - SQL Injection,Web Attack - SQL Injection,1,False,4
+random,test,Web Attack - SQL Injection - Attempted,BENIGN,0,True,2
+random,test,Web Attack - XSS,Web Attack - XSS,1,False,5
+random,test,Web Attack - XSS - Attempted,BENIGN,0,True,197
+random,train,BENIGN,BENIGN,0,False,886234
+random,train,Botnet,Botnet,1,False,412
+random,train,Botnet - Attempted,BENIGN,0,True,2278
+random,train,DDoS,DDoS,1,False,53281
+random,train,DoS GoldenEye,DoS GoldenEye,1,False,4238
+random,train,DoS GoldenEye - Attempted,BENIGN,0,True,45
+random,train,DoS Hulk,DoS Hulk,1,False,88742
+random,train,DoS Hulk - Attempted,BENIGN,0,True,326
+random,train,DoS Slowhttptest,DoS Slowhttptest,1,False,974
+random,train,DoS Slowhttptest - Attempted,BENIGN,0,True,1886
+random,train,DoS Slowloris,DoS Slowloris,1,False,2161
+random,train,DoS Slowloris - Attempted,BENIGN,0,True,1034
+random,train,FTP-Patator,FTP-Patator,1,False,2224
+random,train,FTP-Patator - Attempted,BENIGN,0,True,6
+random,train,Heartbleed,Heartbleed,1,False,6
+random,train,Infiltration,Infiltration,1,False,20
+random,train,Infiltration - Attempted,BENIGN,0,True,25
+random,train,Infiltration - Portscan,Portscan,1,False,40190
+random,train,Portscan,Portscan,1,False,89077
+random,train,SSH-Patator,SSH-Patator,1,False,1658
+random,train,SSH-Patator - Attempted,BENIGN,0,True,15
+random,train,Web Attack - Brute Force,Web Attack - Brute Force,1,False,41
+random,train,Web Attack - Brute Force - Attempted,BENIGN,0,True,723
+random,train,Web Attack - SQL Injection,Web Attack - SQL Injection,1,False,7
+random,train,Web Attack - SQL Injection - Attempted,BENIGN,0,True,2
+random,train,Web Attack - XSS,Web Attack - XSS,1,False,10
+random,train,Web Attack - XSS - Attempted,BENIGN,0,True,366
+random,val,BENIGN,BENIGN,0,False,221559
+random,val,Botnet,Botnet,1,False,103
+random,val,Botnet - Attempted,BENIGN,0,True,569
+random,val,DDoS,DDoS,1,False,13320
+random,val,DoS GoldenEye,DoS GoldenEye,1,False,1059
+random,val,DoS GoldenEye - Attempted,BENIGN,0,True,11
+random,val,DoS Hulk,DoS Hulk,1,False,22186
+random,val,DoS Hulk - Attempted,BENIGN,0,True,81
+random,val,DoS Slowhttptest,DoS Slowhttptest,1,False,244
+random,val,DoS Slowhttptest - Attempted,BENIGN,0,True,472
+random,val,DoS Slowloris,DoS Slowloris,1,False,540
+random,val,DoS Slowloris - Attempted,BENIGN,0,True,259
+random,val,FTP-Patator,FTP-Patator,1,False,556
+random,val,FTP-Patator - Attempted,BENIGN,0,True,2
+random,val,Heartbleed,Heartbleed,1,False,2
+random,val,Infiltration,Infiltration,1,False,5
+random,val,Infiltration - Attempted,BENIGN,0,True,6
+random,val,Infiltration - Portscan,Portscan,1,False,10047
+random,val,Portscan,Portscan,1,False,22269
+random,val,SSH-Patator,SSH-Patator,1,False,415
+random,val,SSH-Patator - Attempted,BENIGN,0,True,4
+random,val,Web Attack - Brute Force,Web Attack - Brute Force,1,False,10
+random,val,Web Attack - Brute Force - Attempted,BENIGN,0,True,181
+random,val,Web Attack - SQL Injection,Web Attack - SQL Injection,1,False,2
+random,val,Web Attack - SQL Injection - Attempted,BENIGN,0,True,1
+random,val,Web Attack - XSS,Web Attack - XSS,1,False,3
+random,val,Web Attack - XSS - Attempted,BENIGN,0,True,92

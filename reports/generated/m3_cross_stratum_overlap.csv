@@ -1,0 +1,27 @@
+stratum,test_rows,test_first_start,train_rows_same_day_starting_later,of_which_benign
+friday|Botnet,221,2017-07-07 13:45:30.340636015,220170,76057
+friday|Botnet - Attempted,1220,2017-07-07 17:50:42.238927126,141491,0
+friday|DDoS,28543,2017-07-07 19:10:22.957072973,0,0
+friday|Portscan,47720,2017-07-07 17:55:24.796759129,52760,0
+thursday|Infiltration,11,2017-07-06 18:19:14.897480965,16109,0
+thursday|Infiltration - Attempted,14,2017-07-06 18:02:25.946023941,37215,0
+thursday|Infiltration - Portscan,21530,2017-07-06 18:32:27.855901003,0,0
+thursday|Web Attack - Brute Force,22,2017-07-06 12:48:23.332066059,164867,124254
+thursday|Web Attack - Brute Force - Attempted,388,2017-07-06 12:48:38.632427931,164823,124210
+thursday|Web Attack - SQL Injection,4,2017-07-06 13:41:54.064530849,133819,93586
+thursday|Web Attack - SQL Injection - Attempted,2,2017-07-06 13:35:33.801349163,138890,98650
+thursday|Web Attack - XSS,5,2017-07-06 13:30:07.664614916,141173,100932
+thursday|Web Attack - XSS - Attempted,197,2017-07-06 13:29:27.793081045,141658,101417
+tuesday|FTP-Patator,1192,2017-07-04 13:02:12.326782942,110765,109099
+tuesday|FTP-Patator - Attempted,4,2017-07-04 12:24:34.048240185,154080,150536
+tuesday|SSH-Patator,888,2017-07-04 17:52:04.287352085,12,0
+tuesday|SSH-Patator - Attempted,8,2017-07-04 18:09:03.999535084,0,0
+wednesday|DoS GoldenEye,2270,2017-07-05 14:17:59.366334915,67861,67855
+wednesday|DoS GoldenEye - Attempted,24,2017-07-05 14:11:22.192588091,74194,71164
+wednesday|DoS Hulk,47540,2017-07-05 13:55:37.708481073,88639,84602
+wednesday|DoS Hulk - Attempted,174,2017-07-05 14:00:57.616628885,83549,79519
+wednesday|DoS Slowhttptest,522,2017-07-05 13:25:59.498506069,198865,106128
+wednesday|DoS Slowhttptest - Attempted,1010,2017-07-05 13:32:49.035945892,193257,100520
+wednesday|DoS Slowloris,1158,2017-07-05 13:03:52.803231955,219173,124125
+wednesday|DoS Slowloris - Attempted,554,2017-07-05 13:03:00.176623106,220542,125494
+wednesday|Heartbleed,3,2017-07-05 18:28:17.732008934,0,0

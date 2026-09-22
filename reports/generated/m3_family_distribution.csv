@@ -1,0 +1,31 @@
+protocol,family,test,train,val,test_unstable
+chrono,BENIGN,478363,891035,221624,False
+chrono,Botnet,221,412,103,False
+chrono,DDoS,28543,52760,12812,False
+chrono,DoS GoldenEye,2270,3980,329,False
+chrono,DoS Hulk,47540,88675,22089,False
+chrono,DoS Slowhttptest,522,704,138,False
+chrono,DoS Slowloris,1158,1871,232,False
+chrono,FTP-Patator,1192,2215,549,False
+chrono,Heartbleed,3,6,2,True
+chrono,Infiltration,11,20,5,True
+chrono,Portscan,69250,129263,32307,False
+chrono,SSH-Patator,888,1651,406,False
+chrono,Web Attack - Brute Force,22,40,9,True
+chrono,Web Attack - SQL Injection,4,7,2,True
+chrono,Web Attack - XSS,5,9,2,True
+random,BENIGN,478363,892940,223237,False
+random,Botnet,221,412,103,False
+random,DDoS,28543,53281,13320,False
+random,DoS GoldenEye,2270,4238,1059,False
+random,DoS Hulk,47540,88742,22186,False
+random,DoS Slowhttptest,522,974,244,False
+random,DoS Slowloris,1158,2161,540,False
+random,FTP-Patator,1192,2224,556,False
+random,Heartbleed,3,6,2,True
+random,Infiltration,11,20,5,True
+random,Portscan,69250,129267,32316,False
+random,SSH-Patator,888,1658,415,False
+random,Web Attack - Brute Force,22,41,10,True
+random,Web Attack - SQL Injection,4,7,2,True
+random,Web Attack - XSS,5,10,3,True

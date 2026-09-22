@@ -1,0 +1,122 @@
+{
+  "version": "v1",
+  "status": "frozen before any model training; changes require a new version with a reason",
+  "source": {
+    "dataset": "Improved CIC-IDS2017 re-extraction (Liu et al., IEEE CNS 2022)",
+    "url": "https://intrusion-detection.distrinet-research.be/CNS2022/Datasets/CICIDS2017_improved.zip",
+    "archive_sha256": "97fdb91d339e2d8cf5627f981b831e5e7e400b981c58181c451a38fd03c48883",
+    "files": {
+      "friday.csv": "ebd499e6f23bd59f9cb81bec28178491b02b925fa5640a24215c9437d79482d0",
+      "monday.csv": "51fe5dc962626efb4ae70dce0303072fb780da0932822b651202ee9c2fbc1aff",
+      "thursday.csv": "78a4d11eaf473d099e30e71ddb01e0f38218e844c0a9cdd36602145d674af482",
+      "tuesday.csv": "e2a0a5b631dfc6b455cc9f9a88b944110637d70a7f74171473925f76f38b6b0c",
+      "wednesday.csv": "bf46c5f3c792e8817381f724511229569606918eaf07ac986d7a2592b6341bc2"
+    }
+  },
+  "cleaning": {
+    "removed": "rows with non-finite Flow Bytes/s or Flow Packets/s (list: reports/generated/m3_removed_rows.csv)",
+    "kept_and_flagged": [
+      "Protocol == 0 (flag_protocol0)",
+      "negative Fwd/Bwd Header Length (flag_negative_header_length)"
+    ],
+    "duplicates": "no rows deleted; novelty evaluated separately"
+  },
+  "targets": {
+    "binary": "y_binary (configs/label_mapping_v1.json)",
+    "multiclass": "family (same file)",
+    "variants": {
+      "primary": "Attempted rows kept, labelled benign (y_binary=0)",
+      "excl_attempted": "Attempted rows removed from train, val and test (sensitivity)"
+    }
+  },
+  "features": {
+    "manifest": "configs/feature_manifest_v1.json",
+    "sets": {
+      "default": 82,
+      "default_plus_dst_port": 83,
+      "no_tcp_window": 80,
+      "no_header_length": 80
+    },
+    "selection": "by column name from the manifest only; check_features() rejects target/metadata/excluded columns"
+  },
+  "splits": {
+    "primary": {
+      "name": "chrono",
+      "strata": "(day, original Label)",
+      "order": "t_start, source_file, source_row",
+      "sizes": "per stratum: test = round(0.3 n), val = round(0.2 * (n - test)), each >= 1; rest train (~56/14/30)",
+      "purge": "drop train rows with t_end >= first val t_start of the stratum; drop val rows with t_end >= first test t_start. Test rows are never removed.",
+      "manifest": "data/processed/split_chrono_v1.parquet",
+      "boundaries": "reports/generated/m3_split_boundaries_chrono.csv"
+    },
+    "comparison": {
+      "name": "random",
+      "strata": "(day, original Label)",
+      "seed": 20170703,
+      "sizes": "identical per-stratum sizes to chrono (before purge); no purge",
+      "manifest": "data/processed/split_random_v1.parquet"
+    }
+  },
+  "novel_vector": {
+    "definition": "test row whose exact ordered feature vector (for that feature set) does not occur in the training partition of the same protocol/variant; floats canonicalised (-0.0 -> 0.0, single NaN); 128-bit hash match confirmed by exact per-column comparison",
+    "reference_set": "train partition only (models are fitted on train only in v1)",
+    "near_duplicate_definition": "same equality on non-timing features only (reported, not used as a subset)",
+    "manifest": "data/processed/novel_test_v1.parquet"
+  },
+  "preprocessing": "src/ids/pipeline.py: fitted on train rows only (constant-column filter; one-hot + scaling for linear models)",
+  "model_selection": "hyper-parameters and thresholds chosen on val only; test untouched until final evaluation",
+  "metrics": {
+    "positive_class": "attack (y_binary = 1); score = model probability of attack",
+    "threshold_free": [
+      "PR-AUC (average precision) - primary threshold-free summary, prevalence-dependent",
+      "ROC-AUC - secondary; can look high while false alarms are operationally large"
+    ],
+    "operating_points": "threshold = highest validation recall with validation FPR <= budget, budgets [0.001, 0.01]",
+    "at_threshold": [
+      "precision",
+      "recall",
+      "F1",
+      "FPR",
+      "false-positive count",
+      "confusion matrix",
+      "per-original-label detection / alert rate with support"
+    ],
+    "multiclass": "per-class precision, recall, F1, support; macro-F1 over classes present in test",
+    "undefined": "reported as null, never replaced by 0/1",
+    "unstable_support_below": 30,
+    "evaluation_sets": [
+      "full test",
+      "novel-vector test"
+    ]
+  },
+  "experiments_planned": [
+    "chrono x primary x {default, default_plus_dst_port, no_tcp_window, no_header_length}",
+    "chrono x excl_attempted x default",
+    "random x primary x default (comparison)",
+    "held-out attack family (separate, later milestone)"
+  ],
+  "artifacts": {
+    "data/processed/dataset_v1.parquet": {
+      "rows": 2099971,
+      "content_sha256": "2b9584beacf96cb4c7b56b8f16eae636aab982d31ebb9a661d254dd947327aef"
+    },
+    "data/processed/split_chrono_v1.parquet": {
+      "rows": 2099971,
+      "content_sha256": "cbafcdc2064fee02558c57b0b3a9d3b39e5068949c23c3260ecbfb705bfc9b74"
+    },
+    "data/processed/split_random_v1.parquet": {
+      "rows": 2099971,
+      "content_sha256": "4f5071f1f76ff9bf8dbd39f1e27616b6e76fe72f0139a70b83ea00275d29dfd7"
+    },
+    "data/processed/novel_test_v1.parquet": {
+      "rows": 2099971,
+      "content_sha256": "06896ff24fdcafba86742be533345813d251c814b95aa64e29dd563b9c2cd902"
+    },
+    "configs/feature_manifest_v1.json": {
+      "sha256": "01f6f0e99eeae877b95208869b022bb2eabcfb28decf5f6d6955786c59af38fc"
+    },
+    "configs/label_mapping_v1.json": {
+      "sha256": "eb499a38f98049dba790d2063e8898943e2aaa262ebeb426f3938f04ae48bf94"
+    }
+  }
+}

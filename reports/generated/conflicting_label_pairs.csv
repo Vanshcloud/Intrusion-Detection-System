@@ -1,0 +1,5 @@
+pair,rows
+Infiltration - Portscan + Portscan,88460
+BENIGN + Infiltration - Portscan + Portscan,1532
+BENIGN + Portscan,1146
+Botnet - Attempted + Infiltration - Attempted,115

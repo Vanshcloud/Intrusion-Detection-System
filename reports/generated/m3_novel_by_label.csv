@@ -1,0 +1,281 @@
+label_original,family,full,exact_seen,near_seen,novel,exact_overlap_share,near_overlap_share,novel_unstable,protocol,variant,feature_set
+BENIGN,BENIGN,474768,50653,351420,424115,0.10669000438108718,0.7401931048427863,False,chrono,primary,default
+Botnet,Botnet,221,0,206,221,0.0,0.9321266968325792,False,chrono,primary,default
+Botnet - Attempted,BENIGN,1220,899,1220,321,0.7368852459016394,1.0,False,chrono,primary,default
+DDoS,DDoS,28543,0,28380,28543,0.0,0.9942893178712819,False,chrono,primary,default
+DoS GoldenEye,DoS GoldenEye,2270,0,429,2270,0.0,0.18898678414096917,False,chrono,primary,default
+DoS GoldenEye - Attempted,BENIGN,24,0,24,24,0.0,1.0,True,chrono,primary,default
+DoS Hulk,DoS Hulk,47540,0,31582,47540,0.0,0.6643247791333614,False,chrono,primary,default
+DoS Hulk - Attempted,BENIGN,174,0,174,174,0.0,1.0,False,chrono,primary,default
+DoS Slowhttptest,DoS Slowhttptest,522,0,32,522,0.0,0.06130268199233716,False,chrono,primary,default
+DoS Slowhttptest - Attempted,BENIGN,1010,0,800,1010,0.0,0.7920792079207921,False,chrono,primary,default
+DoS Slowloris,DoS Slowloris,1158,0,798,1158,0.0,0.689119170984456,False,chrono,primary,default
+DoS Slowloris - Attempted,BENIGN,554,1,480,553,0.0018050541516245488,0.8664259927797834,False,chrono,primary,default
+FTP-Patator,FTP-Patator,1192,0,968,1192,0.0,0.8120805369127517,False,chrono,primary,default
+FTP-Patator - Attempted,BENIGN,4,0,4,4,0.0,1.0,True,chrono,primary,default
+Heartbleed,Heartbleed,3,0,0,3,0.0,0.0,True,chrono,primary,default
+Infiltration,Infiltration,11,0,0,11,0.0,0.0,True,chrono,primary,default
+Infiltration - Attempted,BENIGN,14,0,13,14,0.0,0.9285714285714286,True,chrono,primary,default
+Infiltration - Portscan,Portscan,21530,19992,21513,1538,0.9285647933116582,0.99921040408732,False,chrono,primary,default
+Portscan,Portscan,47720,47200,47629,520,0.989103101424979,0.9980930427493714,False,chrono,primary,default
+SSH-Patator,SSH-Patator,888,0,827,888,0.0,0.9313063063063063,False,chrono,primary,default
+SSH-Patator - Attempted,BENIGN,8,0,1,8,0.0,0.125,True,chrono,primary,default
+Web Attack - Brute Force,Web Attack - Brute Force,22,0,0,22,0.0,0.0,True,chrono,primary,default
+Web Attack - Brute Force - Attempted,BENIGN,388,0,388,388,0.0,1.0,False,chrono,primary,default
+Web Attack - SQL Injection,Web Attack - SQL Injection,4,0,1,4,0.0,0.25,True,chrono,primary,default
+Web Attack - SQL Injection - Attempted,BENIGN,2,0,1,2,0.0,0.5,True,chrono,primary,default
+Web Attack - XSS,Web Attack - XSS,5,0,0,5,0.0,0.0,True,chrono,primary,default
+Web Attack - XSS - Attempted,BENIGN,197,0,197,197,0.0,1.0,False,chrono,primary,default
+BENIGN,BENIGN,474768,50439,350218,424329,0.10623925791123244,0.737661341960705,False,chrono,primary,default_plus_dst_port
+Botnet,Botnet,221,0,206,221,0.0,0.9321266968325792,False,chrono,primary,default_plus_dst_port
+Botnet - Attempted,BENIGN,1220,899,1059,321,0.7368852459016394,0.8680327868852459,False,chrono,primary,default_plus_dst_port
+DDoS,DDoS,28543,0,28380,28543,0.0,0.9942893178712819,False,chrono,primary,default_plus_dst_port
+DoS GoldenEye,DoS GoldenEye,2270,0,429,2270,0.0,0.18898678414096917,False,chrono,primary,default_plus_dst_port
+DoS GoldenEye - Attempted,BENIGN,24,0,24,24,0.0,1.0,True,chrono,primary,default_plus_dst_port
+DoS Hulk,DoS Hulk,47540,0,31582,47540,0.0,0.6643247791333614,False,chrono,primary,default_plus_dst_port
+DoS Hulk - Attempted,BENIGN,174,0,174,174,0.0,1.0,False,chrono,primary,default_plus_dst_port
+DoS Slowhttptest,DoS Slowhttptest,522,0,32,522,0.0,0.06130268199233716,False,chrono,primary,default_plus_dst_port
+DoS Slowhttptest - Attempted,BENIGN,1010,0,800,1010,0.0,0.7920792079207921,False,chrono,primary,default_plus_dst_port
+DoS Slowloris,DoS Slowloris,1158,0,798,1158,0.0,0.689119170984456,False,chrono,primary,default_plus_dst_port
+DoS Slowloris - Attempted,BENIGN,554,1,480,553,0.0018050541516245488,0.8664259927797834,False,chrono,primary,default_plus_dst_port
+FTP-Patator,FTP-Patator,1192,0,968,1192,0.0,0.8120805369127517,False,chrono,primary,default_plus_dst_port
+FTP-Patator - Attempted,BENIGN,4,0,4,4,0.0,1.0,True,chrono,primary,default_plus_dst_port
+Heartbleed,Heartbleed,3,0,0,3,0.0,0.0,True,chrono,primary,default_plus_dst_port
+Infiltration,Infiltration,11,0,0,11,0.0,0.0,True,chrono,primary,default_plus_dst_port
+Infiltration - Attempted,BENIGN,14,0,12,14,0.0,0.8571428571428571,True,chrono,primary,default_plus_dst_port
+Infiltration - Portscan,Portscan,21530,10383,21288,11147,0.4822573153738969,0.9887598699489085,False,chrono,primary,default_plus_dst_port
+Portscan,Portscan,47720,23434,47589,24286,0.4910729253981559,0.997254819782062,False,chrono,primary,default_plus_dst_port
+SSH-Patator,SSH-Patator,888,0,827,888,0.0,0.9313063063063063,False,chrono,primary,default_plus_dst_port
+SSH-Patator - Attempted,BENIGN,8,0,1,8,0.0,0.125,True,chrono,primary,default_plus_dst_port
+Web Attack - Brute Force,Web Attack - Brute Force,22,0,0,22,0.0,0.0,True,chrono,primary,default_plus_dst_port
+Web Attack - Brute Force - Attempted,BENIGN,388,0,388,388,0.0,1.0,False,chrono,primary,default_plus_dst_port
+Web Attack - SQL Injection,Web Attack - SQL Injection,4,0,1,4,0.0,0.25,True,chrono,primary,default_plus_dst_port
+Web Attack - SQL Injection - Attempted,BENIGN,2,0,1,2,0.0,0.5,True,chrono,primary,default_plus_dst_port
+Web Attack - XSS,Web Attack - XSS,5,0,0,5,0.0,0.0,True,chrono,primary,default_plus_dst_port
+Web Attack - XSS - Attempted,BENIGN,197,0,197,197,0.0,1.0,False,chrono,primary,default_plus_dst_port
+BENIGN,BENIGN,474768,50653,359511,424115,0.10669000438108718,0.7572351127287433,False,chrono,primary,no_tcp_window
+Botnet,Botnet,221,0,206,221,0.0,0.9321266968325792,False,chrono,primary,no_tcp_window
+Botnet - Attempted,BENIGN,1220,899,1220,321,0.7368852459016394,1.0,False,chrono,primary,no_tcp_window
+DDoS,DDoS,28543,0,28380,28543,0.0,0.9942893178712819,False,chrono,primary,no_tcp_window
+DoS GoldenEye,DoS GoldenEye,2270,0,429,2270,0.0,0.18898678414096917,False,chrono,primary,no_tcp_window
+DoS GoldenEye - Attempted,BENIGN,24,0,24,24,0.0,1.0,True,chrono,primary,no_tcp_window
+DoS Hulk,DoS Hulk,47540,0,31582,47540,0.0,0.6643247791333614,False,chrono,primary,no_tcp_window
+DoS Hulk - Attempted,BENIGN,174,0,174,174,0.0,1.0,False,chrono,primary,no_tcp_window
+DoS Slowhttptest,DoS Slowhttptest,522,0,32,522,0.0,0.06130268199233716,False,chrono,primary,no_tcp_window
+DoS Slowhttptest - Attempted,BENIGN,1010,0,800,1010,0.0,0.7920792079207921,False,chrono,primary,no_tcp_window
+DoS Slowloris,DoS Slowloris,1158,0,798,1158,0.0,0.689119170984456,False,chrono,primary,no_tcp_window
+DoS Slowloris - Attempted,BENIGN,554,1,480,553,0.0018050541516245488,0.8664259927797834,False,chrono,primary,no_tcp_window
+FTP-Patator,FTP-Patator,1192,0,968,1192,0.0,0.8120805369127517,False,chrono,primary,no_tcp_window
+FTP-Patator - Attempted,BENIGN,4,0,4,4,0.0,1.0,True,chrono,primary,no_tcp_window
+Heartbleed,Heartbleed,3,0,0,3,0.0,0.0,True,chrono,primary,no_tcp_window
+Infiltration,Infiltration,11,0,0,11,0.0,0.0,True,chrono,primary,no_tcp_window
+Infiltration - Attempted,BENIGN,14,0,13,14,0.0,0.9285714285714286,True,chrono,primary,no_tcp_window
+Infiltration - Portscan,Portscan,21530,19992,21515,1538,0.9285647933116582,0.9993032977241059,False,chrono,primary,no_tcp_window
+Portscan,Portscan,47720,47276,47629,444,0.9906957250628667,0.9980930427493714,False,chrono,primary,no_tcp_window
+SSH-Patator,SSH-Patator,888,0,827,888,0.0,0.9313063063063063,False,chrono,primary,no_tcp_window
+SSH-Patator - Attempted,BENIGN,8,0,7,8,0.0,0.875,True,chrono,primary,no_tcp_window
+Web Attack - Brute Force,Web Attack - Brute Force,22,0,0,22,0.0,0.0,True,chrono,primary,no_tcp_window
+Web Attack - Brute Force - Attempted,BENIGN,388,0,388,388,0.0,1.0,False,chrono,primary,no_tcp_window
+Web Attack - SQL Injection,Web Attack - SQL Injection,4,0,1,4,0.0,0.25,True,chrono,primary,no_tcp_window
+Web Attack - SQL Injection - Attempted,BENIGN,2,0,1,2,0.0,0.5,True,chrono,primary,no_tcp_window
+Web Attack - XSS,Web Attack - XSS,5,0,0,5,0.0,0.0,True,chrono,primary,no_tcp_window
+Web Attack - XSS - Attempted,BENIGN,197,0,197,197,0.0,1.0,False,chrono,primary,no_tcp_window
+BENIGN,BENIGN,474768,50653,351471,424115,0.10669000438108718,0.740300525730462,False,chrono,primary,no_header_length
+Botnet,Botnet,221,0,206,221,0.0,0.9321266968325792,False,chrono,primary,no_header_length
+Botnet - Attempted,BENIGN,1220,899,1220,321,0.7368852459016394,1.0,False,chrono,primary,no_header_length
+DDoS,DDoS,28543,0,28380,28543,0.0,0.9942893178712819,False,chrono,primary,no_header_length
+DoS GoldenEye,DoS GoldenEye,2270,0,429,2270,0.0,0.18898678414096917,False,chrono,primary,no_header_length
+DoS GoldenEye - Attempted,BENIGN,24,0,24,24,0.0,1.0,True,chrono,primary,no_header_length
+DoS Hulk,DoS Hulk,47540,0,31582,47540,0.0,0.6643247791333614,False,chrono,primary,no_header_length
+DoS Hulk - Attempted,BENIGN,174,0,174,174,0.0,1.0,False,chrono,primary,no_header_length
+DoS Slowhttptest,DoS Slowhttptest,522,0,32,522,0.0,0.06130268199233716,False,chrono,primary,no_header_length
+DoS Slowhttptest - Attempted,BENIGN,1010,0,800,1010,0.0,0.7920792079207921,False,chrono,primary,no_header_length
+DoS Slowloris,DoS Slowloris,1158,0,798,1158,0.0,0.689119170984456,False,chrono,primary,no_header_length
+DoS Slowloris - Attempted,BENIGN,554,1,480,553,0.0018050541516245488,0.8664259927797834,False,chrono,primary,no_header_length
+FTP-Patator,FTP-Patator,1192,0,968,1192,0.0,0.8120805369127517,False,chrono,primary,no_header_length
+FTP-Patator - Attempted,BENIGN,4,0,4,4,0.0,1.0,True,chrono,primary,no_header_length
+Heartbleed,Heartbleed,3,0,0,3,0.0,0.0,True,chrono,primary,no_header_length
+Infiltration,Infiltration,11,0,0,11,0.0,0.0,True,chrono,primary,no_header_length
+Infiltration - Attempted,BENIGN,14,0,13,14,0.0,0.9285714285714286,True,chrono,primary,no_header_length
+Infiltration - Portscan,Portscan,21530,19992,21513,1538,0.9285647933116582,0.99921040408732,False,chrono,primary,no_header_length
+Portscan,Portscan,47720,47200,47629,520,0.989103101424979,0.9980930427493714,False,chrono,primary,no_header_length
+SSH-Patator,SSH-Patator,888,0,827,888,0.0,0.9313063063063063,False,chrono,primary,no_header_length
+SSH-Patator - Attempted,BENIGN,8,0,1,8,0.0,0.125,True,chrono,primary,no_header_length
+Web Attack - Brute Force,Web Attack - Brute Force,22,0,0,22,0.0,0.0,True,chrono,primary,no_header_length
+Web Attack - Brute Force - Attempted,BENIGN,388,0,388,388,0.0,1.0,False,chrono,primary,no_header_length
+Web Attack - SQL Injection,Web Attack - SQL Injection,4,0,1,4,0.0,0.25,True,chrono,primary,no_header_length
+Web Attack - SQL Injection - Attempted,BENIGN,2,0,1,2,0.0,0.5,True,chrono,primary,no_header_length
+Web Attack - XSS,Web Attack - XSS,5,0,0,5,0.0,0.0,True,chrono,primary,no_header_length
+Web Attack - XSS - Attempted,BENIGN,197,0,197,197,0.0,1.0,False,chrono,primary,no_header_length
+BENIGN,BENIGN,474768,50653,351420,424115,0.10669000438108718,0.7401931048427863,False,chrono,excl_attempted,default
+Botnet,Botnet,221,0,206,221,0.0,0.9321266968325792,False,chrono,excl_attempted,default
+DDoS,DDoS,28543,0,28380,28543,0.0,0.9942893178712819,False,chrono,excl_attempted,default
+DoS GoldenEye,DoS GoldenEye,2270,0,429,2270,0.0,0.18898678414096917,False,chrono,excl_attempted,default
+DoS Hulk,DoS Hulk,47540,0,31582,47540,0.0,0.6643247791333614,False,chrono,excl_attempted,default
+DoS Slowhttptest,DoS Slowhttptest,522,0,32,522,0.0,0.06130268199233716,False,chrono,excl_attempted,default
+DoS Slowloris,DoS Slowloris,1158,0,798,1158,0.0,0.689119170984456,False,chrono,excl_attempted,default
+FTP-Patator,FTP-Patator,1192,0,968,1192,0.0,0.8120805369127517,False,chrono,excl_attempted,default
+Heartbleed,Heartbleed,3,0,0,3,0.0,0.0,True,chrono,excl_attempted,default
+Infiltration,Infiltration,11,0,0,11,0.0,0.0,True,chrono,excl_attempted,default
+Infiltration - Portscan,Portscan,21530,19992,21513,1538,0.9285647933116582,0.99921040408732,False,chrono,excl_attempted,default
+Portscan,Portscan,47720,47200,47629,520,0.989103101424979,0.9980930427493714,False,chrono,excl_attempted,default
+SSH-Patator,SSH-Patator,888,0,827,888,0.0,0.9313063063063063,False,chrono,excl_attempted,default
+Web Attack - Brute Force,Web Attack - Brute Force,22,0,0,22,0.0,0.0,True,chrono,excl_attempted,default
+Web Attack - SQL Injection,Web Attack - SQL Injection,4,0,1,4,0.0,0.25,True,chrono,excl_attempted,default
+Web Attack - XSS,Web Attack - XSS,5,0,0,5,0.0,0.0,True,chrono,excl_attempted,default
+BENIGN,BENIGN,474768,50439,350218,424329,0.10623925791123244,0.737661341960705,False,chrono,excl_attempted,default_plus_dst_port
+Botnet,Botnet,221,0,206,221,0.0,0.9321266968325792,False,chrono,excl_attempted,default_plus_dst_port
+DDoS,DDoS,28543,0,28380,28543,0.0,0.9942893178712819,False,chrono,excl_attempted,default_plus_dst_port
+DoS GoldenEye,DoS GoldenEye,2270,0,429,2270,0.0,0.18898678414096917,False,chrono,excl_attempted,default_plus_dst_port
+DoS Hulk,DoS Hulk,47540,0,31582,47540,0.0,0.6643247791333614,False,chrono,excl_attempted,default_plus_dst_port
+DoS Slowhttptest,DoS Slowhttptest,522,0,32,522,0.0,0.06130268199233716,False,chrono,excl_attempted,default_plus_dst_port
+DoS Slowloris,DoS Slowloris,1158,0,798,1158,0.0,0.689119170984456,False,chrono,excl_attempted,default_plus_dst_port
+FTP-Patator,FTP-Patator,1192,0,968,1192,0.0,0.8120805369127517,False,chrono,excl_attempted,default_plus_dst_port
+Heartbleed,Heartbleed,3,0,0,3,0.0,0.0,True,chrono,excl_attempted,default_plus_dst_port
+Infiltration,Infiltration,11,0,0,11,0.0,0.0,True,chrono,excl_attempted,default_plus_dst_port
+Infiltration - Portscan,Portscan,21530,10383,21288,11147,0.4822573153738969,0.9887598699489085,False,chrono,excl_attempted,default_plus_dst_port
+Portscan,Portscan,47720,23434,47589,24286,0.4910729253981559,0.997254819782062,False,chrono,excl_attempted,default_plus_dst_port
+SSH-Patator,SSH-Patator,888,0,827,888,0.0,0.9313063063063063,False,chrono,excl_attempted,default_plus_dst_port
+Web Attack - Brute Force,Web Attack - Brute Force,22,0,0,22,0.0,0.0,True,chrono,excl_attempted,default_plus_dst_port
+Web Attack - SQL Injection,Web Attack - SQL Injection,4,0,1,4,0.0,0.25,True,chrono,excl_attempted,default_plus_dst_port
+Web Attack - XSS,Web Attack - XSS,5,0,0,5,0.0,0.0,True,chrono,excl_attempted,default_plus_dst_port
+BENIGN,BENIGN,474768,50653,359511,424115,0.10669000438108718,0.7572351127287433,False,chrono,excl_attempted,no_tcp_window
+Botnet,Botnet,221,0,206,221,0.0,0.9321266968325792,False,chrono,excl_attempted,no_tcp_window
+DDoS,DDoS,28543,0,28380,28543,0.0,0.9942893178712819,False,chrono,excl_attempted,no_tcp_window
+DoS GoldenEye,DoS GoldenEye,2270,0,429,2270,0.0,0.18898678414096917,False,chrono,excl_attempted,no_tcp_window
+DoS Hulk,DoS Hulk,47540,0,31582,47540,0.0,0.6643247791333614,False,chrono,excl_attempted,no_tcp_window
+DoS Slowhttptest,DoS Slowhttptest,522,0,32,522,0.0,0.06130268199233716,False,chrono,excl_attempted,no_tcp_window
+DoS Slowloris,DoS Slowloris,1158,0,798,1158,0.0,0.689119170984456,False,chrono,excl_attempted,no_tcp_window
+FTP-Patator,FTP-Patator,1192,0,968,1192,0.0,0.8120805369127517,False,chrono,excl_attempted,no_tcp_window
+Heartbleed,Heartbleed,3,0,0,3,0.0,0.0,True,chrono,excl_attempted,no_tcp_window
+Infiltration,Infiltration,11,0,0,11,0.0,0.0,True,chrono,excl_attempted,no_tcp_window
+Infiltration - Portscan,Portscan,21530,19992,21515,1538,0.9285647933116582,0.9993032977241059,False,chrono,excl_attempted,no_tcp_window
+Portscan,Portscan,47720,47276,47629,444,0.9906957250628667,0.9980930427493714,False,chrono,excl_attempted,no_tcp_window
+SSH-Patator,SSH-Patator,888,0,827,888,0.0,0.9313063063063063,False,chrono,excl_attempted,no_tcp_window
+Web Attack - Brute Force,Web Attack - Brute Force,22,0,0,22,0.0,0.0,True,chrono,excl_attempted,no_tcp_window
+Web Attack - SQL Injection,Web Attack - SQL Injection,4,0,1,4,0.0,0.25,True,chrono,excl_attempted,no_tcp_window
+Web Attack - XSS,Web Attack - XSS,5,0,0,5,0.0,0.0,True,chrono,excl_attempted,no_tcp_window
+BENIGN,BENIGN,474768,50653,351471,424115,0.10669000438108718,0.740300525730462,False,chrono,excl_attempted,no_header_length
+Botnet,Botnet,221,0,206,221,0.0,0.9321266968325792,False,chrono,excl_attempted,no_header_length
+DDoS,DDoS,28543,0,28380,28543,0.0,0.9942893178712819,False,chrono,excl_attempted,no_header_length
+DoS GoldenEye,DoS GoldenEye,2270,0,429,2270,0.0,0.18898678414096917,False,chrono,excl_attempted,no_header_length
+DoS Hulk,DoS Hulk,47540,0,31582,47540,0.0,0.6643247791333614,False,chrono,excl_attempted,no_header_length
+DoS Slowhttptest,DoS Slowhttptest,522,0,32,522,0.0,0.06130268199233716,False,chrono,excl_attempted,no_header_length
+DoS Slowloris,DoS Slowloris,1158,0,798,1158,0.0,0.689119170984456,False,chrono,excl_attempted,no_header_length
+FTP-Patator,FTP-Patator,1192,0,968,1192,0.0,0.8120805369127517,False,chrono,excl_attempted,no_header_length
+Heartbleed,Heartbleed,3,0,0,3,0.0,0.0,True,chrono,excl_attempted,no_header_length
+Infiltration,Infiltration,11,0,0,11,0.0,0.0,True,chrono,excl_attempted,no_header_length
+Infiltration - Portscan,Portscan,21530,19992,21513,1538,0.9285647933116582,0.99921040408732,False,chrono,excl_attempted,no_header_length
+Portscan,Portscan,47720,47200,47629,520,0.989103101424979,0.9980930427493714,False,chrono,excl_attempted,no_header_length
+SSH-Patator,SSH-Patator,888,0,827,888,0.0,0.9313063063063063,False,chrono,excl_attempted,no_header_length
+Web Attack - Brute Force,Web Attack - Brute Force,22,0,0,22,0.0,0.0,True,chrono,excl_attempted,no_header_length
+Web Attack - SQL Injection,Web Attack - SQL Injection,4,0,1,4,0.0,0.25,True,chrono,excl_attempted,no_header_length
+Web Attack - XSS,Web Attack - XSS,5,0,0,5,0.0,0.0,True,chrono,excl_attempted,no_header_length
+BENIGN,BENIGN,474768,53826,362181,420942,0.1133732686280457,0.7628589121423517,False,random,primary,default
+Botnet,Botnet,221,0,205,221,0.0,0.9276018099547512,False,random,primary,default
+Botnet - Attempted,BENIGN,1220,997,1220,223,0.8172131147540984,1.0,False,random,primary,default
+DDoS,DDoS,28543,0,28432,28543,0.0,0.9961111305749221,False,random,primary,default
+DoS GoldenEye,DoS GoldenEye,2270,0,463,2270,0.0,0.2039647577092511,False,random,primary,default
+DoS GoldenEye - Attempted,BENIGN,24,0,24,24,0.0,1.0,True,random,primary,default
+DoS Hulk,DoS Hulk,47540,0,31999,47540,0.0,0.6730963399242743,False,random,primary,default
+DoS Hulk - Attempted,BENIGN,174,0,173,174,0.0,0.9942528735632183,False,random,primary,default
+DoS Slowhttptest,DoS Slowhttptest,522,0,476,522,0.0,0.9118773946360154,False,random,primary,default
+DoS Slowhttptest - Attempted,BENIGN,1010,0,1005,1010,0.0,0.995049504950495,False,random,primary,default
+DoS Slowloris,DoS Slowloris,1158,0,1147,1158,0.0,0.9905008635578584,False,random,primary,default
+DoS Slowloris - Attempted,BENIGN,554,1,550,553,0.0018050541516245488,0.9927797833935018,False,random,primary,default
+FTP-Patator,FTP-Patator,1192,0,954,1192,0.0,0.8003355704697986,False,random,primary,default
+FTP-Patator - Attempted,BENIGN,4,0,4,4,0.0,1.0,True,random,primary,default
+Heartbleed,Heartbleed,3,0,0,3,0.0,0.0,True,random,primary,default
+Infiltration,Infiltration,11,0,0,11,0.0,0.0,True,random,primary,default
+Infiltration - Attempted,BENIGN,14,5,13,9,0.35714285714285715,0.9285714285714286,True,random,primary,default
+Infiltration - Portscan,Portscan,21530,20169,21505,1361,0.9367858801672085,0.9988388295401764,False,random,primary,default
+Portscan,Portscan,47720,47323,47715,397,0.9916806370494552,0.9998952221290863,False,random,primary,default
+SSH-Patator,SSH-Patator,888,0,822,888,0.0,0.9256756756756757,False,random,primary,default
+SSH-Patator - Attempted,BENIGN,8,0,7,8,0.0,0.875,True,random,primary,default
+Web Attack - Brute Force,Web Attack - Brute Force,22,0,0,22,0.0,0.0,True,random,primary,default
+Web Attack - Brute Force - Attempted,BENIGN,388,0,385,388,0.0,0.9922680412371134,False,random,primary,default
+Web Attack - SQL Injection,Web Attack - SQL Injection,4,0,0,4,0.0,0.0,True,random,primary,default
+Web Attack - SQL Injection - Attempted,BENIGN,2,0,0,2,0.0,0.0,True,random,primary,default
+Web Attack - XSS,Web Attack - XSS,5,0,0,5,0.0,0.0,True,random,primary,default
+Web Attack - XSS - Attempted,BENIGN,197,0,194,197,0.0,0.9847715736040609,False,random,primary,default
+BENIGN,BENIGN,474768,53193,360996,421575,0.11203998584571832,0.7603629562228288,False,random,primary,default_plus_dst_port
+Botnet,Botnet,221,0,205,221,0.0,0.9276018099547512,False,random,primary,default_plus_dst_port
+Botnet - Attempted,BENIGN,1220,996,1219,224,0.8163934426229508,0.9991803278688525,False,random,primary,default_plus_dst_port
+DDoS,DDoS,28543,0,28432,28543,0.0,0.9961111305749221,False,random,primary,default_plus_dst_port
+DoS GoldenEye,DoS GoldenEye,2270,0,463,2270,0.0,0.2039647577092511,False,random,primary,default_plus_dst_port
+DoS GoldenEye - Attempted,BENIGN,24,0,24,24,0.0,1.0,True,random,primary,default_plus_dst_port
+DoS Hulk,DoS Hulk,47540,0,31999,47540,0.0,0.6730963399242743,False,random,primary,default_plus_dst_port
+DoS Hulk - Attempted,BENIGN,174,0,173,174,0.0,0.9942528735632183,False,random,primary,default_plus_dst_port
+DoS Slowhttptest,DoS Slowhttptest,522,0,476,522,0.0,0.9118773946360154,False,random,primary,default_plus_dst_port
+DoS Slowhttptest - Attempted,BENIGN,1010,0,1005,1010,0.0,0.995049504950495,False,random,primary,default_plus_dst_port
+DoS Slowloris,DoS Slowloris,1158,0,1147,1158,0.0,0.9905008635578584,False,random,primary,default_plus_dst_port
+DoS Slowloris - Attempted,BENIGN,554,1,550,553,0.0018050541516245488,0.9927797833935018,False,random,primary,default_plus_dst_port
+FTP-Patator,FTP-Patator,1192,0,954,1192,0.0,0.8003355704697986,False,random,primary,default_plus_dst_port
+FTP-Patator - Attempted,BENIGN,4,0,4,4,0.0,1.0,True,random,primary,default_plus_dst_port
+Heartbleed,Heartbleed,3,0,0,3,0.0,0.0,True,random,primary,default_plus_dst_port
+Infiltration,Infiltration,11,0,0,11,0.0,0.0,True,random,primary,default_plus_dst_port
+Infiltration - Attempted,BENIGN,14,0,13,14,0.0,0.9285714285714286,True,random,primary,default_plus_dst_port
+Infiltration - Portscan,Portscan,21530,11352,21250,10178,0.5272642823966558,0.9869948908499768,False,random,primary,default_plus_dst_port
+Portscan,Portscan,47720,24706,47714,23014,0.5177284157585917,0.9998742665549036,False,random,primary,default_plus_dst_port
+SSH-Patator,SSH-Patator,888,0,822,888,0.0,0.9256756756756757,False,random,primary,default_plus_dst_port
+SSH-Patator - Attempted,BENIGN,8,0,7,8,0.0,0.875,True,random,primary,default_plus_dst_port
+Web Attack - Brute Force,Web Attack - Brute Force,22,0,0,22,0.0,0.0,True,random,primary,default_plus_dst_port
+Web Attack - Brute Force - Attempted,BENIGN,388,0,385,388,0.0,0.9922680412371134,False,random,primary,default_plus_dst_port
+Web Attack - SQL Injection,Web Attack - SQL Injection,4,0,0,4,0.0,0.0,True,random,primary,default_plus_dst_port
+Web Attack - SQL Injection - Attempted,BENIGN,2,0,0,2,0.0,0.0,True,random,primary,default_plus_dst_port
+Web Attack - XSS,Web Attack - XSS,5,0,0,5,0.0,0.0,True,random,primary,default_plus_dst_port
+Web Attack - XSS - Attempted,BENIGN,197,0,194,197,0.0,0.9847715736040609,False,random,primary,default_plus_dst_port
+BENIGN,BENIGN,474768,53826,369035,420942,0.1133732686280457,0.7772954369291949,False,random,primary,no_tcp_window
+Botnet,Botnet,221,0,205,221,0.0,0.9276018099547512,False,random,primary,no_tcp_window
+Botnet - Attempted,BENIGN,1220,997,1220,223,0.8172131147540984,1.0,False,random,primary,no_tcp_window
+DDoS,DDoS,28543,0,28432,28543,0.0,0.9961111305749221,False,random,primary,no_tcp_window
+DoS GoldenEye,DoS GoldenEye,2270,0,463,2270,0.0,0.2039647577092511,False,random,primary,no_tcp_window
+DoS GoldenEye - Attempted,BENIGN,24,0,24,24,0.0,1.0,True,random,primary,no_tcp_window
+DoS Hulk,DoS Hulk,47540,0,31999,47540,0.0,0.6730963399242743,False,random,primary,no_tcp_window
+DoS Hulk - Attempted,BENIGN,174,0,173,174,0.0,0.9942528735632183,False,random,primary,no_tcp_window
+DoS Slowhttptest,DoS Slowhttptest,522,0,476,522,0.0,0.9118773946360154,False,random,primary,no_tcp_window
+DoS Slowhttptest - Attempted,BENIGN,1010,0,1005,1010,0.0,0.995049504950495,False,random,primary,no_tcp_window
+DoS Slowloris,DoS Slowloris,1158,0,1147,1158,0.0,0.9905008635578584,False,random,primary,no_tcp_window
+DoS Slowloris - Attempted,BENIGN,554,1,550,553,0.0018050541516245488,0.9927797833935018,False,random,primary,no_tcp_window
+FTP-Patator,FTP-Patator,1192,0,954,1192,0.0,0.8003355704697986,False,random,primary,no_tcp_window
+FTP-Patator - Attempted,BENIGN,4,0,4,4,0.0,1.0,True,random,primary,no_tcp_window
+Heartbleed,Heartbleed,3,0,0,3,0.0,0.0,True,random,primary,no_tcp_window
+Infiltration,Infiltration,11,0,0,11,0.0,0.0,True,random,primary,no_tcp_window
+Infiltration - Attempted,BENIGN,14,5,13,9,0.35714285714285715,0.9285714285714286,True,random,primary,no_tcp_window
+Infiltration - Portscan,Portscan,21530,20170,21505,1360,0.9368323269856015,0.9988388295401764,False,random,primary,no_tcp_window
+Portscan,Portscan,47720,47335,47715,385,0.9919321039396479,0.9998952221290863,False,random,primary,no_tcp_window
+SSH-Patator,SSH-Patator,888,0,822,888,0.0,0.9256756756756757,False,random,primary,no_tcp_window
+SSH-Patator - Attempted,BENIGN,8,0,7,8,0.0,0.875,True,random,primary,no_tcp_window
+Web Attack - Brute Force,Web Attack - Brute Force,22,0,0,22,0.0,0.0,True,random,primary,no_tcp_window
+Web Attack - Brute Force - Attempted,BENIGN,388,0,385,388,0.0,0.9922680412371134,False,random,primary,no_tcp_window
+Web Attack - SQL Injection,Web Attack - SQL Injection,4,0,0,4,0.0,0.0,True,random,primary,no_tcp_window
+Web Attack - SQL Injection - Attempted,BENIGN,2,0,0,2,0.0,0.0,True,random,primary,no_tcp_window
+Web Attack - XSS,Web Attack - XSS,5,0,0,5,0.0,0.0,True,random,primary,no_tcp_window
+Web Attack - XSS - Attempted,BENIGN,197,0,194,197,0.0,0.9847715736040609,False,random,primary,no_tcp_window
+BENIGN,BENIGN,474768,53826,362240,420942,0.1133732686280457,0.762983183365349,False,random,primary,no_header_length
+Botnet,Botnet,221,0,205,221,0.0,0.9276018099547512,False,random,primary,no_header_length
+Botnet - Attempted,BENIGN,1220,997,1220,223,0.8172131147540984,1.0,False,random,primary,no_header_length
+DDoS,DDoS,28543,0,28432,28543,0.0,0.9961111305749221,False,random,primary,no_header_length
+DoS GoldenEye,DoS GoldenEye,2270,0,463,2270,0.0,0.2039647577092511,False,random,primary,no_header_length
+DoS GoldenEye - Attempted,BENIGN,24,0,24,24,0.0,1.0,True,random,primary,no_header_length
+DoS Hulk,DoS Hulk,47540,0,31999,47540,0.0,0.6730963399242743,False,random,primary,no_header_length
+DoS Hulk - Attempted,BENIGN,174,0,173,174,0.0,0.9942528735632183,False,random,primary,no_header_length
+DoS Slowhttptest,DoS Slowhttptest,522,0,476,522,0.0,0.9118773946360154,False,random,primary,no_header_length
+DoS Slowhttptest - Attempted,BENIGN,1010,0,1005,1010,0.0,0.995049504950495,False,random,primary,no_header_length
+DoS Slowloris,DoS Slowloris,1158,0,1147,1158,0.0,0.9905008635578584,False,random,primary,no_header_length
+DoS Slowloris - Attempted,BENIGN,554,1,550,553,0.0018050541516245488,0.9927797833935018,False,random,primary,no_header_length
+FTP-Patator,FTP-Patator,1192,0,954,1192,0.0,0.8003355704697986,False,random,primary,no_header_length
+FTP-Patator - Attempted,BENIGN,4,0,4,4,0.0,1.0,True,random,primary,no_header_length
+Heartbleed,Heartbleed,3,0,0,3,0.0,0.0,True,random,primary,no_header_length
+Infiltration,Infiltration,11,0,0,11,0.0,0.0,True,random,primary,no_header_length
+Infiltration - Attempted,BENIGN,14,5,13,9,0.35714285714285715,0.9285714285714286,True,random,primary,no_header_length
+Infiltration - Portscan,Portscan,21530,20169,21506,1361,0.9367858801672085,0.9988852763585694,False,random,primary,no_header_length
+Portscan,Portscan,47720,47323,47715,397,0.9916806370494552,0.9998952221290863,False,random,primary,no_header_length
+SSH-Patator,SSH-Patator,888,0,822,888,0.0,0.9256756756756757,False,random,primary,no_header_length
+SSH-Patator - Attempted,BENIGN,8,0,7,8,0.0,0.875,True,random,primary,no_header_length
+Web Attack - Brute Force,Web Attack - Brute Force,22,0,0,22,0.0,0.0,True,random,primary,no_header_length
+Web Attack - Brute Force - Attempted,BENIGN,388,0,385,388,0.0,0.9922680412371134,False,random,primary,no_header_length
+Web Attack - SQL Injection,Web Attack - SQL Injection,4,0,0,4,0.0,0.0,True,random,primary,no_header_length
+Web Attack - SQL Injection - Attempted,BENIGN,2,0,0,2,0.0,0.0,True,random,primary,no_header_length
+Web Attack - XSS,Web Attack - XSS,5,0,0,5,0.0,0.0,True,random,primary,no_header_length
+Web Attack - XSS - Attempted,BENIGN,197,0,194,197,0.0,0.9847715736040609,False,random,primary,no_header_length

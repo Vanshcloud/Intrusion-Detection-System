@@ -1,0 +1,74 @@
+{
+  "monday": {
+    "min": "2017-07-03 11:55:58.598308",
+    "max": "2017-07-03 20:01:34.352593",
+    "span_hours": 8.093265079127418,
+    "file_order_is_time_order": false,
+    "spearman_file_order_vs_time": 0.199290961994257,
+    "rows_with_non_unique_timestamp": 684,
+    "largest_gap_between_consecutive_flow_starts_s": 23.732709884643555,
+    "flow_duration_max_us": 119999987,
+    "rows_at_120s_timeout": 0
+  },
+  "tuesday": {
+    "min": "2017-07-04 11:53:44.398274",
+    "max": "2017-07-04 20:00:30.041663",
+    "span_hours": 8.112678719162941,
+    "file_order_is_time_order": false,
+    "spearman_file_order_vs_time": 0.21888138412834213,
+    "rows_with_non_unique_timestamp": 419,
+    "largest_gap_between_consecutive_flow_starts_s": 36.322937965393066,
+    "flow_duration_max_us": 119999977,
+    "rows_at_120s_timeout": 0
+  },
+  "wednesday": {
+    "min": "2017-07-05 11:42:42.084372",
+    "max": "2017-07-05 20:10:14.557249",
+    "span_hours": 8.459020243618223,
+    "file_order_is_time_order": false,
+    "spearman_file_order_vs_time": 0.49162296638399183,
+    "rows_with_non_unique_timestamp": 25593,
+    "largest_gap_between_consecutive_flow_starts_s": 59.33770298957825,
+    "flow_duration_max_us": 119999998,
+    "rows_at_120s_timeout": 0
+  },
+  "thursday": {
+    "min": "2017-07-06 11:59:00.490140",
+    "max": "2017-07-06 20:04:36.513760",
+    "span_hours": 8.093339894480176,
+    "file_order_is_time_order": false,
+    "spearman_file_order_vs_time": 0.23194913703339257,
+    "rows_with_non_unique_timestamp": 810,
+    "largest_gap_between_consecutive_flow_starts_s": 40.92187809944153,
+    "flow_duration_max_us": 119999993,
+    "rows_at_120s_timeout": 0
+  },
+  "friday": {
+    "min": "2017-07-07 11:59:50.315195",
+    "max": "2017-07-07 20:02:40.977798",
+    "span_hours": 8.047406278583738,
+    "file_order_is_time_order": false,
+    "spearman_file_order_vs_time": 0.1178046128927646,
+    "rows_with_non_unique_timestamp": 15019,
+    "largest_gap_between_consecutive_flow_starts_s": 41.07229399681091,
+    "flow_duration_max_us": 119999993,
+    "rows_at_120s_timeout": 0
+  },
+  "non_unique_timestamp_rows_by_label": {
+    "DoS Hulk": 24805,
+    "DDoS": 13010,
+    "BENIGN": 2450,
+    "Portscan": 1629,
+    "Infiltration - Portscan": 402,
+    "DoS Slowloris": 90,
+    "DoS GoldenEye": 53,
+    "DoS Hulk - Attempted": 35,
+    "DoS Slowhttptest": 18,
+    "FTP-Patator": 10,
+    "SSH-Patator": 8,
+    "DoS Slowloris - Attempted": 8,
+    "DoS GoldenEye - Attempted": 4,
+    "DoS Slowhttptest - Attempted": 2,
+    "Botnet - Attempted": 1
+  }
+}

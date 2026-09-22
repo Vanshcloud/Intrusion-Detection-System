@@ -1,0 +1,11 @@
+{
+  "hulk_rows": 158468,
+  "hulk_rows_with_4_values": 158354,
+  "non_hulk_rows_with_4_values": 90681,
+  "non_hulk_labels_with_4_values": {
+    "DDoS": 90597,
+    "Portscan": 56,
+    "Infiltration - Portscan": 20,
+    "BENIGN": 8
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "negative_header_length_rows": 593,
+  "negative_header_length_labels": {
+    "BENIGN": 585,
+    "Infiltration": 5,
+    "Heartbleed": 3
+  },
+  "negative_header_length_protocols": {
+    "6": 593
+  },
+  "negative_header_length_flow_duration_min_s": 0.436653,
+  "inf_rate_rows": 5,
+  "inf_rate_labels": {
+    "BENIGN": 5
+  },
+  "inf_rate_flow_duration_values": {
+    "0": 5
+  },
+  "protocol0_rows": 1510,
+  "protocol0_labels": {
+    "BENIGN": 1508,
+    "Portscan": 2
+  },
+  "protocol0_top_flow_ids": {
+    "8.6.0.1-8.0.6.4-0-0-0": 1184,
+    "192.168.10.50-192.168.10.3-0-0-0": 153,
+    "192.168.10.12-192.168.10.3-0-0-0": 57,
+    "192.168.10.16-192.168.10.3-0-0-0": 54,
+    "192.168.10.8-224.0.0.22-0-0-0": 18
+  },
+  "zero_duration_rows": 5,
+  "zero_duration_labels": {
+    "BENIGN": 5
+  },
+  "icmp_fields_set_when_protocol_not_1": 0
+}

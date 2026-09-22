@@ -1,0 +1,6 @@
+source_file,source_row,id,Label,Flow Duration,Flow Bytes/s,Flow Packets/s,Timestamp
+monday.csv,106983,106984,BENIGN,0,inf,inf,2017-07-03 19:05:10.883887
+monday.csv,114890,114891,BENIGN,0,inf,inf,2017-07-03 19:35:18.272686
+monday.csv,121882,121883,BENIGN,0,inf,inf,2017-07-03 19:50:21.961557
+wednesday.csv,465855,465856,BENIGN,0,inf,inf,2017-07-05 14:04:28.227974
+thursday.csv,12012,12013,BENIGN,0,inf,inf,2017-07-06 13:00:35.852415

@@ -1,0 +1,198 @@
+{
+  "version": "v1",
+  "binary_positive_class": "attack (y_binary = 1) = successful attack labels; BENIGN and every '- Attempted' label = 0",
+  "binary_rule_source": "Liu et al. CNS2022 Dataset_Download.html: 'When in doubt, we recommend to relabel all Attempted flows as Benign'; Attempted must never be a separate class",
+  "family_rule": "family = original label for successful attacks, except 'Infiltration - Portscan' -> 'Portscan'; BENIGN for benign and Attempted rows. No other classes merged.",
+  "sensitivity_variant": "Attempted rows removed from train, val and test (sensitivity)",
+  "labels": [
+    {
+      "label_original": "BENIGN",
+      "is_attempted": false,
+      "y_binary": 0,
+      "family": "BENIGN",
+      "rows": 1582561
+    },
+    {
+      "label_original": "Botnet",
+      "is_attempted": false,
+      "y_binary": 1,
+      "family": "Botnet",
+      "rows": 736
+    },
+    {
+      "label_original": "Botnet - Attempted",
+      "is_attempted": true,
+      "y_binary": 0,
+      "family": "BENIGN",
+      "rows": 4067
+    },
+    {
+      "label_original": "DDoS",
+      "is_attempted": false,
+      "y_binary": 1,
+      "family": "DDoS",
+      "rows": 95144
+    },
+    {
+      "label_original": "DoS GoldenEye",
+      "is_attempted": false,
+      "y_binary": 1,
+      "family": "DoS GoldenEye",
+      "rows": 7567
+    },
+    {
+      "label_original": "DoS GoldenEye - Attempted",
+      "is_attempted": true,
+      "y_binary": 0,
+      "family": "BENIGN",
+      "rows": 80
+    },
+    {
+      "label_original": "DoS Hulk",
+      "is_attempted": false,
+      "y_binary": 1,
+      "family": "DoS Hulk",
+      "rows": 158468
+    },
+    {
+      "label_original": "DoS Hulk - Attempted",
+      "is_attempted": true,
+      "y_binary": 0,
+      "family": "BENIGN",
+      "rows": 581
+    },
+    {
+      "label_original": "DoS Slowhttptest",
+      "is_attempted": false,
+      "y_binary": 1,
+      "family": "DoS Slowhttptest",
+      "rows": 1740
+    },
+    {
+      "label_original": "DoS Slowhttptest - Attempted",
+      "is_attempted": true,
+      "y_binary": 0,
+      "family": "BENIGN",
+      "rows": 3368
+    },
+    {
+      "label_original": "DoS Slowloris",
+      "is_attempted": false,
+      "y_binary": 1,
+      "family": "DoS Slowloris",
+      "rows": 3859
+    },
+    {
+      "label_original": "DoS Slowloris - Attempted",
+      "is_attempted": true,
+      "y_binary": 0,
+      "family": "BENIGN",
+      "rows": 1847
+    },
+    {
+      "label_original": "FTP-Patator",
+      "is_attempted": false,
+      "y_binary": 1,
+      "family": "FTP-Patator",
+      "rows": 3972
+    },
+    {
+      "label_original": "FTP-Patator - Attempted",
+      "is_attempted": true,
+      "y_binary": 0,
+      "family": "BENIGN",
+      "rows": 12
+    },
+    {
+      "label_original": "Heartbleed",
+      "is_attempted": false,
+      "y_binary": 1,
+      "family": "Heartbleed",
+      "rows": 11
+    },
+    {
+      "label_original": "Infiltration",
+      "is_attempted": false,
+      "y_binary": 1,
+      "family": "Infiltration",
+      "rows": 36
+    },
+    {
+      "label_original": "Infiltration - Attempted",
+      "is_attempted": true,
+      "y_binary": 0,
+      "family": "BENIGN",
+      "rows": 45
+    },
+    {
+      "label_original": "Infiltration - Portscan",
+      "is_attempted": false,
+      "y_binary": 1,
+      "family": "Portscan",
+      "rows": 71767
+    },
+    {
+      "label_original": "Portscan",
+      "is_attempted": false,
+      "y_binary": 1,
+      "family": "Portscan",
+      "rows": 159066
+    },
+    {
+      "label_original": "SSH-Patator",
+      "is_attempted": false,
+      "y_binary": 1,
+      "family": "SSH-Patator",
+      "rows": 2961
+    },
+    {
+      "label_original": "SSH-Patator - Attempted",
+      "is_attempted": true,
+      "y_binary": 0,
+      "family": "BENIGN",
+      "rows": 27
+    },
+    {
+      "label_original": "Web Attack - Brute Force",
+      "is_attempted": false,
+      "y_binary": 1,
+      "family": "Web Attack - Brute Force",
+      "rows": 73
+    },
+    {
+      "label_original": "Web Attack - Brute Force - Attempted",
+      "is_attempted": true,
+      "y_binary": 0,
+      "family": "BENIGN",
+      "rows": 1292
+    },
+    {
+      "label_original": "Web Attack - SQL Injection",
+      "is_attempted": false,
+      "y_binary": 1,
+      "family": "Web Attack - SQL Injection",
+      "rows": 13
+    },
+    {
+      "label_original": "Web Attack - SQL Injection - Attempted",
+      "is_attempted": true,
+      "y_binary": 0,
+      "family": "BENIGN",
+      "rows": 5
+    },
+    {
+      "label_original": "Web Attack - XSS",
+      "is_attempted": false,
+      "y_binary": 1,
+      "family": "Web Attack - XSS",
+      "rows": 18
+    },
+    {
+      "label_original": "Web Attack - XSS - Attempted",
+      "is_attempted": true,
+      "y_binary": 0,
+      "family": "BENIGN",
+      "rows": 655
+    }
+  ]
+}

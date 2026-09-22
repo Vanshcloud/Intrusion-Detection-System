@@ -1,0 +1,213 @@
+{
+  "rule": "drop train rows with t_end >= first val t_start of the stratum; drop val rows with t_end >= first test t_start. Test rows are never removed.",
+  "test_rows_before_purge": 629992,
+  "test_rows_after_purge": 629992,
+  "purged_by_reason": {
+    "val_reaches_test": 3389,
+    "train_reaches_val": 3333
+  },
+  "purged_by_label": [
+    {
+      "Label": "BENIGN",
+      "purge_reason": "train_reaches_val",
+      "n": 1317
+    },
+    {
+      "Label": "BENIGN",
+      "purge_reason": "val_reaches_test",
+      "n": 1478
+    },
+    {
+      "Label": "DDoS",
+      "purge_reason": "train_reaches_val",
+      "n": 521
+    },
+    {
+      "Label": "DDoS",
+      "purge_reason": "val_reaches_test",
+      "n": 508
+    },
+    {
+      "Label": "DoS GoldenEye",
+      "purge_reason": "train_reaches_val",
+      "n": 258
+    },
+    {
+      "Label": "DoS GoldenEye",
+      "purge_reason": "val_reaches_test",
+      "n": 730
+    },
+    {
+      "Label": "DoS GoldenEye - Attempted",
+      "purge_reason": "train_reaches_val",
+      "n": 1
+    },
+    {
+      "Label": "DoS GoldenEye - Attempted",
+      "purge_reason": "val_reaches_test",
+      "n": 3
+    },
+    {
+      "Label": "DoS Hulk",
+      "purge_reason": "train_reaches_val",
+      "n": 67
+    },
+    {
+      "Label": "DoS Hulk",
+      "purge_reason": "val_reaches_test",
+      "n": 97
+    },
+    {
+      "Label": "DoS Hulk - Attempted",
+      "purge_reason": "train_reaches_val",
+      "n": 294
+    },
+    {
+      "Label": "DoS Hulk - Attempted",
+      "purge_reason": "val_reaches_test",
+      "n": 81
+    },
+    {
+      "Label": "DoS Slowhttptest",
+      "purge_reason": "train_reaches_val",
+      "n": 270
+    },
+    {
+      "Label": "DoS Slowhttptest",
+      "purge_reason": "val_reaches_test",
+      "n": 106
+    },
+    {
+      "Label": "DoS Slowhttptest - Attempted",
+      "purge_reason": "train_reaches_val",
+      "n": 279
+    },
+    {
+      "Label": "DoS Slowhttptest - Attempted",
+      "purge_reason": "val_reaches_test",
+      "n": 40
+    },
+    {
+      "Label": "DoS Slowloris",
+      "purge_reason": "train_reaches_val",
+      "n": 290
+    },
+    {
+      "Label": "DoS Slowloris",
+      "purge_reason": "val_reaches_test",
+      "n": 308
+    },
+    {
+      "Label": "DoS Slowloris - Attempted",
+      "purge_reason": "train_reaches_val",
+      "n": 3
+    },
+    {
+      "Label": "DoS Slowloris - Attempted",
+      "purge_reason": "val_reaches_test",
+      "n": 2
+    },
+    {
+      "Label": "FTP-Patator",
+      "purge_reason": "train_reaches_val",
+      "n": 9
+    },
+    {
+      "Label": "FTP-Patator",
+      "purge_reason": "val_reaches_test",
+      "n": 7
+    },
+    {
+      "Label": "FTP-Patator - Attempted",
+      "purge_reason": "train_reaches_val",
+      "n": 4
+    },
+    {
+      "Label": "FTP-Patator - Attempted",
+      "purge_reason": "val_reaches_test",
+      "n": 2
+    },
+    {
+      "Label": "Infiltration - Portscan",
+      "purge_reason": "train_reaches_val",
+      "n": 2
+    },
+    {
+      "Label": "Infiltration - Portscan",
+      "purge_reason": "val_reaches_test",
+      "n": 7
+    },
+    {
+      "Label": "Portscan",
+      "purge_reason": "train_reaches_val",
+      "n": 2
+    },
+    {
+      "Label": "Portscan",
+      "purge_reason": "val_reaches_test",
+      "n": 2
+    },
+    {
+      "Label": "SSH-Patator",
+      "purge_reason": "train_reaches_val",
+      "n": 7
+    },
+    {
+      "Label": "SSH-Patator",
+      "purge_reason": "val_reaches_test",
+      "n": 9
+    },
+    {
+      "Label": "Web Attack - Brute Force",
+      "purge_reason": "train_reaches_val",
+      "n": 1
+    },
+    {
+      "Label": "Web Attack - Brute Force",
+      "purge_reason": "val_reaches_test",
+      "n": 1
+    },
+    {
+      "Label": "Web Attack - Brute Force - Attempted",
+      "purge_reason": "train_reaches_val",
+      "n": 3
+    },
+    {
+      "Label": "Web Attack - Brute Force - Attempted",
+      "purge_reason": "val_reaches_test",
+      "n": 3
+    },
+    {
+      "Label": "Web Attack - SQL Injection - Attempted",
+      "purge_reason": "train_reaches_val",
+      "n": 1
+    },
+    {
+      "Label": "Web Attack - SQL Injection - Attempted",
+      "purge_reason": "val_reaches_test",
+      "n": 1
+    },
+    {
+      "Label": "Web Attack - XSS",
+      "purge_reason": "train_reaches_val",
+      "n": 1
+    },
+    {
+      "Label": "Web Attack - XSS",
+      "purge_reason": "val_reaches_test",
+      "n": 1
+    },
+    {
+      "Label": "Web Attack - XSS - Attempted",
+      "purge_reason": "train_reaches_val",
+      "n": 3
+    },
+    {
+      "Label": "Web Attack - XSS - Attempted",
+      "purge_reason": "val_reaches_test",
+      "n": 3
+    }
+  ],
+  "check_train_ends_before_val": true,
+  "check_val_ends_before_test": true
+}
