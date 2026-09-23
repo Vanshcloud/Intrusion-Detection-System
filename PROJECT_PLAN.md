@@ -1,7 +1,7 @@
 # Project Plan — Explainable ML-Based Network Intrusion Detection (CIC-IDS2017)
 
-Status: **Milestone 3 complete (data preparation, frozen experiment protocol v1); awaiting review.** No model has been trained.
-Milestone record: M1 plan (this document) → M2 audit (`reports/DATA_AUDIT.md`, `reports/LEAKAGE_AUDIT.md`) → M3 protocol (`reports/EXPERIMENT_PROTOCOL.md`). Where later milestones changed an assumption below, a dated note says so; the authoritative current design is `reports/EXPERIMENT_PROTOCOL.md`.
+Status: **Milestone 4 complete (binary models trained and evaluated under protocol v1); awaiting review.** Results: `reports/MODEL_EVALUATION.md`. No SHAP, dashboard or multiclass work yet.
+Milestone record: M1 plan (this document) → M2 audit (`reports/DATA_AUDIT.md`, `reports/LEAKAGE_AUDIT.md`) → M3 protocol (`reports/EXPERIMENT_PROTOCOL.md`) → M4 models (`configs/model_selection_v1.json` addendum A, `configs/m4_frozen.json`, `reports/MODEL_EVALUATION.md`). Where later milestones changed an assumption below, a dated note says so; the authoritative current design is `reports/EXPERIMENT_PROTOCOL.md`.
 Every numeric value in this document is either (a) quoted from a cited source, or (b) marked **TBD — determined after running the experiment**.
 
 Verification date for all web sources: 2026-09-22.
@@ -131,6 +131,8 @@ Measure first (TBD). Default: class weighting (`class_weight` / `scale_pos_weigh
 
 ## 9. Models (planned)
 
+> **Milestone 4 update:** all three trained. Selection rule and search spaces in `configs/model_selection_v1.json` (addendum A to protocol v1, written before training); selected model LightGBM (tie-break over Random Forest on validation PR-AUC). Logistic regression uses a stateless signed log1p before scaling (documented configuration choice, not a protocol change). Key result: validation false-alarm rates did not transfer to the chronological test period (see MODEL_EVALUATION §8.1).
+
 | # | Model | Why |
 |---|---|---|
 | 1 | Logistic Regression (standardised, class-weighted) | Transparent linear baseline; shows how much non-linearity buys |
@@ -193,6 +195,7 @@ Status as of Milestone 3 (resolved items kept for the record):
 7. "BCCC-CIC-IDS-2017" — not investigated, not used.
 8. Cause of negative header lengths and protocol-0 rows — unverified; kept and flagged (M3).
 9. Rare classes (Heartbleed 3, SQL Injection 4, XSS 5, Infiltration 11, Brute Force 22 test rows) — reported with counts, flagged unstable; no resampling or merging.
+10. Reply-direction scan flows labelled BENIGN (M4 hypothesis, MODEL_EVALUATION §8.1) — **decision (2026-09-23): not relabelled in protocol v1**; v1 labels, thresholds, models and results stay unchanged. Any alternative labelling may only be run as a separately documented protocol-v2 sensitivity experiment and never replaces v1 results.
 
 ## 16. References (verified via Crossref / publisher / venue pages)
 

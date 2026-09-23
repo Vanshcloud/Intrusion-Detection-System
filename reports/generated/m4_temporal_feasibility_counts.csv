@@ -1,0 +1,46 @@
+candidate,family,train,test
+C1_per_day_70pct,BENIGN,1111295,483245
+C1_per_day_70pct,Botnet,736,0
+C1_per_day_70pct,DDoS,0,95144
+C1_per_day_70pct,DoS GoldenEye,7567,0
+C1_per_day_70pct,DoS Hulk,158468,0
+C1_per_day_70pct,DoS Slowhttptest,1740,0
+C1_per_day_70pct,DoS Slowloris,3859,0
+C1_per_day_70pct,FTP-Patator,3972,0
+C1_per_day_70pct,Heartbleed,0,11
+C1_per_day_70pct,Infiltration,27,9
+C1_per_day_70pct,Portscan,180743,50090
+C1_per_day_70pct,SSH-Patator,1467,1494
+C1_per_day_70pct,Web Attack - Brute Force,73,0
+C1_per_day_70pct,Web Attack - SQL Injection,13,0
+C1_per_day_70pct,Web Attack - XSS,18,0
+C2_mon-wed_vs_thu-fri,BENIGN,1011761,582779
+C2_mon-wed_vs_thu-fri,Botnet,0,736
+C2_mon-wed_vs_thu-fri,DDoS,0,95144
+C2_mon-wed_vs_thu-fri,DoS GoldenEye,7567,0
+C2_mon-wed_vs_thu-fri,DoS Hulk,158468,0
+C2_mon-wed_vs_thu-fri,DoS Slowhttptest,1740,0
+C2_mon-wed_vs_thu-fri,DoS Slowloris,3859,0
+C2_mon-wed_vs_thu-fri,FTP-Patator,3972,0
+C2_mon-wed_vs_thu-fri,Heartbleed,11,0
+C2_mon-wed_vs_thu-fri,Infiltration,0,36
+C2_mon-wed_vs_thu-fri,Portscan,0,230833
+C2_mon-wed_vs_thu-fri,SSH-Patator,2961,0
+C2_mon-wed_vs_thu-fri,Web Attack - Brute Force,0,73
+C2_mon-wed_vs_thu-fri,Web Attack - SQL Injection,0,13
+C2_mon-wed_vs_thu-fri,Web Attack - XSS,0,18
+C3_mon-thu_vs_fri,BENIGN,1301929,292611
+C3_mon-thu_vs_fri,Botnet,0,736
+C3_mon-thu_vs_fri,DDoS,0,95144
+C3_mon-thu_vs_fri,DoS GoldenEye,7567,0
+C3_mon-thu_vs_fri,DoS Hulk,158468,0
+C3_mon-thu_vs_fri,DoS Slowhttptest,1740,0
+C3_mon-thu_vs_fri,DoS Slowloris,3859,0
+C3_mon-thu_vs_fri,FTP-Patator,3972,0
+C3_mon-thu_vs_fri,Heartbleed,11,0
+C3_mon-thu_vs_fri,Infiltration,36,0
+C3_mon-thu_vs_fri,Portscan,71767,159066
+C3_mon-thu_vs_fri,SSH-Patator,2961,0
+C3_mon-thu_vs_fri,Web Attack - Brute Force,73,0
+C3_mon-thu_vs_fri,Web Attack - SQL Injection,13,0
+C3_mon-thu_vs_fri,Web Attack - XSS,18,0

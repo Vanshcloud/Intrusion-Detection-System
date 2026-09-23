@@ -1,0 +1,87 @@
+{
+  "name": "Protocol v1 addendum A: model selection and experiment execution rules",
+  "applies_to": "configs/experiment_protocol_v1.json (unchanged)",
+  "why_an_addendum": "Protocol v1 fixes metrics and FPR budgets but does not define how hyper-parameters and the model family are selected, nor how comparison experiments reuse configurations. These rules are fixed before any model is trained (2026-09-23) and before any test prediction exists. They add rules; they change nothing in v1.",
+  "data_use": {
+    "fit": "train partition only (preprocessing and estimator)",
+    "early_stopping": "LightGBM only; validation partition; binary_logloss; patience 50 rounds",
+    "selection_and_thresholds": "validation partition only",
+    "test": "scored once per frozen experiment after configs/m4_frozen.json exists; never used for any decision"
+  },
+  "selection_metric": {
+    "primary": "validation recall at the 0.1 % FPR operating point (threshold chosen on validation with ids.metrics.select_threshold, max_fpr=0.001)",
+    "tie_break": "if primary values differ by < 0.001: higher validation PR-AUC; then lower fit time",
+    "rationale": "an IDS is operated under a false-alarm budget; recall at the strictest pre-declared budget is the operational criterion. PR-AUC and ROC-AUC are reported for every candidate but are not the selection target, because they average over operating points with unacceptable false-alarm volumes."
+  },
+  "selection_scope": [
+    "Step 1: within each family (lr, rf, lgbm), pick the best searched configuration on chrono/primary/default (experiment E1).",
+    "Step 2: across the three family winners, pick the overall selected model with the same rule. All three family winners are evaluated on test as predeclared baselines."
+  ],
+  "thresholds": "for every trained experiment model: thresholds for FPR budgets 0.001 and 0.01 from its own validation predictions; frozen in configs/m4_frozen.json before test scoring",
+  "experiments": {
+    "E1_primary": "chrono x primary x default; lr, rf, lgbm (small searches)",
+    "E2_random_comparison": "random x primary x default; each family retrained with its E1-selected hyper-parameters (no re-tuning); own validation thresholds",
+    "E3_feature_ablation": "chrono x primary x {default_plus_dst_port, no_tcp_window, no_header_length}; overall selected family with its E1 hyper-parameters (no re-tuning); own validation thresholds",
+    "E4_attempted_sensitivity": "chrono x excl_attempted x default; overall selected family with its E1 hyper-parameters; own validation thresholds",
+    "E5_label_independent_temporal": "feasibility analysis only unless it answers an interpretable question (decided before any training on it)"
+  },
+  "lightgbm_iterations_in_comparisons": "E2-E4 use the same early-stopping rule on their own validation data (the number of rounds is a fitted quantity, not a tuned hyper-parameter)",
+  "search_budget_rule": "search spaces are fixed after a single benchmark run per family (runtime only) and recorded in search_spaces below before the search starts; if a family's single fit exceeds 15 minutes, its grid is reduced and the reduction is documented",
+  "benchmark_observation": "Single benchmark fits on E1 (8 threads): lr 13 s, rf (25 trees) 18 s, lgbm 18 s (early stop at 178 rounds); peak RSS 4.7 GB. No grid reduction needed. Recorded 2026-09-23 before the search.",
+  "search_spaces": {
+    "_why": {
+      "lr": "C (regularisation strength) and class weighting (1:3.2 benign:attack imbalance) are the parameters that change a linear model's ranking; preprocessing is fixed (signed log1p + standardise, one-hot codes).",
+      "rf": "tree count fixed at 100 (more trees only reduce variance); depth and leaf size control over-fitting to repeated scenario vectors; max_features fixed at sqrt (standard).",
+      "lgbm": "learning rate fixed at 0.05 with validation early stopping (rounds are fitted); num_leaves and min_child_samples control tree complexity."
+    },
+    "lr": {
+      "C": [
+        0.01,
+        0.1,
+        1.0,
+        10.0
+      ],
+      "class_weight": [
+        null,
+        "balanced"
+      ],
+      "max_iter": [
+        2000
+      ]
+    },
+    "rf": {
+      "n_estimators": [
+        100
+      ],
+      "max_depth": [
+        null,
+        20
+      ],
+      "min_samples_leaf": [
+        1,
+        5
+      ],
+      "max_features": [
+        "sqrt"
+      ]
+    },
+    "lgbm": {
+      "n_estimators": [
+        3000
+      ],
+      "learning_rate": [
+        0.05
+      ],
+      "num_leaves": [
+        15,
+        63,
+        255
+      ],
+      "min_child_samples": [
+        20,
+        100,
+        500
+      ]
+    }
+  }
+}

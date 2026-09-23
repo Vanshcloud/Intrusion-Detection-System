@@ -1,0 +1,481 @@
+{
+  "created_utc": "2026-09-23T06:44:30.040350+00:00",
+  "selection_rule_file": "configs/model_selection_v1.json",
+  "selection_rule_sha256": "16f461f503c495477fb775a60afeaad40b4dd88635f2f20408345c924d327049",
+  "family_winners": {
+    "lr": "E1_primary__lr__0587332323",
+    "rf": "E1_primary__rf__63b3d396c3",
+    "lgbm": "E1_primary__lgbm__99966b1299"
+  },
+  "overall_selected": "E1_primary__lgbm__99966b1299",
+  "experiments": [
+    {
+      "experiment": "E1_primary",
+      "family": "lr",
+      "run_id": "E1_primary__lr__0587332323",
+      "params": {
+        "C": 10.0,
+        "class_weight": null,
+        "max_iter": 2000
+      },
+      "protocol": "chrono",
+      "variant": "primary",
+      "feature_set": "default",
+      "model_path": "artifacts/m4/models/E1_primary__lr__0587332323.joblib",
+      "model_sha256": "855945976bd53a378c742b7f9ca0c86d8a5f8567837a7d1e0cf1aa7af79f767b",
+      "thresholds": {
+        "0.001": 0.8028030541242089,
+        "0.01": 0.16873740625530875
+      },
+      "val_at_threshold": {
+        "0.001": {
+          "threshold": 0.8028030541242089,
+          "fpr": 0.000997184420459878,
+          "recall": 0.9792273682684641,
+          "precision": 0.9967391143965886,
+          "f1": 0.987905643545533,
+          "fp": 221,
+          "fn": 1433,
+          "tp": 67552,
+          "tn": 221403,
+          "budget_met": true
+        },
+        "0.01": {
+          "threshold": 0.16873740625530875,
+          "fpr": 0.00989513771071725,
+          "recall": 0.9963035442487497,
+          "precision": 0.969079142168267,
+          "f1": 0.9825027875461018,
+          "fp": 2193,
+          "fn": 255,
+          "tp": 68730,
+          "tn": 219431,
+          "budget_met": true
+        }
+      },
+      "best_iteration": null
+    },
+    {
+      "experiment": "E1_primary",
+      "family": "rf",
+      "run_id": "E1_primary__rf__63b3d396c3",
+      "params": {
+        "n_estimators": 100,
+        "max_depth": null,
+        "min_samples_leaf": 5,
+        "max_features": "sqrt"
+      },
+      "protocol": "chrono",
+      "variant": "primary",
+      "feature_set": "default",
+      "model_path": "artifacts/m4/models/E1_primary__rf__63b3d396c3.joblib",
+      "model_sha256": "31b227c0915d0f52a44e797d96c5de97132a0d9728053b8da78386563343f1b4",
+      "thresholds": {
+        "0.001": 0.14415721878898446,
+        "0.01": 0.03241326168957747
+      },
+      "val_at_threshold": {
+        "0.001": {
+          "threshold": 0.14415721878898446,
+          "fpr": 0.0007806013789120312,
+          "recall": 0.9999710081901863,
+          "precision": 0.9974984093932558,
+          "f1": 0.9987331784191514,
+          "fp": 173,
+          "fn": 2,
+          "tp": 68983,
+          "tn": 221451,
+          "budget_met": true
+        },
+        "0.01": {
+          "threshold": 0.03241326168957747,
+          "fpr": 0.0026892394325524313,
+          "recall": 1.0,
+          "precision": 0.9914344433106739,
+          "f1": 0.9956988005715688,
+          "fp": 596,
+          "fn": 0,
+          "tp": 68985,
+          "tn": 221028,
+          "budget_met": true
+        }
+      },
+      "best_iteration": null
+    },
+    {
+      "experiment": "E1_primary",
+      "family": "lgbm",
+      "run_id": "E1_primary__lgbm__99966b1299",
+      "params": {
+        "n_estimators": 3000,
+        "learning_rate": 0.05,
+        "num_leaves": 63,
+        "min_child_samples": 500
+      },
+      "protocol": "chrono",
+      "variant": "primary",
+      "feature_set": "default",
+      "model_path": "artifacts/m4/models/E1_primary__lgbm__99966b1299.joblib",
+      "model_sha256": "e9a45e3dbb14a752674860cda17489cf8fe0d49f511748f8f8e5e96c154c3172",
+      "thresholds": {
+        "0.001": 0.027597897248344987,
+        "0.01": 0.0030711278264351476
+      },
+      "val_at_threshold": {
+        "0.001": {
+          "threshold": 0.027597897248344987,
+          "fpr": 0.0008663321661913872,
+          "recall": 0.9998115532362107,
+          "precision": 0.9972239893586259,
+          "f1": 0.9985160949409695,
+          "fp": 192,
+          "fn": 13,
+          "tp": 68972,
+          "tn": 221432,
+          "budget_met": true
+        },
+        "0.01": {
+          "threshold": 0.0030711278264351476,
+          "fpr": 0.003068259755261163,
+          "recall": 1.0,
+          "precision": 0.9902390009330366,
+          "f1": 0.9950955643707177,
+          "fp": 680,
+          "fn": 0,
+          "tp": 68985,
+          "tn": 220944,
+          "budget_met": true
+        }
+      },
+      "best_iteration": 162
+    },
+    {
+      "experiment": "E2_random",
+      "family": "lr",
+      "run_id": "E2_random__lr__ed3d36e75b",
+      "params": {
+        "C": 10.0,
+        "class_weight": null,
+        "max_iter": 2000
+      },
+      "protocol": "random",
+      "variant": "primary",
+      "feature_set": "default",
+      "model_path": "artifacts/m4/models/E2_random__lr__ed3d36e75b.joblib",
+      "model_sha256": "20b4edd1997a382ef4cfb0d094e611d67466bd84e10d251916f3b970334ff01c",
+      "thresholds": {
+        "0.001": 0.8987900373800078,
+        "0.01": 0.22597132576464368
+      },
+      "val_at_threshold": {
+        "0.001": {
+          "threshold": 0.8987900373800078,
+          "fpr": 0.000998938348033704,
+          "recall": 0.9577733497265443,
+          "precision": 0.9967203953173716,
+          "f1": 0.9768588251403533,
+          "fp": 223,
+          "fn": 2988,
+          "tp": 67773,
+          "tn": 223014,
+          "budget_met": true
+        },
+        "0.01": {
+          "threshold": 0.22597132576464368,
+          "fpr": 0.009949067582882765,
+          "recall": 0.9935981684826387,
+          "precision": 0.9693777661349253,
+          "f1": 0.9813385442110405,
+          "fp": 2221,
+          "fn": 453,
+          "tp": 70308,
+          "tn": 221016,
+          "budget_met": true
+        }
+      },
+      "best_iteration": null
+    },
+    {
+      "experiment": "E2_random",
+      "family": "rf",
+      "run_id": "E2_random__rf__d209177c75",
+      "params": {
+        "n_estimators": 100,
+        "max_depth": null,
+        "min_samples_leaf": 5,
+        "max_features": "sqrt"
+      },
+      "protocol": "random",
+      "variant": "primary",
+      "feature_set": "default",
+      "model_path": "artifacts/m4/models/E2_random__rf__d209177c75.joblib",
+      "model_sha256": "6ef68954af5e78d3d962380a09de84dc17711a293d0be0727f77f0eac863082e",
+      "thresholds": {
+        "0.001": 0.0863066378066378,
+        "0.01": 0.015983877233877234
+      },
+      "val_at_threshold": {
+        "0.001": {
+          "threshold": 0.0863066378066378,
+          "fpr": 0.0005509839318750924,
+          "recall": 0.9999717358431904,
+          "precision": 0.9982647216500663,
+          "f1": 0.9991174996293498,
+          "fp": 123,
+          "fn": 2,
+          "tp": 70759,
+          "tn": 223114,
+          "budget_met": true
+        },
+        "0.01": {
+          "threshold": 0.015983877233877234,
+          "fpr": 0.00399127384797323,
+          "recall": 1.0,
+          "precision": 0.9875648970021772,
+          "f1": 0.9937435486928862,
+          "fp": 891,
+          "fn": 0,
+          "tp": 70761,
+          "tn": 222346,
+          "budget_met": true
+        }
+      },
+      "best_iteration": null
+    },
+    {
+      "experiment": "E2_random",
+      "family": "lgbm",
+      "run_id": "E2_random__lgbm__820fc7aaa4",
+      "params": {
+        "n_estimators": 3000,
+        "learning_rate": 0.05,
+        "num_leaves": 63,
+        "min_child_samples": 500
+      },
+      "protocol": "random",
+      "variant": "primary",
+      "feature_set": "default",
+      "model_path": "artifacts/m4/models/E2_random__lgbm__820fc7aaa4.joblib",
+      "model_sha256": "90d124580f32652b0653fa12287d603477cefe02afaa0ddf34cecb075de7631c",
+      "thresholds": {
+        "0.001": 0.0055313804497862966,
+        "0.01": 0.0055313804497862966
+      },
+      "val_at_threshold": {
+        "0.001": {
+          "threshold": 0.0055313804497862966,
+          "fpr": 0.00023293629640247808,
+          "recall": 1.0,
+          "precision": 0.9992656715574824,
+          "f1": 0.9996327009196604,
+          "fp": 52,
+          "fn": 0,
+          "tp": 70761,
+          "tn": 223185,
+          "budget_met": true
+        },
+        "0.01": {
+          "threshold": 0.0055313804497862966,
+          "fpr": 0.00023293629640247808,
+          "recall": 1.0,
+          "precision": 0.9992656715574824,
+          "f1": 0.9996327009196604,
+          "fp": 52,
+          "fn": 0,
+          "tp": 70761,
+          "tn": 223185,
+          "budget_met": true
+        }
+      },
+      "best_iteration": 262
+    },
+    {
+      "experiment": "E3_dst_port",
+      "family": "lgbm",
+      "run_id": "E3_dst_port__lgbm__df14ca5ef5",
+      "params": {
+        "n_estimators": 3000,
+        "learning_rate": 0.05,
+        "num_leaves": 63,
+        "min_child_samples": 500
+      },
+      "protocol": "chrono",
+      "variant": "primary",
+      "feature_set": "default_plus_dst_port",
+      "model_path": "artifacts/m4/models/E3_dst_port__lgbm__df14ca5ef5.joblib",
+      "model_sha256": "cc1dabc4f9b1fbde364f214f594d56f8955c888f3be00efc17cb4de2eadab0ba",
+      "thresholds": {
+        "0.001": 0.013122064653579091,
+        "0.01": 0.013122064653579091
+      },
+      "val_at_threshold": {
+        "0.001": {
+          "threshold": 0.013122064653579091,
+          "fpr": 0.0009159657798794355,
+          "recall": 1.0,
+          "precision": 0.9970659651962768,
+          "f1": 0.9985308272962156,
+          "fp": 203,
+          "fn": 0,
+          "tp": 68985,
+          "tn": 221421,
+          "budget_met": true
+        },
+        "0.01": {
+          "threshold": 0.013122064653579091,
+          "fpr": 0.0009159657798794355,
+          "recall": 1.0,
+          "precision": 0.9970659651962768,
+          "f1": 0.9985308272962156,
+          "fp": 203,
+          "fn": 0,
+          "tp": 68985,
+          "tn": 221421,
+          "budget_met": true
+        }
+      },
+      "best_iteration": 188
+    },
+    {
+      "experiment": "E3_no_tcp_window",
+      "family": "lgbm",
+      "run_id": "E3_no_tcp_window__lgbm__2d9c77885e",
+      "params": {
+        "n_estimators": 3000,
+        "learning_rate": 0.05,
+        "num_leaves": 63,
+        "min_child_samples": 500
+      },
+      "protocol": "chrono",
+      "variant": "primary",
+      "feature_set": "no_tcp_window",
+      "model_path": "artifacts/m4/models/E3_no_tcp_window__lgbm__2d9c77885e.joblib",
+      "model_sha256": "f6ee9502598d944596801beeb79336b56d234d4ca71df6f1d1902f676840367d",
+      "thresholds": {
+        "0.001": 0.046948198825788254,
+        "0.01": 0.008978581639929022
+      },
+      "val_at_threshold": {
+        "0.001": {
+          "threshold": 0.046948198825788254,
+          "fpr": 0.0007174313251272425,
+          "recall": 0.9998695368558382,
+          "precision": 0.9977001518767629,
+          "f1": 0.9987836663770634,
+          "fp": 159,
+          "fn": 9,
+          "tp": 68976,
+          "tn": 221465,
+          "budget_met": true
+        },
+        "0.01": {
+          "threshold": 0.008978581639929022,
+          "fpr": 0.0016514456918023319,
+          "recall": 1.0,
+          "precision": 0.9947224985941082,
+          "f1": 0.9973542678695351,
+          "fp": 366,
+          "fn": 0,
+          "tp": 68985,
+          "tn": 221258,
+          "budget_met": true
+        }
+      },
+      "best_iteration": 163
+    },
+    {
+      "experiment": "E3_no_header_length",
+      "family": "lgbm",
+      "run_id": "E3_no_header_length__lgbm__8260212cd6",
+      "params": {
+        "n_estimators": 3000,
+        "learning_rate": 0.05,
+        "num_leaves": 63,
+        "min_child_samples": 500
+      },
+      "protocol": "chrono",
+      "variant": "primary",
+      "feature_set": "no_header_length",
+      "model_path": "artifacts/m4/models/E3_no_header_length__lgbm__8260212cd6.joblib",
+      "model_sha256": "0a0b53373cf60c2acc5f0a33be6a83adc71eddcb91bbbafe6d252d2231f11078",
+      "thresholds": {
+        "0.001": 0.016732037274246676,
+        "0.01": 0.002639062914527464
+      },
+      "val_at_threshold": {
+        "0.001": {
+          "threshold": 0.016732037274246676,
+          "fpr": 0.0008573078727935603,
+          "recall": 0.9998550409509314,
+          "precision": 0.997252945854117,
+          "f1": 0.9985522982265653,
+          "fp": 190,
+          "fn": 10,
+          "tp": 68975,
+          "tn": 221434,
+          "budget_met": true
+        },
+        "0.01": {
+          "threshold": 0.002639062914527464,
+          "fpr": 0.0020846117748980256,
+          "recall": 1.0,
+          "precision": 0.9933474448140308,
+          "f1": 0.9966626213592233,
+          "fp": 462,
+          "fn": 0,
+          "tp": 68985,
+          "tn": 221162,
+          "budget_met": true
+        }
+      },
+      "best_iteration": 182
+    },
+    {
+      "experiment": "E4_excl_attempted",
+      "family": "lgbm",
+      "run_id": "E4_excl_attempted__lgbm__5531df882c",
+      "params": {
+        "n_estimators": 3000,
+        "learning_rate": 0.05,
+        "num_leaves": 63,
+        "min_child_samples": 500
+      },
+      "protocol": "chrono",
+      "variant": "excl_attempted",
+      "feature_set": "default",
+      "model_path": "artifacts/m4/models/E4_excl_attempted__lgbm__5531df882c.joblib",
+      "model_sha256": "7c232861e3b983688d5a383511d1a372a9151759b85a42f675cdfb3fa088b327",
+      "thresholds": {
+        "0.001": 0.015114602862778515,
+        "0.01": 0.0018063178601991036
+      },
+      "val_at_threshold": {
+        "0.001": {
+          "threshold": 0.015114602862778515,
+          "fpr": 0.0006997423675828445,
+          "recall": 0.9999855040950931,
+          "precision": 0.9977725708004281,
+          "f1": 0.9988778118054198,
+          "fp": 154,
+          "fn": 1,
+          "tp": 68984,
+          "tn": 219927,
+          "budget_met": true
+        },
+        "0.01": {
+          "threshold": 0.0018063178601991036,
+          "fpr": 0.0019492823096950668,
+          "recall": 1.0,
+          "precision": 0.9938196905523381,
+          "f1": 0.9969002666204235,
+          "fp": 429,
+          "fn": 0,
+          "tp": 68985,
+          "tn": 219652,
+          "budget_met": true
+        }
+      },
+      "best_iteration": 192
+    }
+  ]
+}

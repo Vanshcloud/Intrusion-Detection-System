@@ -1,0 +1,7 @@
+experiment,test_fp,fp_reverse_of_same_day_attack_pair,share_reverse,fp_label_BENIGN,fp_label_Attempted
+E1_primary__lr,2689,2395,0.8906656749721086,2687,2
+E1_primary__rf,3119,2820,0.9041359410067329,2953,166
+E1_primary__lgbm,2773,2395,0.863685539127299,2547,226
+E2_random__lr,471,21,0.044585987261146494,460,11
+E2_random__rf,290,16,0.05517241379310345,270,20
+E2_random__lgbm,121,19,0.15702479338842976,108,13

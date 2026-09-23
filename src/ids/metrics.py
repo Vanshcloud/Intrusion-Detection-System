@@ -103,3 +103,14 @@ def multiclass_report(y_true, y_pred, classes=None):
                 macro_f1=float(np.mean(present)) if present else None,  # over classes present in y_true
                 weighted_f1=float(np.average(present, weights=wts)) if present else None,
                 n=len(y_true))
+
+
+def wilson(k, n, z=1.959964):
+    """95 % Wilson score interval for k successes out of n; (None, None) when n == 0."""
+    if n == 0:
+        return None, None
+    p = k / n
+    d = 1 + z * z / n
+    c = (p + z * z / (2 * n)) / d
+    h = z * np.sqrt(p * (1 - p) / n + z * z / (4 * n * n)) / d
+    return float(max(0.0, c - h)), float(min(1.0, c + h))

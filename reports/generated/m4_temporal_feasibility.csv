@@ -1,0 +1,4 @@
+candidate,attack_families_in_test,families_in_test_without_enough_train,test_has_both_classes,feasible_for_v1_question
+C1_per_day_70pct,5,"DDoS, Heartbleed, Infiltration",True,False
+C2_mon-wed_vs_thu-fri,7,"Botnet, DDoS, Infiltration, Portscan, Web Attack - Brute Force, Web Attack - SQL Injection, Web Attack - XSS",True,False
+C3_mon-thu_vs_fri,3,"Botnet, DDoS",True,False
