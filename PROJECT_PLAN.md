@@ -178,7 +178,7 @@ IDS/
 ├── PROJECT_PLAN.md  DATA_CARD.md  MODEL_CARD.md  README.md
 ├── requirements.txt  .gitignore  LICENSE
 ```
-*Final layout:* see `README.md` (Repository structure). Configs are versioned JSON rather than one YAML file, and no LICENSE file has been added yet.
+*Final layout:* see `README.md` (Repository structure). Configs are versioned JSON rather than one YAML file. Source code is MIT-licensed (`LICENSE`); the dataset is not.
 
 Deviation from the suggested layout: one `src/ids/` package with modules instead of six sub-packages — the code volume does not justify six packages. `notebooks/` omitted unless exploration needs it.
 

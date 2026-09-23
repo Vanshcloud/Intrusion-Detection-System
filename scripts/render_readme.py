@@ -251,7 +251,9 @@ This repository is for defensive research and benchmark analysis. It contains no
 
 ## License
 
-No license file has been added to this repository yet, so no reuse permissions are granted for the code. The dataset is not covered by this repository and remains under its providers' terms (see [Dataset setup](#dataset-setup)).
+- **Source code** in this repository (Python modules, scripts, tests, dashboard and configuration) is released under the [MIT License](LICENSE), copyright (c) 2026 Vansh Tomar.
+- **CIC-IDS2017 dataset:** not distributed in this repository and **not** covered by the MIT License. Obtain it separately from its provider; it is subject to the provider's own terms and conditions, and the dataset authors ask users to cite their papers (see [Dataset setup](#dataset-setup) and [References](#references)).
+- **Dataset-derived files:** the generated tables in `reports/generated/` (aggregate statistics and {num(ex['verification']['demo_cases'])} example test rows used by the case explorer), the figures and the model export were produced from the dataset. The MIT License covers the code and the analysis write-up, but it does not grant rights in the underlying dataset content.
 
 ## References
 
