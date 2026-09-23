@@ -1,0 +1,10 @@
+# Dashboard (dashboard/app.py): offline research demo; no telemetry, no deploy button.
+[browser]
+gatherUsageStats = false
+
+[client]
+toolbarMode = "viewer"
+
+[theme]
+base = "light"
+primaryColor = "#2a78d6"

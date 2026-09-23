@@ -1,0 +1,1057 @@
+set,group,bin_lo,bin_hi,n
+val benign by day group,friday,-12.0,-11.5,0
+val benign by day group,friday,-11.5,-11.0,0
+val benign by day group,friday,-11.0,-10.5,1
+val benign by day group,friday,-10.5,-10.0,18
+val benign by day group,friday,-10.0,-9.5,25312
+val benign by day group,friday,-9.5,-9.0,12538
+val benign by day group,friday,-9.0,-8.5,1064
+val benign by day group,friday,-8.5,-8.0,563
+val benign by day group,friday,-8.0,-7.5,637
+val benign by day group,friday,-7.5,-7.0,225
+val benign by day group,friday,-7.0,-6.5,133
+val benign by day group,friday,-6.5,-6.0,93
+val benign by day group,friday,-6.0,-5.5,42
+val benign by day group,friday,-5.5,-5.0,14
+val benign by day group,friday,-5.0,-4.5,10
+val benign by day group,friday,-4.5,-4.0,6
+val benign by day group,friday,-4.0,-3.5,6
+val benign by day group,friday,-3.5,-3.0,8
+val benign by day group,friday,-3.0,-2.5,7
+val benign by day group,friday,-2.5,-2.0,0
+val benign by day group,friday,-2.0,-1.5,2
+val benign by day group,friday,-1.5,-1.0,0
+val benign by day group,friday,-1.0,-0.5,0
+val benign by day group,friday,-0.5,0.0,0
+val benign by day group,friday,0.0,0.5,4
+val benign by day group,friday,0.5,1.0,0
+val benign by day group,friday,1.0,1.5,0
+val benign by day group,friday,1.5,2.0,0
+val benign by day group,friday,2.0,2.5,0
+val benign by day group,friday,2.5,3.0,0
+val benign by day group,friday,3.0,3.5,0
+val benign by day group,friday,3.5,4.0,0
+val benign by day group,friday,4.0,4.5,0
+val benign by day group,friday,4.5,5.0,0
+val benign by day group,friday,5.0,5.5,0
+val benign by day group,friday,5.5,6.0,0
+val benign by day group,friday,6.0,6.5,0
+val benign by day group,friday,6.5,7.0,0
+val benign by day group,friday,7.0,7.5,0
+val benign by day group,friday,7.5,8.0,0
+val benign by day group,friday,8.0,8.5,0
+val benign by day group,friday,8.5,9.0,0
+val benign by day group,friday,9.0,9.5,0
+val benign by day group,friday,9.5,10.0,0
+val benign by day group,friday,10.0,10.5,0
+val benign by day group,friday,10.5,11.0,0
+val benign by day group,friday,11.0,11.5,0
+val benign by day group,friday,11.5,12.0,0
+val benign by day group and direction,friday|other,-12.0,-11.5,0
+val benign by day group and direction,friday|other,-11.5,-11.0,0
+val benign by day group and direction,friday|other,-11.0,-10.5,1
+val benign by day group and direction,friday|other,-10.5,-10.0,18
+val benign by day group and direction,friday|other,-10.0,-9.5,25312
+val benign by day group and direction,friday|other,-9.5,-9.0,12538
+val benign by day group and direction,friday|other,-9.0,-8.5,1064
+val benign by day group and direction,friday|other,-8.5,-8.0,562
+val benign by day group and direction,friday|other,-8.0,-7.5,637
+val benign by day group and direction,friday|other,-7.5,-7.0,225
+val benign by day group and direction,friday|other,-7.0,-6.5,133
+val benign by day group and direction,friday|other,-6.5,-6.0,93
+val benign by day group and direction,friday|other,-6.0,-5.5,42
+val benign by day group and direction,friday|other,-5.5,-5.0,14
+val benign by day group and direction,friday|other,-5.0,-4.5,10
+val benign by day group and direction,friday|other,-4.5,-4.0,6
+val benign by day group and direction,friday|other,-4.0,-3.5,6
+val benign by day group and direction,friday|other,-3.5,-3.0,8
+val benign by day group and direction,friday|other,-3.0,-2.5,7
+val benign by day group and direction,friday|other,-2.5,-2.0,0
+val benign by day group and direction,friday|other,-2.0,-1.5,2
+val benign by day group and direction,friday|other,-1.5,-1.0,0
+val benign by day group and direction,friday|other,-1.0,-0.5,0
+val benign by day group and direction,friday|other,-0.5,0.0,0
+val benign by day group and direction,friday|other,0.0,0.5,4
+val benign by day group and direction,friday|other,0.5,1.0,0
+val benign by day group and direction,friday|other,1.0,1.5,0
+val benign by day group and direction,friday|other,1.5,2.0,0
+val benign by day group and direction,friday|other,2.0,2.5,0
+val benign by day group and direction,friday|other,2.5,3.0,0
+val benign by day group and direction,friday|other,3.0,3.5,0
+val benign by day group and direction,friday|other,3.5,4.0,0
+val benign by day group and direction,friday|other,4.0,4.5,0
+val benign by day group and direction,friday|other,4.5,5.0,0
+val benign by day group and direction,friday|other,5.0,5.5,0
+val benign by day group and direction,friday|other,5.5,6.0,0
+val benign by day group and direction,friday|other,6.0,6.5,0
+val benign by day group and direction,friday|other,6.5,7.0,0
+val benign by day group and direction,friday|other,7.0,7.5,0
+val benign by day group and direction,friday|other,7.5,8.0,0
+val benign by day group and direction,friday|other,8.0,8.5,0
+val benign by day group and direction,friday|other,8.5,9.0,0
+val benign by day group and direction,friday|other,9.0,9.5,0
+val benign by day group and direction,friday|other,9.5,10.0,0
+val benign by day group and direction,friday|other,10.0,10.5,0
+val benign by day group and direction,friday|other,10.5,11.0,0
+val benign by day group and direction,friday|other,11.0,11.5,0
+val benign by day group and direction,friday|other,11.5,12.0,0
+val benign by day group and direction,friday|reverse,-12.0,-11.5,0
+val benign by day group and direction,friday|reverse,-11.5,-11.0,0
+val benign by day group and direction,friday|reverse,-11.0,-10.5,0
+val benign by day group and direction,friday|reverse,-10.5,-10.0,0
+val benign by day group and direction,friday|reverse,-10.0,-9.5,0
+val benign by day group and direction,friday|reverse,-9.5,-9.0,0
+val benign by day group and direction,friday|reverse,-9.0,-8.5,0
+val benign by day group and direction,friday|reverse,-8.5,-8.0,1
+val benign by day group and direction,friday|reverse,-8.0,-7.5,0
+val benign by day group and direction,friday|reverse,-7.5,-7.0,0
+val benign by day group and direction,friday|reverse,-7.0,-6.5,0
+val benign by day group and direction,friday|reverse,-6.5,-6.0,0
+val benign by day group and direction,friday|reverse,-6.0,-5.5,0
+val benign by day group and direction,friday|reverse,-5.5,-5.0,0
+val benign by day group and direction,friday|reverse,-5.0,-4.5,0
+val benign by day group and direction,friday|reverse,-4.5,-4.0,0
+val benign by day group and direction,friday|reverse,-4.0,-3.5,0
+val benign by day group and direction,friday|reverse,-3.5,-3.0,0
+val benign by day group and direction,friday|reverse,-3.0,-2.5,0
+val benign by day group and direction,friday|reverse,-2.5,-2.0,0
+val benign by day group and direction,friday|reverse,-2.0,-1.5,0
+val benign by day group and direction,friday|reverse,-1.5,-1.0,0
+val benign by day group and direction,friday|reverse,-1.0,-0.5,0
+val benign by day group and direction,friday|reverse,-0.5,0.0,0
+val benign by day group and direction,friday|reverse,0.0,0.5,0
+val benign by day group and direction,friday|reverse,0.5,1.0,0
+val benign by day group and direction,friday|reverse,1.0,1.5,0
+val benign by day group and direction,friday|reverse,1.5,2.0,0
+val benign by day group and direction,friday|reverse,2.0,2.5,0
+val benign by day group and direction,friday|reverse,2.5,3.0,0
+val benign by day group and direction,friday|reverse,3.0,3.5,0
+val benign by day group and direction,friday|reverse,3.5,4.0,0
+val benign by day group and direction,friday|reverse,4.0,4.5,0
+val benign by day group and direction,friday|reverse,4.5,5.0,0
+val benign by day group and direction,friday|reverse,5.0,5.5,0
+val benign by day group and direction,friday|reverse,5.5,6.0,0
+val benign by day group and direction,friday|reverse,6.0,6.5,0
+val benign by day group and direction,friday|reverse,6.5,7.0,0
+val benign by day group and direction,friday|reverse,7.0,7.5,0
+val benign by day group and direction,friday|reverse,7.5,8.0,0
+val benign by day group and direction,friday|reverse,8.0,8.5,0
+val benign by day group and direction,friday|reverse,8.5,9.0,0
+val benign by day group and direction,friday|reverse,9.0,9.5,0
+val benign by day group and direction,friday|reverse,9.5,10.0,0
+val benign by day group and direction,friday|reverse,10.0,10.5,0
+val benign by day group and direction,friday|reverse,10.5,11.0,0
+val benign by day group and direction,friday|reverse,11.0,11.5,0
+val benign by day group and direction,friday|reverse,11.5,12.0,0
+val benign by day group,mon-wed,-12.0,-11.5,0
+val benign by day group,mon-wed,-11.5,-11.0,0
+val benign by day group,mon-wed,-11.0,-10.5,0
+val benign by day group,mon-wed,-10.5,-10.0,52
+val benign by day group,mon-wed,-10.0,-9.5,87001
+val benign by day group,mon-wed,-9.5,-9.0,43615
+val benign by day group,mon-wed,-9.0,-8.5,3897
+val benign by day group,mon-wed,-8.5,-8.0,2659
+val benign by day group,mon-wed,-8.0,-7.5,1500
+val benign by day group,mon-wed,-7.5,-7.0,641
+val benign by day group,mon-wed,-7.0,-6.5,441
+val benign by day group,mon-wed,-6.5,-6.0,336
+val benign by day group,mon-wed,-6.0,-5.5,169
+val benign by day group,mon-wed,-5.5,-5.0,111
+val benign by day group,mon-wed,-5.0,-4.5,65
+val benign by day group,mon-wed,-4.5,-4.0,44
+val benign by day group,mon-wed,-4.0,-3.5,34
+val benign by day group,mon-wed,-3.5,-3.0,18
+val benign by day group,mon-wed,-3.0,-2.5,9
+val benign by day group,mon-wed,-2.5,-2.0,3
+val benign by day group,mon-wed,-2.0,-1.5,11
+val benign by day group,mon-wed,-1.5,-1.0,11
+val benign by day group,mon-wed,-1.0,-0.5,17
+val benign by day group,mon-wed,-0.5,0.0,10
+val benign by day group,mon-wed,0.0,0.5,0
+val benign by day group,mon-wed,0.5,1.0,6
+val benign by day group,mon-wed,1.0,1.5,4
+val benign by day group,mon-wed,1.5,2.0,1
+val benign by day group,mon-wed,2.0,2.5,0
+val benign by day group,mon-wed,2.5,3.0,0
+val benign by day group,mon-wed,3.0,3.5,0
+val benign by day group,mon-wed,3.5,4.0,0
+val benign by day group,mon-wed,4.0,4.5,0
+val benign by day group,mon-wed,4.5,5.0,0
+val benign by day group,mon-wed,5.0,5.5,0
+val benign by day group,mon-wed,5.5,6.0,0
+val benign by day group,mon-wed,6.0,6.5,0
+val benign by day group,mon-wed,6.5,7.0,0
+val benign by day group,mon-wed,7.0,7.5,0
+val benign by day group,mon-wed,7.5,8.0,0
+val benign by day group,mon-wed,8.0,8.5,0
+val benign by day group,mon-wed,8.5,9.0,0
+val benign by day group,mon-wed,9.0,9.5,0
+val benign by day group,mon-wed,9.5,10.0,0
+val benign by day group,mon-wed,10.0,10.5,0
+val benign by day group,mon-wed,10.5,11.0,0
+val benign by day group,mon-wed,11.0,11.5,0
+val benign by day group,mon-wed,11.5,12.0,0
+val benign by day group and direction,mon-wed|other,-12.0,-11.5,0
+val benign by day group and direction,mon-wed|other,-11.5,-11.0,0
+val benign by day group and direction,mon-wed|other,-11.0,-10.5,0
+val benign by day group and direction,mon-wed|other,-10.5,-10.0,52
+val benign by day group and direction,mon-wed|other,-10.0,-9.5,87000
+val benign by day group and direction,mon-wed|other,-9.5,-9.0,43301
+val benign by day group and direction,mon-wed|other,-9.0,-8.5,3854
+val benign by day group and direction,mon-wed|other,-8.5,-8.0,2235
+val benign by day group and direction,mon-wed|other,-8.0,-7.5,1493
+val benign by day group and direction,mon-wed|other,-7.5,-7.0,636
+val benign by day group and direction,mon-wed|other,-7.0,-6.5,422
+val benign by day group and direction,mon-wed|other,-6.5,-6.0,330
+val benign by day group and direction,mon-wed|other,-6.0,-5.5,166
+val benign by day group and direction,mon-wed|other,-5.5,-5.0,110
+val benign by day group and direction,mon-wed|other,-5.0,-4.5,65
+val benign by day group and direction,mon-wed|other,-4.5,-4.0,43
+val benign by day group and direction,mon-wed|other,-4.0,-3.5,33
+val benign by day group and direction,mon-wed|other,-3.5,-3.0,18
+val benign by day group and direction,mon-wed|other,-3.0,-2.5,9
+val benign by day group and direction,mon-wed|other,-2.5,-2.0,3
+val benign by day group and direction,mon-wed|other,-2.0,-1.5,11
+val benign by day group and direction,mon-wed|other,-1.5,-1.0,11
+val benign by day group and direction,mon-wed|other,-1.0,-0.5,17
+val benign by day group and direction,mon-wed|other,-0.5,0.0,10
+val benign by day group and direction,mon-wed|other,0.0,0.5,0
+val benign by day group and direction,mon-wed|other,0.5,1.0,6
+val benign by day group and direction,mon-wed|other,1.0,1.5,4
+val benign by day group and direction,mon-wed|other,1.5,2.0,1
+val benign by day group and direction,mon-wed|other,2.0,2.5,0
+val benign by day group and direction,mon-wed|other,2.5,3.0,0
+val benign by day group and direction,mon-wed|other,3.0,3.5,0
+val benign by day group and direction,mon-wed|other,3.5,4.0,0
+val benign by day group and direction,mon-wed|other,4.0,4.5,0
+val benign by day group and direction,mon-wed|other,4.5,5.0,0
+val benign by day group and direction,mon-wed|other,5.0,5.5,0
+val benign by day group and direction,mon-wed|other,5.5,6.0,0
+val benign by day group and direction,mon-wed|other,6.0,6.5,0
+val benign by day group and direction,mon-wed|other,6.5,7.0,0
+val benign by day group and direction,mon-wed|other,7.0,7.5,0
+val benign by day group and direction,mon-wed|other,7.5,8.0,0
+val benign by day group and direction,mon-wed|other,8.0,8.5,0
+val benign by day group and direction,mon-wed|other,8.5,9.0,0
+val benign by day group and direction,mon-wed|other,9.0,9.5,0
+val benign by day group and direction,mon-wed|other,9.5,10.0,0
+val benign by day group and direction,mon-wed|other,10.0,10.5,0
+val benign by day group and direction,mon-wed|other,10.5,11.0,0
+val benign by day group and direction,mon-wed|other,11.0,11.5,0
+val benign by day group and direction,mon-wed|other,11.5,12.0,0
+val benign by day group and direction,mon-wed|reverse,-12.0,-11.5,0
+val benign by day group and direction,mon-wed|reverse,-11.5,-11.0,0
+val benign by day group and direction,mon-wed|reverse,-11.0,-10.5,0
+val benign by day group and direction,mon-wed|reverse,-10.5,-10.0,0
+val benign by day group and direction,mon-wed|reverse,-10.0,-9.5,1
+val benign by day group and direction,mon-wed|reverse,-9.5,-9.0,314
+val benign by day group and direction,mon-wed|reverse,-9.0,-8.5,43
+val benign by day group and direction,mon-wed|reverse,-8.5,-8.0,424
+val benign by day group and direction,mon-wed|reverse,-8.0,-7.5,7
+val benign by day group and direction,mon-wed|reverse,-7.5,-7.0,5
+val benign by day group and direction,mon-wed|reverse,-7.0,-6.5,19
+val benign by day group and direction,mon-wed|reverse,-6.5,-6.0,6
+val benign by day group and direction,mon-wed|reverse,-6.0,-5.5,3
+val benign by day group and direction,mon-wed|reverse,-5.5,-5.0,1
+val benign by day group and direction,mon-wed|reverse,-5.0,-4.5,0
+val benign by day group and direction,mon-wed|reverse,-4.5,-4.0,1
+val benign by day group and direction,mon-wed|reverse,-4.0,-3.5,1
+val benign by day group and direction,mon-wed|reverse,-3.5,-3.0,0
+val benign by day group and direction,mon-wed|reverse,-3.0,-2.5,0
+val benign by day group and direction,mon-wed|reverse,-2.5,-2.0,0
+val benign by day group and direction,mon-wed|reverse,-2.0,-1.5,0
+val benign by day group and direction,mon-wed|reverse,-1.5,-1.0,0
+val benign by day group and direction,mon-wed|reverse,-1.0,-0.5,0
+val benign by day group and direction,mon-wed|reverse,-0.5,0.0,0
+val benign by day group and direction,mon-wed|reverse,0.0,0.5,0
+val benign by day group and direction,mon-wed|reverse,0.5,1.0,0
+val benign by day group and direction,mon-wed|reverse,1.0,1.5,0
+val benign by day group and direction,mon-wed|reverse,1.5,2.0,0
+val benign by day group and direction,mon-wed|reverse,2.0,2.5,0
+val benign by day group and direction,mon-wed|reverse,2.5,3.0,0
+val benign by day group and direction,mon-wed|reverse,3.0,3.5,0
+val benign by day group and direction,mon-wed|reverse,3.5,4.0,0
+val benign by day group and direction,mon-wed|reverse,4.0,4.5,0
+val benign by day group and direction,mon-wed|reverse,4.5,5.0,0
+val benign by day group and direction,mon-wed|reverse,5.0,5.5,0
+val benign by day group and direction,mon-wed|reverse,5.5,6.0,0
+val benign by day group and direction,mon-wed|reverse,6.0,6.5,0
+val benign by day group and direction,mon-wed|reverse,6.5,7.0,0
+val benign by day group and direction,mon-wed|reverse,7.0,7.5,0
+val benign by day group and direction,mon-wed|reverse,7.5,8.0,0
+val benign by day group and direction,mon-wed|reverse,8.0,8.5,0
+val benign by day group and direction,mon-wed|reverse,8.5,9.0,0
+val benign by day group and direction,mon-wed|reverse,9.0,9.5,0
+val benign by day group and direction,mon-wed|reverse,9.5,10.0,0
+val benign by day group and direction,mon-wed|reverse,10.0,10.5,0
+val benign by day group and direction,mon-wed|reverse,10.5,11.0,0
+val benign by day group and direction,mon-wed|reverse,11.0,11.5,0
+val benign by day group and direction,mon-wed|reverse,11.5,12.0,0
+val benign by day group,thursday,-12.0,-11.5,0
+val benign by day group,thursday,-11.5,-11.0,0
+val benign by day group,thursday,-11.0,-10.5,0
+val benign by day group,thursday,-10.5,-10.0,3
+val benign by day group,thursday,-10.0,-9.5,24120
+val benign by day group,thursday,-9.5,-9.0,13284
+val benign by day group,thursday,-9.0,-8.5,1086
+val benign by day group,thursday,-8.5,-8.0,661
+val benign by day group,thursday,-8.0,-7.5,517
+val benign by day group,thursday,-7.5,-7.0,235
+val benign by day group,thursday,-7.0,-6.5,119
+val benign by day group,thursday,-6.5,-6.0,75
+val benign by day group,thursday,-6.0,-5.5,51
+val benign by day group,thursday,-5.5,-5.0,17
+val benign by day group,thursday,-5.0,-4.5,21
+val benign by day group,thursday,-4.5,-4.0,8
+val benign by day group,thursday,-4.0,-3.5,11
+val benign by day group,thursday,-3.5,-3.0,5
+val benign by day group,thursday,-3.0,-2.5,4
+val benign by day group,thursday,-2.5,-2.0,1
+val benign by day group,thursday,-2.0,-1.5,2
+val benign by day group,thursday,-1.5,-1.0,0
+val benign by day group,thursday,-1.0,-0.5,5
+val benign by day group,thursday,-0.5,0.0,1
+val benign by day group,thursday,0.0,0.5,1
+val benign by day group,thursday,0.5,1.0,0
+val benign by day group,thursday,1.0,1.5,0
+val benign by day group,thursday,1.5,2.0,1
+val benign by day group,thursday,2.0,2.5,0
+val benign by day group,thursday,2.5,3.0,0
+val benign by day group,thursday,3.0,3.5,41
+val benign by day group,thursday,3.5,4.0,0
+val benign by day group,thursday,4.0,4.5,0
+val benign by day group,thursday,4.5,5.0,0
+val benign by day group,thursday,5.0,5.5,0
+val benign by day group,thursday,5.5,6.0,2
+val benign by day group,thursday,6.0,6.5,0
+val benign by day group,thursday,6.5,7.0,1
+val benign by day group,thursday,7.0,7.5,2
+val benign by day group,thursday,7.5,8.0,0
+val benign by day group,thursday,8.0,8.5,12
+val benign by day group,thursday,8.5,9.0,0
+val benign by day group,thursday,9.0,9.5,0
+val benign by day group,thursday,9.5,10.0,0
+val benign by day group,thursday,10.0,10.5,0
+val benign by day group,thursday,10.5,11.0,0
+val benign by day group,thursday,11.0,11.5,0
+val benign by day group,thursday,11.5,12.0,0
+val benign by day group and direction,thursday|other,-12.0,-11.5,0
+val benign by day group and direction,thursday|other,-11.5,-11.0,0
+val benign by day group and direction,thursday|other,-11.0,-10.5,0
+val benign by day group and direction,thursday|other,-10.5,-10.0,3
+val benign by day group and direction,thursday|other,-10.0,-9.5,24120
+val benign by day group and direction,thursday|other,-9.5,-9.0,13284
+val benign by day group and direction,thursday|other,-9.0,-8.5,1086
+val benign by day group and direction,thursday|other,-8.5,-8.0,661
+val benign by day group and direction,thursday|other,-8.0,-7.5,517
+val benign by day group and direction,thursday|other,-7.5,-7.0,235
+val benign by day group and direction,thursday|other,-7.0,-6.5,119
+val benign by day group and direction,thursday|other,-6.5,-6.0,75
+val benign by day group and direction,thursday|other,-6.0,-5.5,51
+val benign by day group and direction,thursday|other,-5.5,-5.0,17
+val benign by day group and direction,thursday|other,-5.0,-4.5,21
+val benign by day group and direction,thursday|other,-4.5,-4.0,8
+val benign by day group and direction,thursday|other,-4.0,-3.5,11
+val benign by day group and direction,thursday|other,-3.5,-3.0,5
+val benign by day group and direction,thursday|other,-3.0,-2.5,4
+val benign by day group and direction,thursday|other,-2.5,-2.0,1
+val benign by day group and direction,thursday|other,-2.0,-1.5,2
+val benign by day group and direction,thursday|other,-1.5,-1.0,0
+val benign by day group and direction,thursday|other,-1.0,-0.5,5
+val benign by day group and direction,thursday|other,-0.5,0.0,1
+val benign by day group and direction,thursday|other,0.0,0.5,1
+val benign by day group and direction,thursday|other,0.5,1.0,0
+val benign by day group and direction,thursday|other,1.0,1.5,0
+val benign by day group and direction,thursday|other,1.5,2.0,1
+val benign by day group and direction,thursday|other,2.0,2.5,0
+val benign by day group and direction,thursday|other,2.5,3.0,0
+val benign by day group and direction,thursday|other,3.0,3.5,0
+val benign by day group and direction,thursday|other,3.5,4.0,0
+val benign by day group and direction,thursday|other,4.0,4.5,0
+val benign by day group and direction,thursday|other,4.5,5.0,0
+val benign by day group and direction,thursday|other,5.0,5.5,0
+val benign by day group and direction,thursday|other,5.5,6.0,2
+val benign by day group and direction,thursday|other,6.0,6.5,0
+val benign by day group and direction,thursday|other,6.5,7.0,1
+val benign by day group and direction,thursday|other,7.0,7.5,2
+val benign by day group and direction,thursday|other,7.5,8.0,0
+val benign by day group and direction,thursday|other,8.0,8.5,12
+val benign by day group and direction,thursday|other,8.5,9.0,0
+val benign by day group and direction,thursday|other,9.0,9.5,0
+val benign by day group and direction,thursday|other,9.5,10.0,0
+val benign by day group and direction,thursday|other,10.0,10.5,0
+val benign by day group and direction,thursday|other,10.5,11.0,0
+val benign by day group and direction,thursday|other,11.0,11.5,0
+val benign by day group and direction,thursday|other,11.5,12.0,0
+val benign by day group and direction,thursday|reverse,-12.0,-11.5,0
+val benign by day group and direction,thursday|reverse,-11.5,-11.0,0
+val benign by day group and direction,thursday|reverse,-11.0,-10.5,0
+val benign by day group and direction,thursday|reverse,-10.5,-10.0,0
+val benign by day group and direction,thursday|reverse,-10.0,-9.5,0
+val benign by day group and direction,thursday|reverse,-9.5,-9.0,0
+val benign by day group and direction,thursday|reverse,-9.0,-8.5,0
+val benign by day group and direction,thursday|reverse,-8.5,-8.0,0
+val benign by day group and direction,thursday|reverse,-8.0,-7.5,0
+val benign by day group and direction,thursday|reverse,-7.5,-7.0,0
+val benign by day group and direction,thursday|reverse,-7.0,-6.5,0
+val benign by day group and direction,thursday|reverse,-6.5,-6.0,0
+val benign by day group and direction,thursday|reverse,-6.0,-5.5,0
+val benign by day group and direction,thursday|reverse,-5.5,-5.0,0
+val benign by day group and direction,thursday|reverse,-5.0,-4.5,0
+val benign by day group and direction,thursday|reverse,-4.5,-4.0,0
+val benign by day group and direction,thursday|reverse,-4.0,-3.5,0
+val benign by day group and direction,thursday|reverse,-3.5,-3.0,0
+val benign by day group and direction,thursday|reverse,-3.0,-2.5,0
+val benign by day group and direction,thursday|reverse,-2.5,-2.0,0
+val benign by day group and direction,thursday|reverse,-2.0,-1.5,0
+val benign by day group and direction,thursday|reverse,-1.5,-1.0,0
+val benign by day group and direction,thursday|reverse,-1.0,-0.5,0
+val benign by day group and direction,thursday|reverse,-0.5,0.0,0
+val benign by day group and direction,thursday|reverse,0.0,0.5,0
+val benign by day group and direction,thursday|reverse,0.5,1.0,0
+val benign by day group and direction,thursday|reverse,1.0,1.5,0
+val benign by day group and direction,thursday|reverse,1.5,2.0,0
+val benign by day group and direction,thursday|reverse,2.0,2.5,0
+val benign by day group and direction,thursday|reverse,2.5,3.0,0
+val benign by day group and direction,thursday|reverse,3.0,3.5,41
+val benign by day group and direction,thursday|reverse,3.5,4.0,0
+val benign by day group and direction,thursday|reverse,4.0,4.5,0
+val benign by day group and direction,thursday|reverse,4.5,5.0,0
+val benign by day group and direction,thursday|reverse,5.0,5.5,0
+val benign by day group and direction,thursday|reverse,5.5,6.0,0
+val benign by day group and direction,thursday|reverse,6.0,6.5,0
+val benign by day group and direction,thursday|reverse,6.5,7.0,0
+val benign by day group and direction,thursday|reverse,7.0,7.5,0
+val benign by day group and direction,thursday|reverse,7.5,8.0,0
+val benign by day group and direction,thursday|reverse,8.0,8.5,0
+val benign by day group and direction,thursday|reverse,8.5,9.0,0
+val benign by day group and direction,thursday|reverse,9.0,9.5,0
+val benign by day group and direction,thursday|reverse,9.5,10.0,0
+val benign by day group and direction,thursday|reverse,10.0,10.5,0
+val benign by day group and direction,thursday|reverse,10.5,11.0,0
+val benign by day group and direction,thursday|reverse,11.0,11.5,0
+val benign by day group and direction,thursday|reverse,11.5,12.0,0
+test benign by day group,friday,-12.0,-11.5,0
+test benign by day group,friday,-11.5,-11.0,0
+test benign by day group,friday,-11.0,-10.5,0
+test benign by day group,friday,-10.5,-10.0,16
+test benign by day group,friday,-10.0,-9.5,53256
+test benign by day group,friday,-9.5,-9.0,27327
+test benign by day group,friday,-9.0,-8.5,2215
+test benign by day group,friday,-8.5,-8.0,1233
+test benign by day group,friday,-8.0,-7.5,1693
+test benign by day group,friday,-7.5,-7.0,750
+test benign by day group,friday,-7.0,-6.5,270
+test benign by day group,friday,-6.5,-6.0,203
+test benign by day group,friday,-6.0,-5.5,82
+test benign by day group,friday,-5.5,-5.0,35
+test benign by day group,friday,-5.0,-4.5,25
+test benign by day group,friday,-4.5,-4.0,17
+test benign by day group,friday,-4.0,-3.5,7
+test benign by day group,friday,-3.5,-3.0,8
+test benign by day group,friday,-3.0,-2.5,8
+test benign by day group,friday,-2.5,-2.0,0
+test benign by day group,friday,-2.0,-1.5,0
+test benign by day group,friday,-1.5,-1.0,1
+test benign by day group,friday,-1.0,-0.5,0
+test benign by day group,friday,-0.5,0.0,4
+test benign by day group,friday,0.0,0.5,1
+test benign by day group,friday,0.5,1.0,1
+test benign by day group,friday,1.0,1.5,1
+test benign by day group,friday,1.5,2.0,0
+test benign by day group,friday,2.0,2.5,0
+test benign by day group,friday,2.5,3.0,1
+test benign by day group,friday,3.0,3.5,627
+test benign by day group,friday,3.5,4.0,0
+test benign by day group,friday,4.0,4.5,1
+test benign by day group,friday,4.5,5.0,0
+test benign by day group,friday,5.0,5.5,0
+test benign by day group,friday,5.5,6.0,0
+test benign by day group,friday,6.0,6.5,0
+test benign by day group,friday,6.5,7.0,0
+test benign by day group,friday,7.0,7.5,1
+test benign by day group,friday,7.5,8.0,0
+test benign by day group,friday,8.0,8.5,0
+test benign by day group,friday,8.5,9.0,0
+test benign by day group,friday,9.0,9.5,0
+test benign by day group,friday,9.5,10.0,0
+test benign by day group,friday,10.0,10.5,0
+test benign by day group,friday,10.5,11.0,0
+test benign by day group,friday,11.0,11.5,0
+test benign by day group,friday,11.5,12.0,0
+test benign by day group and direction,friday|other,-12.0,-11.5,0
+test benign by day group and direction,friday|other,-11.5,-11.0,0
+test benign by day group and direction,friday|other,-11.0,-10.5,0
+test benign by day group and direction,friday|other,-10.5,-10.0,16
+test benign by day group and direction,friday|other,-10.0,-9.5,53256
+test benign by day group and direction,friday|other,-9.5,-9.0,27327
+test benign by day group and direction,friday|other,-9.0,-8.5,2215
+test benign by day group and direction,friday|other,-8.5,-8.0,1211
+test benign by day group and direction,friday|other,-8.0,-7.5,1496
+test benign by day group and direction,friday|other,-7.5,-7.0,562
+test benign by day group and direction,friday|other,-7.0,-6.5,212
+test benign by day group and direction,friday|other,-6.5,-6.0,141
+test benign by day group and direction,friday|other,-6.0,-5.5,63
+test benign by day group and direction,friday|other,-5.5,-5.0,31
+test benign by day group and direction,friday|other,-5.0,-4.5,23
+test benign by day group and direction,friday|other,-4.5,-4.0,16
+test benign by day group and direction,friday|other,-4.0,-3.5,7
+test benign by day group and direction,friday|other,-3.5,-3.0,8
+test benign by day group and direction,friday|other,-3.0,-2.5,8
+test benign by day group and direction,friday|other,-2.5,-2.0,0
+test benign by day group and direction,friday|other,-2.0,-1.5,0
+test benign by day group and direction,friday|other,-1.5,-1.0,1
+test benign by day group and direction,friday|other,-1.0,-0.5,0
+test benign by day group and direction,friday|other,-0.5,0.0,4
+test benign by day group and direction,friday|other,0.0,0.5,1
+test benign by day group and direction,friday|other,0.5,1.0,1
+test benign by day group and direction,friday|other,1.0,1.5,1
+test benign by day group and direction,friday|other,1.5,2.0,0
+test benign by day group and direction,friday|other,2.0,2.5,0
+test benign by day group and direction,friday|other,2.5,3.0,1
+test benign by day group and direction,friday|other,3.0,3.5,0
+test benign by day group and direction,friday|other,3.5,4.0,0
+test benign by day group and direction,friday|other,4.0,4.5,0
+test benign by day group and direction,friday|other,4.5,5.0,0
+test benign by day group and direction,friday|other,5.0,5.5,0
+test benign by day group and direction,friday|other,5.5,6.0,0
+test benign by day group and direction,friday|other,6.0,6.5,0
+test benign by day group and direction,friday|other,6.5,7.0,0
+test benign by day group and direction,friday|other,7.0,7.5,0
+test benign by day group and direction,friday|other,7.5,8.0,0
+test benign by day group and direction,friday|other,8.0,8.5,0
+test benign by day group and direction,friday|other,8.5,9.0,0
+test benign by day group and direction,friday|other,9.0,9.5,0
+test benign by day group and direction,friday|other,9.5,10.0,0
+test benign by day group and direction,friday|other,10.0,10.5,0
+test benign by day group and direction,friday|other,10.5,11.0,0
+test benign by day group and direction,friday|other,11.0,11.5,0
+test benign by day group and direction,friday|other,11.5,12.0,0
+test benign by day group and direction,friday|reverse,-12.0,-11.5,0
+test benign by day group and direction,friday|reverse,-11.5,-11.0,0
+test benign by day group and direction,friday|reverse,-11.0,-10.5,0
+test benign by day group and direction,friday|reverse,-10.5,-10.0,0
+test benign by day group and direction,friday|reverse,-10.0,-9.5,0
+test benign by day group and direction,friday|reverse,-9.5,-9.0,0
+test benign by day group and direction,friday|reverse,-9.0,-8.5,0
+test benign by day group and direction,friday|reverse,-8.5,-8.0,22
+test benign by day group and direction,friday|reverse,-8.0,-7.5,197
+test benign by day group and direction,friday|reverse,-7.5,-7.0,188
+test benign by day group and direction,friday|reverse,-7.0,-6.5,58
+test benign by day group and direction,friday|reverse,-6.5,-6.0,62
+test benign by day group and direction,friday|reverse,-6.0,-5.5,19
+test benign by day group and direction,friday|reverse,-5.5,-5.0,4
+test benign by day group and direction,friday|reverse,-5.0,-4.5,2
+test benign by day group and direction,friday|reverse,-4.5,-4.0,1
+test benign by day group and direction,friday|reverse,-4.0,-3.5,0
+test benign by day group and direction,friday|reverse,-3.5,-3.0,0
+test benign by day group and direction,friday|reverse,-3.0,-2.5,0
+test benign by day group and direction,friday|reverse,-2.5,-2.0,0
+test benign by day group and direction,friday|reverse,-2.0,-1.5,0
+test benign by day group and direction,friday|reverse,-1.5,-1.0,0
+test benign by day group and direction,friday|reverse,-1.0,-0.5,0
+test benign by day group and direction,friday|reverse,-0.5,0.0,0
+test benign by day group and direction,friday|reverse,0.0,0.5,0
+test benign by day group and direction,friday|reverse,0.5,1.0,0
+test benign by day group and direction,friday|reverse,1.0,1.5,0
+test benign by day group and direction,friday|reverse,1.5,2.0,0
+test benign by day group and direction,friday|reverse,2.0,2.5,0
+test benign by day group and direction,friday|reverse,2.5,3.0,0
+test benign by day group and direction,friday|reverse,3.0,3.5,627
+test benign by day group and direction,friday|reverse,3.5,4.0,0
+test benign by day group and direction,friday|reverse,4.0,4.5,1
+test benign by day group and direction,friday|reverse,4.5,5.0,0
+test benign by day group and direction,friday|reverse,5.0,5.5,0
+test benign by day group and direction,friday|reverse,5.5,6.0,0
+test benign by day group and direction,friday|reverse,6.0,6.5,0
+test benign by day group and direction,friday|reverse,6.5,7.0,0
+test benign by day group and direction,friday|reverse,7.0,7.5,1
+test benign by day group and direction,friday|reverse,7.5,8.0,0
+test benign by day group and direction,friday|reverse,8.0,8.5,0
+test benign by day group and direction,friday|reverse,8.5,9.0,0
+test benign by day group and direction,friday|reverse,9.0,9.5,0
+test benign by day group and direction,friday|reverse,9.5,10.0,0
+test benign by day group and direction,friday|reverse,10.0,10.5,0
+test benign by day group and direction,friday|reverse,10.5,11.0,0
+test benign by day group and direction,friday|reverse,11.0,11.5,0
+test benign by day group and direction,friday|reverse,11.5,12.0,0
+test benign by day group,mon-wed,-12.0,-11.5,0
+test benign by day group,mon-wed,-11.5,-11.0,0
+test benign by day group,mon-wed,-11.0,-10.5,0
+test benign by day group,mon-wed,-10.5,-10.0,123
+test benign by day group,mon-wed,-10.0,-9.5,183455
+test benign by day group,mon-wed,-9.5,-9.0,98867
+test benign by day group,mon-wed,-9.0,-8.5,8746
+test benign by day group,mon-wed,-8.5,-8.0,4868
+test benign by day group,mon-wed,-8.0,-7.5,3116
+test benign by day group,mon-wed,-7.5,-7.0,1694
+test benign by day group,mon-wed,-7.0,-6.5,977
+test benign by day group,mon-wed,-6.5,-6.0,543
+test benign by day group,mon-wed,-6.0,-5.5,443
+test benign by day group,mon-wed,-5.5,-5.0,166
+test benign by day group,mon-wed,-5.0,-4.5,94
+test benign by day group,mon-wed,-4.5,-4.0,78
+test benign by day group,mon-wed,-4.0,-3.5,44
+test benign by day group,mon-wed,-3.5,-3.0,23
+test benign by day group,mon-wed,-3.0,-2.5,19
+test benign by day group,mon-wed,-2.5,-2.0,13
+test benign by day group,mon-wed,-2.0,-1.5,57
+test benign by day group,mon-wed,-1.5,-1.0,52
+test benign by day group,mon-wed,-1.0,-0.5,122
+test benign by day group,mon-wed,-0.5,0.0,11
+test benign by day group,mon-wed,0.0,0.5,7
+test benign by day group,mon-wed,0.5,1.0,2
+test benign by day group,mon-wed,1.0,1.5,0
+test benign by day group,mon-wed,1.5,2.0,3
+test benign by day group,mon-wed,2.0,2.5,4
+test benign by day group,mon-wed,2.5,3.0,0
+test benign by day group,mon-wed,3.0,3.5,0
+test benign by day group,mon-wed,3.5,4.0,0
+test benign by day group,mon-wed,4.0,4.5,0
+test benign by day group,mon-wed,4.5,5.0,0
+test benign by day group,mon-wed,5.0,5.5,0
+test benign by day group,mon-wed,5.5,6.0,0
+test benign by day group,mon-wed,6.0,6.5,0
+test benign by day group,mon-wed,6.5,7.0,0
+test benign by day group,mon-wed,7.0,7.5,0
+test benign by day group,mon-wed,7.5,8.0,0
+test benign by day group,mon-wed,8.0,8.5,1
+test benign by day group,mon-wed,8.5,9.0,0
+test benign by day group,mon-wed,9.0,9.5,0
+test benign by day group,mon-wed,9.5,10.0,0
+test benign by day group,mon-wed,10.0,10.5,0
+test benign by day group,mon-wed,10.5,11.0,0
+test benign by day group,mon-wed,11.0,11.5,0
+test benign by day group,mon-wed,11.5,12.0,0
+test benign by day group and direction,mon-wed|other,-12.0,-11.5,0
+test benign by day group and direction,mon-wed|other,-11.5,-11.0,0
+test benign by day group and direction,mon-wed|other,-11.0,-10.5,0
+test benign by day group and direction,mon-wed|other,-10.5,-10.0,123
+test benign by day group and direction,mon-wed|other,-10.0,-9.5,183455
+test benign by day group and direction,mon-wed|other,-9.5,-9.0,98830
+test benign by day group and direction,mon-wed|other,-9.0,-8.5,8734
+test benign by day group and direction,mon-wed|other,-8.5,-8.0,4786
+test benign by day group and direction,mon-wed|other,-8.0,-7.5,3115
+test benign by day group and direction,mon-wed|other,-7.5,-7.0,1694
+test benign by day group and direction,mon-wed|other,-7.0,-6.5,976
+test benign by day group and direction,mon-wed|other,-6.5,-6.0,543
+test benign by day group and direction,mon-wed|other,-6.0,-5.5,443
+test benign by day group and direction,mon-wed|other,-5.5,-5.0,166
+test benign by day group and direction,mon-wed|other,-5.0,-4.5,94
+test benign by day group and direction,mon-wed|other,-4.5,-4.0,78
+test benign by day group and direction,mon-wed|other,-4.0,-3.5,44
+test benign by day group and direction,mon-wed|other,-3.5,-3.0,23
+test benign by day group and direction,mon-wed|other,-3.0,-2.5,19
+test benign by day group and direction,mon-wed|other,-2.5,-2.0,13
+test benign by day group and direction,mon-wed|other,-2.0,-1.5,57
+test benign by day group and direction,mon-wed|other,-1.5,-1.0,52
+test benign by day group and direction,mon-wed|other,-1.0,-0.5,122
+test benign by day group and direction,mon-wed|other,-0.5,0.0,11
+test benign by day group and direction,mon-wed|other,0.0,0.5,7
+test benign by day group and direction,mon-wed|other,0.5,1.0,2
+test benign by day group and direction,mon-wed|other,1.0,1.5,0
+test benign by day group and direction,mon-wed|other,1.5,2.0,3
+test benign by day group and direction,mon-wed|other,2.0,2.5,4
+test benign by day group and direction,mon-wed|other,2.5,3.0,0
+test benign by day group and direction,mon-wed|other,3.0,3.5,0
+test benign by day group and direction,mon-wed|other,3.5,4.0,0
+test benign by day group and direction,mon-wed|other,4.0,4.5,0
+test benign by day group and direction,mon-wed|other,4.5,5.0,0
+test benign by day group and direction,mon-wed|other,5.0,5.5,0
+test benign by day group and direction,mon-wed|other,5.5,6.0,0
+test benign by day group and direction,mon-wed|other,6.0,6.5,0
+test benign by day group and direction,mon-wed|other,6.5,7.0,0
+test benign by day group and direction,mon-wed|other,7.0,7.5,0
+test benign by day group and direction,mon-wed|other,7.5,8.0,0
+test benign by day group and direction,mon-wed|other,8.0,8.5,1
+test benign by day group and direction,mon-wed|other,8.5,9.0,0
+test benign by day group and direction,mon-wed|other,9.0,9.5,0
+test benign by day group and direction,mon-wed|other,9.5,10.0,0
+test benign by day group and direction,mon-wed|other,10.0,10.5,0
+test benign by day group and direction,mon-wed|other,10.5,11.0,0
+test benign by day group and direction,mon-wed|other,11.0,11.5,0
+test benign by day group and direction,mon-wed|other,11.5,12.0,0
+test benign by day group and direction,mon-wed|reverse,-12.0,-11.5,0
+test benign by day group and direction,mon-wed|reverse,-11.5,-11.0,0
+test benign by day group and direction,mon-wed|reverse,-11.0,-10.5,0
+test benign by day group and direction,mon-wed|reverse,-10.5,-10.0,0
+test benign by day group and direction,mon-wed|reverse,-10.0,-9.5,0
+test benign by day group and direction,mon-wed|reverse,-9.5,-9.0,37
+test benign by day group and direction,mon-wed|reverse,-9.0,-8.5,12
+test benign by day group and direction,mon-wed|reverse,-8.5,-8.0,82
+test benign by day group and direction,mon-wed|reverse,-8.0,-7.5,1
+test benign by day group and direction,mon-wed|reverse,-7.5,-7.0,0
+test benign by day group and direction,mon-wed|reverse,-7.0,-6.5,1
+test benign by day group and direction,mon-wed|reverse,-6.5,-6.0,0
+test benign by day group and direction,mon-wed|reverse,-6.0,-5.5,0
+test benign by day group and direction,mon-wed|reverse,-5.5,-5.0,0
+test benign by day group and direction,mon-wed|reverse,-5.0,-4.5,0
+test benign by day group and direction,mon-wed|reverse,-4.5,-4.0,0
+test benign by day group and direction,mon-wed|reverse,-4.0,-3.5,0
+test benign by day group and direction,mon-wed|reverse,-3.5,-3.0,0
+test benign by day group and direction,mon-wed|reverse,-3.0,-2.5,0
+test benign by day group and direction,mon-wed|reverse,-2.5,-2.0,0
+test benign by day group and direction,mon-wed|reverse,-2.0,-1.5,0
+test benign by day group and direction,mon-wed|reverse,-1.5,-1.0,0
+test benign by day group and direction,mon-wed|reverse,-1.0,-0.5,0
+test benign by day group and direction,mon-wed|reverse,-0.5,0.0,0
+test benign by day group and direction,mon-wed|reverse,0.0,0.5,0
+test benign by day group and direction,mon-wed|reverse,0.5,1.0,0
+test benign by day group and direction,mon-wed|reverse,1.0,1.5,0
+test benign by day group and direction,mon-wed|reverse,1.5,2.0,0
+test benign by day group and direction,mon-wed|reverse,2.0,2.5,0
+test benign by day group and direction,mon-wed|reverse,2.5,3.0,0
+test benign by day group and direction,mon-wed|reverse,3.0,3.5,0
+test benign by day group and direction,mon-wed|reverse,3.5,4.0,0
+test benign by day group and direction,mon-wed|reverse,4.0,4.5,0
+test benign by day group and direction,mon-wed|reverse,4.5,5.0,0
+test benign by day group and direction,mon-wed|reverse,5.0,5.5,0
+test benign by day group and direction,mon-wed|reverse,5.5,6.0,0
+test benign by day group and direction,mon-wed|reverse,6.0,6.5,0
+test benign by day group and direction,mon-wed|reverse,6.5,7.0,0
+test benign by day group and direction,mon-wed|reverse,7.0,7.5,0
+test benign by day group and direction,mon-wed|reverse,7.5,8.0,0
+test benign by day group and direction,mon-wed|reverse,8.0,8.5,0
+test benign by day group and direction,mon-wed|reverse,8.5,9.0,0
+test benign by day group and direction,mon-wed|reverse,9.0,9.5,0
+test benign by day group and direction,mon-wed|reverse,9.5,10.0,0
+test benign by day group and direction,mon-wed|reverse,10.0,10.5,0
+test benign by day group and direction,mon-wed|reverse,10.5,11.0,0
+test benign by day group and direction,mon-wed|reverse,11.0,11.5,0
+test benign by day group and direction,mon-wed|reverse,11.5,12.0,0
+test benign by day group,thursday,-12.0,-11.5,0
+test benign by day group,thursday,-11.5,-11.0,0
+test benign by day group,thursday,-11.0,-10.5,0
+test benign by day group,thursday,-10.5,-10.0,29
+test benign by day group,thursday,-10.0,-9.5,51963
+test benign by day group,thursday,-9.5,-9.0,27456
+test benign by day group,thursday,-9.0,-8.5,2538
+test benign by day group,thursday,-8.5,-8.0,1444
+test benign by day group,thursday,-8.0,-7.5,833
+test benign by day group,thursday,-7.5,-7.0,388
+test benign by day group,thursday,-7.0,-6.5,249
+test benign by day group,thursday,-6.5,-6.0,183
+test benign by day group,thursday,-6.0,-5.5,47
+test benign by day group,thursday,-5.5,-5.0,48
+test benign by day group,thursday,-5.0,-4.5,31
+test benign by day group,thursday,-4.5,-4.0,24
+test benign by day group,thursday,-4.0,-3.5,19
+test benign by day group,thursday,-3.5,-3.0,12
+test benign by day group,thursday,-3.0,-2.5,0
+test benign by day group,thursday,-2.5,-2.0,6
+test benign by day group,thursday,-2.0,-1.5,147
+test benign by day group,thursday,-1.5,-1.0,18
+test benign by day group,thursday,-1.0,-0.5,10
+test benign by day group,thursday,-0.5,0.0,32
+test benign by day group,thursday,0.0,0.5,6
+test benign by day group,thursday,0.5,1.0,0
+test benign by day group,thursday,1.0,1.5,0
+test benign by day group,thursday,1.5,2.0,2
+test benign by day group,thursday,2.0,2.5,1
+test benign by day group,thursday,2.5,3.0,4
+test benign by day group,thursday,3.0,3.5,1561
+test benign by day group,thursday,3.5,4.0,0
+test benign by day group,thursday,4.0,4.5,0
+test benign by day group,thursday,4.5,5.0,1
+test benign by day group,thursday,5.0,5.5,0
+test benign by day group,thursday,5.5,6.0,0
+test benign by day group,thursday,6.0,6.5,0
+test benign by day group,thursday,6.5,7.0,0
+test benign by day group,thursday,7.0,7.5,0
+test benign by day group,thursday,7.5,8.0,0
+test benign by day group,thursday,8.0,8.5,0
+test benign by day group,thursday,8.5,9.0,0
+test benign by day group,thursday,9.0,9.5,0
+test benign by day group,thursday,9.5,10.0,0
+test benign by day group,thursday,10.0,10.5,0
+test benign by day group,thursday,10.5,11.0,0
+test benign by day group,thursday,11.0,11.5,0
+test benign by day group,thursday,11.5,12.0,0
+test benign by day group and direction,thursday|other,-12.0,-11.5,0
+test benign by day group and direction,thursday|other,-11.5,-11.0,0
+test benign by day group and direction,thursday|other,-11.0,-10.5,0
+test benign by day group and direction,thursday|other,-10.5,-10.0,29
+test benign by day group and direction,thursday|other,-10.0,-9.5,51963
+test benign by day group and direction,thursday|other,-9.5,-9.0,27456
+test benign by day group and direction,thursday|other,-9.0,-8.5,2538
+test benign by day group and direction,thursday|other,-8.5,-8.0,1444
+test benign by day group and direction,thursday|other,-8.0,-7.5,833
+test benign by day group and direction,thursday|other,-7.5,-7.0,388
+test benign by day group and direction,thursday|other,-7.0,-6.5,249
+test benign by day group and direction,thursday|other,-6.5,-6.0,182
+test benign by day group and direction,thursday|other,-6.0,-5.5,46
+test benign by day group and direction,thursday|other,-5.5,-5.0,33
+test benign by day group and direction,thursday|other,-5.0,-4.5,23
+test benign by day group and direction,thursday|other,-4.5,-4.0,24
+test benign by day group and direction,thursday|other,-4.0,-3.5,19
+test benign by day group and direction,thursday|other,-3.5,-3.0,12
+test benign by day group and direction,thursday|other,-3.0,-2.5,0
+test benign by day group and direction,thursday|other,-2.5,-2.0,5
+test benign by day group and direction,thursday|other,-2.0,-1.5,1
+test benign by day group and direction,thursday|other,-1.5,-1.0,1
+test benign by day group and direction,thursday|other,-1.0,-0.5,7
+test benign by day group and direction,thursday|other,-0.5,0.0,2
+test benign by day group and direction,thursday|other,0.0,0.5,6
+test benign by day group and direction,thursday|other,0.5,1.0,0
+test benign by day group and direction,thursday|other,1.0,1.5,0
+test benign by day group and direction,thursday|other,1.5,2.0,0
+test benign by day group and direction,thursday|other,2.0,2.5,0
+test benign by day group and direction,thursday|other,2.5,3.0,0
+test benign by day group and direction,thursday|other,3.0,3.5,0
+test benign by day group and direction,thursday|other,3.5,4.0,0
+test benign by day group and direction,thursday|other,4.0,4.5,0
+test benign by day group and direction,thursday|other,4.5,5.0,0
+test benign by day group and direction,thursday|other,5.0,5.5,0
+test benign by day group and direction,thursday|other,5.5,6.0,0
+test benign by day group and direction,thursday|other,6.0,6.5,0
+test benign by day group and direction,thursday|other,6.5,7.0,0
+test benign by day group and direction,thursday|other,7.0,7.5,0
+test benign by day group and direction,thursday|other,7.5,8.0,0
+test benign by day group and direction,thursday|other,8.0,8.5,0
+test benign by day group and direction,thursday|other,8.5,9.0,0
+test benign by day group and direction,thursday|other,9.0,9.5,0
+test benign by day group and direction,thursday|other,9.5,10.0,0
+test benign by day group and direction,thursday|other,10.0,10.5,0
+test benign by day group and direction,thursday|other,10.5,11.0,0
+test benign by day group and direction,thursday|other,11.0,11.5,0
+test benign by day group and direction,thursday|other,11.5,12.0,0
+test benign by day group and direction,thursday|reverse,-12.0,-11.5,0
+test benign by day group and direction,thursday|reverse,-11.5,-11.0,0
+test benign by day group and direction,thursday|reverse,-11.0,-10.5,0
+test benign by day group and direction,thursday|reverse,-10.5,-10.0,0
+test benign by day group and direction,thursday|reverse,-10.0,-9.5,0
+test benign by day group and direction,thursday|reverse,-9.5,-9.0,0
+test benign by day group and direction,thursday|reverse,-9.0,-8.5,0
+test benign by day group and direction,thursday|reverse,-8.5,-8.0,0
+test benign by day group and direction,thursday|reverse,-8.0,-7.5,0
+test benign by day group and direction,thursday|reverse,-7.5,-7.0,0
+test benign by day group and direction,thursday|reverse,-7.0,-6.5,0
+test benign by day group and direction,thursday|reverse,-6.5,-6.0,1
+test benign by day group and direction,thursday|reverse,-6.0,-5.5,1
+test benign by day group and direction,thursday|reverse,-5.5,-5.0,15
+test benign by day group and direction,thursday|reverse,-5.0,-4.5,8
+test benign by day group and direction,thursday|reverse,-4.5,-4.0,0
+test benign by day group and direction,thursday|reverse,-4.0,-3.5,0
+test benign by day group and direction,thursday|reverse,-3.5,-3.0,0
+test benign by day group and direction,thursday|reverse,-3.0,-2.5,0
+test benign by day group and direction,thursday|reverse,-2.5,-2.0,1
+test benign by day group and direction,thursday|reverse,-2.0,-1.5,146
+test benign by day group and direction,thursday|reverse,-1.5,-1.0,17
+test benign by day group and direction,thursday|reverse,-1.0,-0.5,3
+test benign by day group and direction,thursday|reverse,-0.5,0.0,30
+test benign by day group and direction,thursday|reverse,0.0,0.5,0
+test benign by day group and direction,thursday|reverse,0.5,1.0,0
+test benign by day group and direction,thursday|reverse,1.0,1.5,0
+test benign by day group and direction,thursday|reverse,1.5,2.0,2
+test benign by day group and direction,thursday|reverse,2.0,2.5,1
+test benign by day group and direction,thursday|reverse,2.5,3.0,4
+test benign by day group and direction,thursday|reverse,3.0,3.5,1561
+test benign by day group and direction,thursday|reverse,3.5,4.0,0
+test benign by day group and direction,thursday|reverse,4.0,4.5,0
+test benign by day group and direction,thursday|reverse,4.5,5.0,1
+test benign by day group and direction,thursday|reverse,5.0,5.5,0
+test benign by day group and direction,thursday|reverse,5.5,6.0,0
+test benign by day group and direction,thursday|reverse,6.0,6.5,0
+test benign by day group and direction,thursday|reverse,6.5,7.0,0
+test benign by day group and direction,thursday|reverse,7.0,7.5,0
+test benign by day group and direction,thursday|reverse,7.5,8.0,0
+test benign by day group and direction,thursday|reverse,8.0,8.5,0
+test benign by day group and direction,thursday|reverse,8.5,9.0,0
+test benign by day group and direction,thursday|reverse,9.0,9.5,0
+test benign by day group and direction,thursday|reverse,9.5,10.0,0
+test benign by day group and direction,thursday|reverse,10.0,10.5,0
+test benign by day group and direction,thursday|reverse,10.5,11.0,0
+test benign by day group and direction,thursday|reverse,11.0,11.5,0
+test benign by day group and direction,thursday|reverse,11.5,12.0,0
+test outcome,FN,-12.0,-11.5,0
+test outcome,FN,-11.5,-11.0,0
+test outcome,FN,-11.0,-10.5,0
+test outcome,FN,-10.5,-10.0,0
+test outcome,FN,-10.0,-9.5,1
+test outcome,FN,-9.5,-9.0,2
+test outcome,FN,-9.0,-8.5,0
+test outcome,FN,-8.5,-8.0,1
+test outcome,FN,-8.0,-7.5,1
+test outcome,FN,-7.5,-7.0,2
+test outcome,FN,-7.0,-6.5,9
+test outcome,FN,-6.5,-6.0,8
+test outcome,FN,-6.0,-5.5,6
+test outcome,FN,-5.5,-5.0,2
+test outcome,FN,-5.0,-4.5,9
+test outcome,FN,-4.5,-4.0,9
+test outcome,FN,-4.0,-3.5,3
+test outcome,FN,-3.5,-3.0,0
+test outcome,FN,-3.0,-2.5,0
+test outcome,FN,-2.5,-2.0,0
+test outcome,FN,-2.0,-1.5,0
+test outcome,FN,-1.5,-1.0,0
+test outcome,FN,-1.0,-0.5,0
+test outcome,FN,-0.5,0.0,0
+test outcome,FN,0.0,0.5,0
+test outcome,FN,0.5,1.0,0
+test outcome,FN,1.0,1.5,0
+test outcome,FN,1.5,2.0,0
+test outcome,FN,2.0,2.5,0
+test outcome,FN,2.5,3.0,0
+test outcome,FN,3.0,3.5,0
+test outcome,FN,3.5,4.0,0
+test outcome,FN,4.0,4.5,0
+test outcome,FN,4.5,5.0,0
+test outcome,FN,5.0,5.5,0
+test outcome,FN,5.5,6.0,0
+test outcome,FN,6.0,6.5,0
+test outcome,FN,6.5,7.0,0
+test outcome,FN,7.0,7.5,0
+test outcome,FN,7.5,8.0,0
+test outcome,FN,8.0,8.5,0
+test outcome,FN,8.5,9.0,0
+test outcome,FN,9.0,9.5,0
+test outcome,FN,9.5,10.0,0
+test outcome,FN,10.0,10.5,0
+test outcome,FN,10.5,11.0,0
+test outcome,FN,11.0,11.5,0
+test outcome,FN,11.5,12.0,0
+test outcome,FP,-12.0,-11.5,0
+test outcome,FP,-11.5,-11.0,0
+test outcome,FP,-11.0,-10.5,0
+test outcome,FP,-10.5,-10.0,0
+test outcome,FP,-10.0,-9.5,0
+test outcome,FP,-9.5,-9.0,0
+test outcome,FP,-9.0,-8.5,0
+test outcome,FP,-8.5,-8.0,0
+test outcome,FP,-8.0,-7.5,0
+test outcome,FP,-7.5,-7.0,0
+test outcome,FP,-7.0,-6.5,0
+test outcome,FP,-6.5,-6.0,0
+test outcome,FP,-6.0,-5.5,0
+test outcome,FP,-5.5,-5.0,0
+test outcome,FP,-5.0,-4.5,0
+test outcome,FP,-4.5,-4.0,0
+test outcome,FP,-4.0,-3.5,5
+test outcome,FP,-3.5,-3.0,43
+test outcome,FP,-3.0,-2.5,27
+test outcome,FP,-2.5,-2.0,19
+test outcome,FP,-2.0,-1.5,204
+test outcome,FP,-1.5,-1.0,71
+test outcome,FP,-1.0,-0.5,132
+test outcome,FP,-0.5,0.0,47
+test outcome,FP,0.0,0.5,14
+test outcome,FP,0.5,1.0,3
+test outcome,FP,1.0,1.5,1
+test outcome,FP,1.5,2.0,5
+test outcome,FP,2.0,2.5,5
+test outcome,FP,2.5,3.0,5
+test outcome,FP,3.0,3.5,2188
+test outcome,FP,3.5,4.0,0
+test outcome,FP,4.0,4.5,1
+test outcome,FP,4.5,5.0,1
+test outcome,FP,5.0,5.5,0
+test outcome,FP,5.5,6.0,0
+test outcome,FP,6.0,6.5,0
+test outcome,FP,6.5,7.0,0
+test outcome,FP,7.0,7.5,1
+test outcome,FP,7.5,8.0,0
+test outcome,FP,8.0,8.5,1
+test outcome,FP,8.5,9.0,0
+test outcome,FP,9.0,9.5,0
+test outcome,FP,9.5,10.0,0
+test outcome,FP,10.0,10.5,0
+test outcome,FP,10.5,11.0,0
+test outcome,FP,11.0,11.5,0
+test outcome,FP,11.5,12.0,0
+test outcome,TN,-12.0,-11.5,0
+test outcome,TN,-11.5,-11.0,0
+test outcome,TN,-11.0,-10.5,0
+test outcome,TN,-10.5,-10.0,168
+test outcome,TN,-10.0,-9.5,288674
+test outcome,TN,-9.5,-9.0,153650
+test outcome,TN,-9.0,-8.5,13499
+test outcome,TN,-8.5,-8.0,7545
+test outcome,TN,-8.0,-7.5,5642
+test outcome,TN,-7.5,-7.0,2832
+test outcome,TN,-7.0,-6.5,1496
+test outcome,TN,-6.5,-6.0,929
+test outcome,TN,-6.0,-5.5,572
+test outcome,TN,-5.5,-5.0,249
+test outcome,TN,-5.0,-4.5,150
+test outcome,TN,-4.5,-4.0,119
+test outcome,TN,-4.0,-3.5,65
+test outcome,TN,-3.5,-3.0,0
+test outcome,TN,-3.0,-2.5,0
+test outcome,TN,-2.5,-2.0,0
+test outcome,TN,-2.0,-1.5,0
+test outcome,TN,-1.5,-1.0,0
+test outcome,TN,-1.0,-0.5,0
+test outcome,TN,-0.5,0.0,0
+test outcome,TN,0.0,0.5,0
+test outcome,TN,0.5,1.0,0
+test outcome,TN,1.0,1.5,0
+test outcome,TN,1.5,2.0,0
+test outcome,TN,2.0,2.5,0
+test outcome,TN,2.5,3.0,0
+test outcome,TN,3.0,3.5,0
+test outcome,TN,3.5,4.0,0
+test outcome,TN,4.0,4.5,0
+test outcome,TN,4.5,5.0,0
+test outcome,TN,5.0,5.5,0
+test outcome,TN,5.5,6.0,0
+test outcome,TN,6.0,6.5,0
+test outcome,TN,6.5,7.0,0
+test outcome,TN,7.0,7.5,0
+test outcome,TN,7.5,8.0,0
+test outcome,TN,8.0,8.5,0
+test outcome,TN,8.5,9.0,0
+test outcome,TN,9.0,9.5,0
+test outcome,TN,9.5,10.0,0
+test outcome,TN,10.0,10.5,0
+test outcome,TN,10.5,11.0,0
+test outcome,TN,11.0,11.5,0
+test outcome,TN,11.5,12.0,0
+test outcome,TP,-12.0,-11.5,0
+test outcome,TP,-11.5,-11.0,0
+test outcome,TP,-11.0,-10.5,0
+test outcome,TP,-10.5,-10.0,0
+test outcome,TP,-10.0,-9.5,0
+test outcome,TP,-9.5,-9.0,0
+test outcome,TP,-9.0,-8.5,0
+test outcome,TP,-8.5,-8.0,0
+test outcome,TP,-8.0,-7.5,0
+test outcome,TP,-7.5,-7.0,0
+test outcome,TP,-7.0,-6.5,0
+test outcome,TP,-6.5,-6.0,0
+test outcome,TP,-6.0,-5.5,0
+test outcome,TP,-5.5,-5.0,0
+test outcome,TP,-5.0,-4.5,0
+test outcome,TP,-4.5,-4.0,0
+test outcome,TP,-4.0,-3.5,1
+test outcome,TP,-3.5,-3.0,3
+test outcome,TP,-3.0,-2.5,10
+test outcome,TP,-2.5,-2.0,9
+test outcome,TP,-2.0,-1.5,31
+test outcome,TP,-1.5,-1.0,24
+test outcome,TP,-1.0,-0.5,16
+test outcome,TP,-0.5,0.0,32
+test outcome,TP,0.0,0.5,54
+test outcome,TP,0.5,1.0,334
+test outcome,TP,1.0,1.5,56
+test outcome,TP,1.5,2.0,58
+test outcome,TP,2.0,2.5,57
+test outcome,TP,2.5,3.0,104
+test outcome,TP,3.0,3.5,115
+test outcome,TP,3.5,4.0,259
+test outcome,TP,4.0,4.5,169
+test outcome,TP,4.5,5.0,193
+test outcome,TP,5.0,5.5,268
+test outcome,TP,5.5,6.0,364
+test outcome,TP,6.0,6.5,553
+test outcome,TP,6.5,7.0,681
+test outcome,TP,7.0,7.5,1352
+test outcome,TP,7.5,8.0,2252
+test outcome,TP,8.0,8.5,142002
+test outcome,TP,8.5,9.0,2084
+test outcome,TP,9.0,9.5,489
+test outcome,TP,9.5,10.0,6
+test outcome,TP,10.0,10.5,0
+test outcome,TP,10.5,11.0,0
+test outcome,TP,11.0,11.5,0
+test outcome,TP,11.5,12.0,0
