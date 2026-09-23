@@ -22,7 +22,13 @@ uv venv --python 3.12 .venv && uv pip install --python .venv -r requirements.txt
   audit (bit-identical scores on all test rows). The dashboard loads it only if the hashes match. Without it, the
   explorer shows the stored frozen scores and SHAP values and skips the live check.
 
-`reports/generated/m6_demo_cases.csv` and `m6_score_hist.csv` are rebuilt from the local artifacts with
+- **Benchmark case explorer, exact rows:** exact CIC-IDS2017 rows are not redistributed (the improved dataset has no
+  verified redistribution licence). In a clone the explorer shows the committed Milestone 5 casebook
+  (`reports/generated/m5_casebook.csv`: stored frozen scores and top SHAP contributions). With a locally obtained
+  dataset and the local artifacts, `.venv/bin/python scripts/m6_dashboard_data.py` writes the git-ignored
+  `artifacts/m6/demo_cases.csv`, which enables row exploration and the live check.
+
+`reports/generated/m6_score_hist.csv` (aggregate counts) and the local case rows are rebuilt with
 `.venv/bin/python scripts/m6_dashboard_data.py`; the export is re-verified (byte-identical regeneration, exact
 scores) with `.venv/bin/python scripts/m6_export_model.py --check`.
 

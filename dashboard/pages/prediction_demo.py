@@ -6,15 +6,52 @@ from dashboard import data as D
 from dashboard import ui
 
 h = ui.cached("headline")
-cases = ui.cached("demo_cases")
+cases = D.demo_cases()  # local only (not cached: it appears once the user generates it)
 ui.header("Benchmark case explorer",
           "Pick a stored test flow from the benchmark and see the frozen model's score and its SHAP explanation.")
-st.markdown(f"These are **{D.num(len(cases))} real rows of the CIC-IDS2017 test partition** (a small curated set covering every "
-            "outcome, attack label, day group and novel/duplicated status, plus the Milestone 5 casebook). There is no "
-            "manual input, packet capture or upload: synthetic feature values would not be network traffic.")
-
 OUTCOME = {"TP": "true positive (attack detected)", "FP": "false positive (benign flagged)",
            "TN": "true negative (benign passed)", "FN": "false negative (attack missed)"}
+
+
+def split_contrib(text):
+    return pd.DataFrame({"feature = value (SHAP, log-odds)": str(text).split("; ")})
+
+
+if cases is None:
+    st.info("**Exact CIC-IDS2017 rows are not included in this public repository**: the dataset has no verified "
+            "redistribution licence. This view shows the Milestone 5 casebook instead: the stored frozen score and the "
+            "largest recorded SHAP contributions of representative test flows. Exploring exact benchmark rows, and the "
+            "live check with the model export, becomes available after you obtain the dataset yourself and build the "
+            "local artifacts (`data/README.md`, then `scripts/m6_dashboard_data.py`).", icon=":material/lock:")
+    cb = ui.cached("casebook")
+    i = st.selectbox("Casebook entry", cb.index, format_func=lambda k: cb.case[k])
+    r = cb.loc[i]
+    c = st.columns(4)
+    c[0].metric("Frozen score (probability of attack)", f"{r.score:.4f}")
+    c[1].metric("Frozen threshold", f"{h['threshold']:.4f}")
+    c[2].metric("Predicted class", "attack" if r.score >= h["threshold"] else "benign")
+    c[3].metric("Benchmark label", "attack" if r.y_binary else "benign", help=f"original label: {r.label_original}")
+    st.dataframe(pd.DataFrame({"day": [r.day], "original label": [r.label_original],
+                               "feature vector": ["novel" if r.novel else "exact match in training"],
+                               "reverse of a same-day attack pair": ["yes" if r.reverse_of_attack_pair else "no"]}),
+                 hide_index=True, width="stretch")
+    st.subheader("Largest stored SHAP contributions (Milestone 5)")
+    a, b = st.columns(2)
+    a.markdown("**Toward attack**")
+    a.dataframe(split_contrib(r.lgbm_top_toward_attack), hide_index=True, width="stretch")
+    b.markdown("**Toward benign**")
+    b.dataframe(split_contrib(r.lgbm_top_toward_benign), hide_index=True, width="stretch")
+    model, status = ui.model()
+    st.caption(f"Model export: {status}. Scores and contributions above are the stored frozen values; nothing is "
+               "recomputed without the local rows.")
+    ui.limitations()
+    ui.source("reports/generated/m5_casebook.csv", "configs/m4_frozen.json", "configs/m6_model_export.json")
+    st.stop()
+
+st.markdown(f"These are **{D.num(len(cases))} real rows of the CIC-IDS2017 test partition**, built locally from your own "
+            "copy of the dataset (`artifacts/m6/demo_cases.csv`, not part of the repository): a small curated set covering "
+            "every outcome, attack label, day group and novel/duplicated status, plus the Milestone 5 casebook. There is no "
+            "manual input, packet capture or upload: synthetic feature values would not be network traffic.")
 with st.container(border=True):
     casebook = cases[cases.case.notna()].sort_values("case", key=lambda s: s.str.split(" ").str[0].astype(int))
     mode = st.radio("Choose a case", ["Milestone 5 casebook", "Filter all cases"], horizontal=True)
@@ -86,5 +123,5 @@ else:
         f"{live['shap_max_abs_diff']:.1e}.", icon=":material/verified:" if ok else ":material/error:")
 
 ui.limitations()
-ui.source("reports/generated/m6_demo_cases.csv (built by scripts/m6_dashboard_data.py from the stored predictions and "
+ui.source("artifacts/m6/demo_cases.csv (local; built by scripts/m6_dashboard_data.py from the stored predictions and "
           "the SHAP census)", "configs/m4_frozen.json", "configs/m6_model_export.json")

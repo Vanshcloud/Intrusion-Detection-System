@@ -3,7 +3,8 @@ import streamlit as st
 from dashboard import data as D
 from dashboard import ui
 
-h, s = ui.cached("headline"), ui.cached("shap_global")
+h, s, mi = ui.cached("headline"), ui.cached("shap_global"), ui.cached("model_inputs")
+assert mi["has_protocol"]
 imp = s["importance"]
 ui.header("Explainability (SHAP)", f"What drives the frozen {h['family']} model's scores — computed once in Milestone 5.")
 st.info("**SHAP explains model behaviour. It does not prove that a feature causes malicious network activity.** "
@@ -16,7 +17,8 @@ with st.expander("Method and output space", expanded=True):
         f"- **Output space: log-odds of attack.** Each flow's score is sigmoid(base value + sum of its SHAP values). "
         f"Base value {s['base_log_odds']:.4f} log-odds (probability {s['base_probability']:.4f}); the stored scores are "
         f"reproduced with a maximum error of {s['additivity_error']:.1e}.\n"
-        f"- **Inputs:** {s['n_inputs']} flow statistics; no IPs, ports, timestamps or identifiers.\n"
+        f"- **Inputs:** {mi['n']} — `Protocol` plus {mi['n'] - 1} flow statistics (the {mi['n_default']}-feature default "
+        f"set minus {', '.join(mi['dropped'])}, constant in training); no IPs, ports, timestamps or identifiers.\n"
         "- Positive SHAP pushes a flow toward *attack*, negative toward *benign*.")
 
 st.subheader("Global feature importance")

@@ -9,7 +9,8 @@ writes dashboard/model/<run_id>.txt plus a separate record configs/m6_model_expo
 
   .venv/bin/python scripts/m6_export_model.py           # verify; write only if no export exists yet
   .venv/bin/python scripts/m6_export_model.py --check   # verify an existing export is byte-identical, write nothing
-Needs the local artifacts: frozen joblib, data/processed, stored test predictions, artifacts/m5 SHAP census.
+Needs the local artifacts: frozen joblib, data/processed, stored test predictions, artifacts/m5 SHAP census and
+the local case rows artifacts/m6/demo_cases.csv (scripts/m6_dashboard_data.py).
 """
 import argparse
 import hashlib
@@ -23,7 +24,7 @@ import numpy as np
 import pandas as pd
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "src"))
-from ids.data import GENERATED, ROOT, sha256  # noqa: E402
+from ids.data import ROOT, sha256  # noqa: E402
 from ids.modeling import KEY, load  # noqa: E402
 
 OUT_DIR = ROOT / "dashboard" / "model"
@@ -73,7 +74,10 @@ def main():
               "predictions_equal_at_frozen_threshold": bool(np.array_equal(s >= thr, stored.score.to_numpy() >= thr)),
               "scores_bitwise_equal_original_pipeline": bool(np.array_equal(s, model.predict_proba(X)[:, 1]))}
     # --- SHAP on the dashboard case set: export vs original model vs stored Milestone 5 census
-    cases = pd.read_csv(GENERATED / "m6_demo_cases.csv", float_precision="round_trip")
+    demo = ROOT / "artifacts/m6/demo_cases.csv"  # local only; built by scripts/m6_dashboard_data.py
+    if not demo.exists():
+        sys.exit(f"{demo.relative_to(ROOT)} missing: run scripts/m6_dashboard_data.py first")
+    cases = pd.read_csv(demo, float_precision="round_trip")
     Xc = cases[[f"f__{f}" for f in X.columns]].set_axis(list(X.columns), axis=1).astype(X.dtypes.to_dict())
     c_export = booster.predict(Xc[inputs].to_numpy(dtype=float), pred_contrib=True)
     c_orig = est.booster_.predict(pre.transform(Xc), pred_contrib=True, num_iteration=est.best_iteration_)

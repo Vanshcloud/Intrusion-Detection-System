@@ -38,6 +38,8 @@ def render():
     scans = comp[comp.label.isin(["Portscan", "Infiltration - Portscan"])]
     budget = pct(h["budget"], 1)
     dec = D.read_csv("m5_shift_decomposition")
+    cb = D.casebook()
+    n_removed = len(D.read_csv("m3_removed_rows"))
     val_rev_thu_fri = int(dec[(dec.partition == "val") & dec.daygroup.isin(["thursday", "friday"])
                               & dec.reverse_of_attack].benign.sum())
     assert all(v for v in ex["verification"].values() if isinstance(v, bool)), "export audit record has a failed check"
@@ -79,7 +81,7 @@ All values are from the single frozen test evaluation (protocol v1, {h['family']
 4. **Most test false positives are reverse-direction traffic from attack scenarios.** {num(rev['fp'])} of {num(h['fp'])} false positives ({pct(rev['fp'] / h['fp'], 1)}) are flows whose source and destination are the reverse of a same-day attack pair. These make up {pct(rev['benign'] / (rev['benign'] + other['benign']), 2)} of benign test flows, and {pct(rev['fpr'], 1)} of them were flagged.
 5. **The remaining benign traffic stays close to the intended budget.** Excluding those flows, benign FPR was {pct(other['fpr'], 3)} on test against {pct(val_other['fpr'], 3)} on validation.
 6. **The model leans heavily on a few flow-level features.** `{rst.feature}` carries {pct(rst.share_all, 1)} of the total mean absolute SHAP value over the test set. The top five are {top5}. A Random Forest trained on the same data ranks features differently (top-10 overlap {rf.top10_overlap:.1f}).
-7. **Novel-vector performance stays high, but that subset has a different attack mix.** On the {num(nov['novel_test'])} test rows whose feature vector never appears in training, recall is {f5(nv.recall)} and FPR {pct(nv.fpr, 3)}. Scans make up {pct(scans.share_of_attacks_full.sum(), 1)} of attack rows in the full test set but only {pct(scans.share_of_attacks_novel.sum(), 1)} in the novel subset, so the two numbers are not directly comparable.
+7. **Novel-vector performance stays high, but that subset has a different attack mix.** On the {num(nov['novel_test'])} test rows whose feature vector never appears in training, recall is {f5(nv.recall)} and FPR {pct(nv.fpr, 3)}. Scans make up {pct(scans.share_of_attacks_full.sum(), 1)} of attack rows in the full test set but only {pct(scans.share_of_attacks_novel.sum(), 1)} in the novel subset, so the two numbers are not directly comparable. A novel vector is not an unseen or zero-day attack: every novel test row belongs to an attack type, tool and host that also appear in training.
 
 ## Pipeline
 
@@ -159,7 +161,7 @@ Full analysis: [`reports/EXPLAINABILITY_ANALYSIS.md`](reports/EXPLAINABILITY_ANA
 
 ## Research dashboard
 
-A read-only Streamlit app with {n_pages} pages. It shows the frozen results, per-family recall, SHAP explanations, the false-positive case study, the novel-vector analysis and a case explorer. It is a benchmark and research interface: it does not capture, scan or generate traffic, and it is not a monitoring tool. Every displayed value is read from committed artifacts, and a test fails if a number is typed into a page.
+A read-only Streamlit app with {n_pages} pages. It shows the frozen results, per-family recall, SHAP explanations, the false-positive case study, the novel-vector analysis and a case explorer. It is a benchmark and research interface: it does not capture, scan or generate traffic, and it is not a monitoring tool. Every research value is read from committed artifacts (exact case rows are local only, see below), and a test fails if a number is typed into a page.
 
 ```bash
 .venv/bin/python -m streamlit run dashboard/app.py
@@ -170,17 +172,17 @@ A read-only Streamlit app with {n_pages} pages. It shows the frozen results, per
 | {shot('dashboard_overview.png', 'Dashboard overview page')} | {shot('dashboard_evaluation.png', 'Model comparison and chronological vs random split')} |
 | Overview | Evaluation: model comparison, chronological vs random split |
 | {shot('dashboard_false_positives.png', 'False-positive case study page')} | {shot('dashboard_prediction_demo.png', 'Benchmark case explorer page')} |
-| False-positive case study | Benchmark case explorer |
+| False-positive case study | Benchmark case explorer (public casebook view) |
 
-### Benchmark case explorer and the committed model export
+### Benchmark case explorer, exact rows and the committed model export
 
-The case explorer shows stored test rows with the frozen score and SHAP explanation. It can also recompute both live from [`{ex['export_path']}`]({ex['export_path']}), a {num(ex['export_bytes'])}-byte LightGBM text export of the frozen selected model. This file was not retrained and is not a new model:
+The case explorer has two modes. In a clone it shows the committed Milestone 5 casebook: the stored frozen score and the largest recorded SHAP contributions of {num(len(cb))} representative test flows. Exact CIC-IDS2017 rows are not committed, because the improved dataset has no verified redistribution licence. With the dataset obtained locally and the local artifacts built (levels 2–4 below), `scripts/m6_dashboard_data.py` writes the git-ignored `artifacts/m6/demo_cases.csv`; the explorer then shows exact benchmark rows and re-scores them live with [`{ex['export_path']}`]({ex['export_path']}), a {num(ex['export_bytes'])}-byte LightGBM text export of the frozen selected model. This file was not retrained and is not a new model:
 
 - it is a deterministic export of the frozen model file recorded in [`configs/m4_frozen.json`](configs/m4_frozen.json) (unchanged);
 - its SHA-256 (`{ex['export_sha256'][:16]}…`) is recorded in [`configs/m6_model_export.json`](configs/m6_model_export.json), and the dashboard loads it only if the hash matches;
-- its scores are bit-identical to the frozen model on all {num(ex['verification']['test_rows'])} test rows, and its SHAP values are bit-identical on all {num(ex['verification']['demo_cases'])} explorer cases.
+- when it was exported, its scores were bit-identical to the frozen model on all {num(ex['verification']['test_rows'])} test rows, and its SHAP values were bit-identical on the {num(ex['verification']['demo_cases'])} locally held explorer rows; with the local artifacts, `scripts/m6_export_model.py --check` repeats this audit.
 
-Without the export, the explorer falls back to the stored scores and SHAP values. See [`dashboard/README.md`](dashboard/README.md).
+If the export is missing or its hash differs, the explorer uses the stored frozen values only. See [`dashboard/README.md`](dashboard/README.md).
 
 ## Repository structure
 
@@ -212,7 +214,7 @@ uv pip install --python .venv -r requirements.txt
 
 ## Dataset setup
 
-The dataset is **not** included in this repository and is not redistributed.
+The dataset is **not** included in this repository, and exact dataset rows are not committed. The committed files derived from it are aggregate tables and figures, plus short excerpts in the audit tables under `reports/generated/`: row identifiers, flow endpoints (IP address and port) and a few feature values quoted in case explanations, host IP pairs from the 2017 capture in the false-positive analysis, partial values of the {num(n_removed)} rows removed during cleaning, and partial feature vectors of the most frequent duplicate groups.
 
 - **Version used:** {o['dataset']}. It is re-extracted from the original CIC-IDS2017 packet captures with corrected flow extraction and labelling.
 - **Source:** <{prov['source_url']}> (documentation: <{prov['documentation_urls'][0]}>). Original dataset: <https://www.unb.ca/cic/datasets/ids-2017.html>.
@@ -225,12 +227,12 @@ Download, audit and preparation commands are in [`data/README.md`](data/README.m
 
 | Level | Needs | What it reproduces | How |
 |---|---|---|---|
-| 1. Reports and dashboard | a normal clone | every report, table, figure and dashboard page; model-export hash check; README regeneration | install as above; `.venv/bin/python scripts/render_readme.py` |
+| 1. Reports and dashboard | a normal clone | read every committed report, table and figure; run the dashboard (case explorer in casebook mode) and the clone-compatible tests, including the model-export hash check; regenerate README.md | install as above; `.venv/bin/python scripts/render_readme.py` |
 | 2. Data preparation | clone + raw dataset | audit tables, cleaning, splits, novel-vector flags (`data/interim/`, `data/processed/`) | [`data/README.md`](data/README.md) |
 | 3. Model training and test evaluation | level 2 | the grid search, frozen models and single test evaluation (`artifacts/m4/`) | [`reports/MODEL_EVALUATION.md`](reports/MODEL_EVALUATION.md) §17 |
-| 4. Full SHAP analysis | level 3 | the SHAP census over all test and validation rows (`artifacts/m5/`, several hundred MB) and the M5 tables and figures | [`reports/EXPLAINABILITY_ANALYSIS.md`](reports/EXPLAINABILITY_ANALYSIS.md) §22 |
+| 4. Full SHAP analysis | level 3 | the SHAP census over all test and validation rows (`artifacts/m5/`, several hundred MB) and the M5 tables and figures; then `scripts/m6_dashboard_data.py` builds the local case-explorer rows | [`reports/EXPLAINABILITY_ANALYSIS.md`](reports/EXPLAINABILITY_ANALYSIS.md) §22 |
 
-`data/raw/`, `data/interim/`, `data/processed/` and `artifacts/` are intentionally not tracked (see [`.gitignore`](.gitignore)). They are large and can be regenerated. The only model file in the repository is the compact text export described above. Levels 2–4 were run when each milestone was produced, and the stored predictions and SHAP outputs were verified to reproduce (hashes and checks in `configs/` and `reports/generated/`). Re-running levels 3–4 rewrites the frozen records, so compare the results with the committed versions using `git diff`. With the local artifacts present, `.venv/bin/python scripts/m6_export_model.py --check` re-verifies the model export against the frozen model.
+`data/raw/`, `data/interim/`, `data/processed/` and `artifacts/` are intentionally not tracked (see [`.gitignore`](.gitignore)). They are large and can be regenerated. The only model file in the repository is the compact text export described above. Levels 2–4 were run when each milestone was produced. Afterwards, the processed data were checked against the hashes in `configs/experiment_protocol_v1.json`, the frozen chronological and random-split LightGBM models were re-scored and reproduced their stored predictions exactly, and an independent rerun of the SHAP stage produced identical tables (`reports/generated/m5_reproducibility.json`). Retraining from scratch was not repeated. `scripts/prepare.py` rewrites the protocol-v1 configs and generated tables, so compare them with the committed versions using `git diff`. `scripts/m4_develop.py freeze` and `scripts/m4_evaluate.py` refuse to overwrite an existing frozen record or test evaluation. With the local artifacts present, `.venv/bin/python scripts/m6_export_model.py --check` re-verifies the model export against the frozen model.
 
 ## Limitations
 
@@ -251,9 +253,9 @@ This repository is for defensive research and benchmark analysis. It contains no
 
 ## License
 
-- **Source code** in this repository (Python modules, scripts, tests, dashboard and configuration) is released under the [MIT License](LICENSE), copyright (c) 2026 Vansh Tomar.
-- **CIC-IDS2017 dataset:** not distributed in this repository and **not** covered by the MIT License. Obtain it separately from its provider; it is subject to the provider's own terms and conditions, and the dataset authors ask users to cite their papers (see [Dataset setup](#dataset-setup) and [References](#references)).
-- **Dataset-derived files:** the generated tables in `reports/generated/` (aggregate statistics and {num(ex['verification']['demo_cases'])} example test rows used by the case explorer), the figures and the model export were produced from the dataset. The MIT License covers the code and the analysis write-up, but it does not grant rights in the underlying dataset content.
+- The repository's original software (source code, tests, scripts, dashboard code and configuration) is licensed under the [MIT License](LICENSE), copyright (c) 2026 Vansh Tomar.
+- CIC-IDS2017, including the improved version used here, is obtained separately from its provider and is not licensed by this repository (see [Dataset setup](#dataset-setup) and [References](#references)).
+- Third-party and dataset-derived content, such as the generated tables, figures, the excerpts listed above and the model export trained on the dataset, remains subject to the applicable source terms.
 
 ## References
 

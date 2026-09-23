@@ -234,8 +234,21 @@ def novel_composition():
 
 
 # ------------------------------------------------------------------ prediction demo
+def demo_cases_path():
+    """Exact benchmark rows for the case explorer: generated locally by scripts/m6_dashboard_data.py, never committed
+    (the improved CIC-IDS2017 dataset has no verified redistribution licence)."""
+    return ROOT / "artifacts" / "m6" / "demo_cases.csv"
+
+
 def demo_cases():
-    return read_csv("m6_demo_cases")
+    """Local benchmark rows (feature values, stored score and SHAP values), or None in a clone without local data."""
+    p = demo_cases_path()
+    return pd.read_csv(p, float_precision="round_trip") if p.exists() else None
+
+
+def casebook():
+    """Milestone 5 casebook (committed): stored frozen scores and top SHAP contributions of representative test flows."""
+    return read_csv("m5_casebook")
 
 
 def demo_features():
@@ -261,6 +274,14 @@ def reconstructed_score(row):
 def model_export():
     """Record of the committed text export of the frozen model (configs/m6_model_export.json)."""
     return read_json("configs/m6_model_export.json")
+
+
+def model_inputs():
+    """Frozen model inputs relative to the manifest's default feature set (from the export record)."""
+    inputs = model_export()["input_features"]
+    default = read_json("configs/feature_manifest_v1.json")["feature_sets"]["default"]
+    return {"n": len(inputs), "n_default": len(default), "has_protocol": "Protocol" in inputs,
+            "dropped": [c for c in default if c not in inputs]}
 
 
 def model_path():
@@ -308,7 +329,8 @@ def live_explain(booster, row):
 
 def validate_case_index(i):
     """Row index of a demo case; raises ValueError for anything that is not a valid index."""
-    n = len(demo_cases())
+    c = demo_cases()
+    n = 0 if c is None else len(c)
     if isinstance(i, bool) or not isinstance(i, (int, np.integer)) or not 0 <= i < n:
         raise ValueError(f"case index must be an integer in [0, {n - 1}]")
     return int(i)

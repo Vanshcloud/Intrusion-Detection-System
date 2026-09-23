@@ -51,7 +51,7 @@ st.markdown(
     "- **Explainability (SHAP)** — what drives the frozen model's scores\n"
     "- **False-positive case study** — why false alarms concentrate on Thursday and Friday\n"
     "- **Novel-vector analysis** — results on test rows whose feature vector never occurs in training\n"
-    "- **Benchmark case explorer** — individual stored test rows with their frozen score and SHAP explanation\n"
+    "- **Benchmark case explorer** — stored frozen scores and SHAP explanations of individual test flows (exact rows only with locally obtained data)\n"
     "- **Methodology & limitations** — how the numbers were produced and what they do not show")
 
 ui.limitations()

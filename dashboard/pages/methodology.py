@@ -62,7 +62,10 @@ st.markdown(
     "(record: `configs/m6_model_export.json`). The original joblib file stays outside the repository; "
     "`scripts/m4_develop.py freeze` deliberately refuses to run while `configs/m4_frozen.json` exists, so a clone cannot "
     "re-train it without a documented protocol revision. If the export is missing or its hash differs, the case "
-    "explorer shows the stored frozen scores and SHAP values and skips the live check.")
+    "explorer shows the stored frozen scores and SHAP values and skips the live check.\n"
+    "- **Exact benchmark rows** are not redistributed (no verified licence for the improved dataset). Without them the "
+    "case explorer shows the committed Milestone 5 casebook; with a locally obtained dataset, "
+    "`scripts/m6_dashboard_data.py` builds `artifacts/m6/demo_cases.csv` and enables row exploration and the live check.")
 st.code(".venv/bin/python -m streamlit run dashboard/app.py", language="bash")
 ui.source("configs/experiment_protocol_v1.json", "configs/model_selection_v1.json", "configs/feature_manifest_v1.json",
           "reports/generated/m3_purge.json", "reports/EXPERIMENT_PROTOCOL.md")

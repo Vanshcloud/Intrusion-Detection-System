@@ -17,6 +17,8 @@ from ids.metrics import UNSTABLE_SUPPORT
 
 PRED = ROOT / "artifacts/m4/test/E1_primary__lgbm__test_predictions.parquet"
 needs_local = pytest.mark.skipif(not PRED.exists(), reason="local stored predictions (artifacts/m4) missing")
+needs_cases = pytest.mark.skipif(not D.demo_cases_path().exists(),
+                                 reason="local case rows (artifacts/m6/demo_cases.csv) missing; exact rows are not committed")
 PAGES = ["overview", "evaluation", "attack_analysis", "explainability", "false_positives", "novel_vectors",
          "prediction_demo", "methodology"]
 
@@ -98,7 +100,8 @@ def test_score_histograms_cover_populations_exactly():
     assert o.to_dict() == {"FN": h["fn"], "FP": h["fp"], "TN": h["tn"], "TP": h["tp"]}
 
 
-# ---------------------------------------------------------------- demo cases (committed) and live model (local)
+# ---------------------------------------------------------------- demo cases (local) and live model
+@needs_cases
 def test_demo_cases_are_self_consistent():
     c = D.demo_cases()
     assert c.source_row.notna().all() and not c.duplicated(["source_file", "source_row"]).any()
@@ -114,6 +117,7 @@ def test_demo_cases_are_self_consistent():
     assert c.case.notna().sum() == len(pd.read_csv(ROOT / "reports/generated/m5_casebook.csv"))
 
 
+@needs_cases
 def test_case_contributions_and_index_validation():
     row = D.demo_cases().iloc[0]
     pos, neg = D.case_contributions(row, 5)
@@ -135,6 +139,7 @@ def test_load_model_missing_and_hash_mismatch(tmp_path):
 
 
 @needs_local
+@needs_cases
 def test_demo_scores_equal_stored_predictions():
     c = D.demo_cases()
     p = pd.read_parquet(PRED).merge(c[["source_file", "source_row", "score"]], on=["source_file", "source_row"],
@@ -158,8 +163,9 @@ def test_committed_model_export_record_is_consistent():
     assert v["test_rows"] == D.headline()["n"] and all(x for x in v.values() if isinstance(x, bool))
 
 
+@needs_cases
 def test_live_export_reproduces_every_demo_case_exactly():
-    """Runs in a fresh clone: committed export vs stored frozen scores and SHAP values of all demo cases."""
+    """Committed export vs stored frozen scores and SHAP values of all local demo cases."""
     booster, msg = D.load_model()
     assert booster is not None, msg
     c = D.demo_cases()
@@ -170,7 +176,7 @@ def test_live_export_reproduces_every_demo_case_exactly():
 
 # ---------------------------------------------------------------- number-provenance guard
 ALLOWED = re.compile(
-    r"CIC-IDS2017|SHA-256|\b\w*sha256\w*|(?:configs|reports|scripts|dashboard|data)/[\w./-]*|\bm[3-6]_\w+|protocol-v1|\bv1\b|§\d+(?:–§\d+)?|"
+    r"CIC-IDS2017|SHA-256|\b\w*sha256\w*|(?:configs|reports|scripts|dashboard|data|artifacts)/[\w./-]*|\bm[3-6]_\w+|protocol-v1|\bv1\b|§\d+(?:–§\d+)?|"
     r"Milestones? \d(?:[-–]\d)?|\b95 %|\b\w*top-?\d+\w*|\bci95_\w+|\bE[12]_\w+|\be1e2\b|\b[fF]1\b|"
     r"#[0-9a-f]{6}|^[{:,+.]*\d*[a-z%]}?$|\{:\+\.\d+f\}|\(1\)|\(0\)|fontsize=\d+")
 LAYOUT_KW = {"height", "width", "labelLimit", "dx", "dy"}
@@ -233,6 +239,7 @@ def test_app_pages_render_without_exceptions():
         assert at.title and "not a live network monitor" in at.info[0].value
 
 
+@needs_cases
 def test_case_explorer_without_model(monkeypatch, tmp_path):
     """Missing frozen model: the explorer still renders from stored values and says why the live check is skipped."""
     from streamlit.testing.v1 import AppTest
@@ -255,3 +262,34 @@ def test_every_cited_repository_path_exists():
     missing = [p for p in sorted(paths)
                if not ((ROOT / p).exists() or (p.endswith("_") and any(ROOT.glob(p + "*"))))]  # "m3_*" style prefixes
     assert paths and missing == []
+
+
+def test_case_explorer_public_mode_without_local_rows(monkeypatch, tmp_path):
+    """Clone without the dataset: no exact rows; the explorer shows the committed Milestone 5 casebook and says why."""
+    from streamlit.testing.v1 import AppTest
+    monkeypatch.setattr(D, "demo_cases_path", lambda: tmp_path / "absent.csv")
+    assert D.demo_cases() is None
+    with pytest.raises(ValueError):
+        D.validate_case_index(0)
+    at = AppTest.from_file(str(ROOT / "dashboard/app.py"), default_timeout=120)
+    at.run()
+    at.switch_page("pages/prediction_demo.py")
+    at.run()
+    assert not at.exception
+    assert any("not included in this public repository" in i.value for i in at.info)
+    cb = D.casebook()
+    assert list(at.selectbox[0].options) == list(cb.case)
+    assert at.metric[0].value == f"{cb.score.iloc[0]:.4f}"
+
+
+def test_no_committed_table_contains_exact_benchmark_rows():
+    """Exact source rows (row IDs + most model input values) must not be committed (no verified redistribution licence)."""
+    import subprocess
+    inputs = set(D.model_export()["input_features"])
+    tracked = subprocess.run(["git", "ls-files", "*.csv"], cwd=ROOT, capture_output=True, text=True, check=True).stdout.split()
+    bad = []
+    for f in tracked:
+        cols = {c.removeprefix("f__") for c in pd.read_csv(ROOT / f, nrows=0).columns}
+        if "source_row" in cols and len(cols & inputs) > len(inputs) // 2:
+            bad.append(f)
+    assert tracked and bad == []

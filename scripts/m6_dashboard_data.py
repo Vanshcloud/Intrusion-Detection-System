@@ -1,9 +1,10 @@
 """Milestone 6: compact, clone-friendly tables for the dashboard, derived from frozen artifacts only.
 
 Needs the local artifacts (data/processed, artifacts/m4 predictions, artifacts/m5 SHAP census); writes
-  reports/generated/m6_demo_cases.csv   benchmark test rows for the prediction demo: raw feature values (f__*),
-                                         stored frozen score, stored SHAP values (s__*), outcome and row metadata
-  reports/generated/m6_score_hist.csv   counts of logit(score) in fixed bins, per population (no raw scores)
+  artifacts/m6/demo_cases.csv           LOCAL ONLY (git-ignored): exact benchmark test rows for the case explorer — raw
+                                         feature values (f__*), stored frozen score, stored SHAP values (s__*), outcome
+                                         and row metadata. Not committed: the dataset has no verified redistribution licence.
+  reports/generated/m6_score_hist.csv   counts of logit(score) in fixed bins, per population (no raw scores; committed)
 Nothing is trained or re-scored; scores and SHAP values are copied from the stored Milestone 4/5 artifacts.
 """
 import json
@@ -22,6 +23,7 @@ from m5_analyze import ART, FEATS, THR, load_all, shap_table  # noqa: E402
 
 CAP = 3  # demo rows per (outcome, label, novel, day group)
 BINS = np.arange(-12.0, 12.5, 0.5)  # logit(score) bin edges; scores are clipped into [-12, 12]
+DEMO = ROOT / "artifacts" / "m6" / "demo_cases.csv"  # git-ignored (artifacts/)
 META = ["day", "daygroup", "label_original", "family", "y_binary", "novel", "reverse",
         "Src IP", "Src Port", "Dst IP", "Dst Port"]
 
@@ -73,7 +75,8 @@ def main():
     X, y, meta = parts["test"]
     sv = shap_table("shap_E1_lgbm_test.parquet", meta)
     assert list(sv.columns) == FEATS
-    demo_cases(X, meta, sv, outcome(y, meta.score, THR)).to_csv(GENERATED / "m6_demo_cases.csv", index=False)
+    DEMO.parent.mkdir(parents=True, exist_ok=True)
+    demo_cases(X, meta, sv, outcome(y, meta.score, THR)).to_csv(DEMO, index=False)
     score_hist(parts).to_csv(GENERATED / "m6_score_hist.csv", index=False)
     print("done")
 
