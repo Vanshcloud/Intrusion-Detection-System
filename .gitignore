@@ -7,3 +7,5 @@ data/interim/
 data/processed/
 # Model artifacts, predictions and run logs (regenerable; large)
 artifacts/
+# Empty uv lock stub created by tooling at session start (no [project] table; deps are pinned in requirements.txt)
+uv.lock

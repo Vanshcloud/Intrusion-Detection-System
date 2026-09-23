@@ -1,0 +1,15 @@
+day,row,start,end,benign_reverse_rows
+thursday,BENIGN train window,11:59:00,16:59:10,2
+thursday,BENIGN val window,16:59:10,17:59:49,41
+thursday,BENIGN test window,17:59:49,20:04:36,1791
+thursday,attack: Infiltration,17:19:02,18:46:09,
+thursday,attack: Infiltration - Portscan,17:00:31,18:46:04,
+thursday,attack: Web Attack - Brute Force,12:19:27,13:00:11,
+thursday,attack: Web Attack - SQL Injection,13:35:45,13:42:55,
+thursday,attack: Web Attack - XSS,13:16:16,13:35:21,
+friday,BENIGN train window,11:59:50,16:37:26,0
+friday,BENIGN val window,16:37:26,17:40:44,1
+friday,BENIGN test window,17:40:44,20:02:40,1182
+friday,attack: Botnet,13:04:13,14:02:02,
+friday,attack: DDoS,18:56:31,19:16:12,
+friday,attack: Portscan,16:55:32,18:24:01,

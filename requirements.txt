@@ -1,8 +1,10 @@
 joblib==1.6.0
 lightgbm==4.7.0
+matplotlib==3.11.2
 numpy==2.5.3
 pandas==3.0.6
 pyarrow==25.0.1
 pytest==9.1.1
 scikit-learn==1.9.1
 scipy==1.18.1
+shap==0.52.0

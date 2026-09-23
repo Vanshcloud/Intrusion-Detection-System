@@ -1,0 +1,11 @@
+,Botnet,DDoS,DoS GoldenEye,DoS Hulk,DoS Slowhttptest,DoS Slowloris,FTP-Patator,Infiltration - Portscan,Portscan,SSH-Patator
+Botnet,1,0.6,0.5,0.4,0.6,0.5,0.3,0.5,0.5,0.4
+DDoS,0.6,1,0.7,0.7,0.6,0.6,0.4,0.5,0.7,0.4
+DoS GoldenEye,0.5,0.7,1,0.6,0.7,0.5,0.3,0.5,0.6,0.6
+DoS Hulk,0.4,0.7,0.6,1,0.5,0.6,0.2,0.5,0.6,0.3
+DoS Slowhttptest,0.6,0.6,0.7,0.5,1,0.8,0.2,0.6,0.6,0.6
+DoS Slowloris,0.5,0.6,0.5,0.6,0.8,1,0.3,0.7,0.7,0.4
+FTP-Patator,0.3,0.4,0.3,0.2,0.2,0.3,1,0.4,0.4,0.3
+Infiltration - Portscan,0.5,0.5,0.5,0.5,0.6,0.7,0.4,1,0.6,0.4
+Portscan,0.5,0.7,0.6,0.6,0.6,0.7,0.4,0.6,1,0.5
+SSH-Patator,0.4,0.4,0.6,0.3,0.6,0.4,0.3,0.4,0.5,1

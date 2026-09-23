@@ -1,0 +1,82 @@
+feature,group,rank,mean_abs_all,share_all,mean_abs_benign,mean_abs_attack,mean_signed_all,spearman_value_vs_shap_uniform,direction
+RST Flag Count,flags,1,3.48169,0.395259,2.47229,6.66617,0.193348,0.781728,higher value -> toward attack
+Bwd PSH Flags,flags,2,0.720098,0.0817493,0.6287,1.00844,0.0409364,-0.372114,non-monotone / mixed
+Flow Duration,timing,3,0.510176,0.0579179,0.251822,1.32524,0.123855,-0.540185,higher value -> toward benign
+Bwd Init Win Bytes,tcp_window,4,0.48405,0.0549519,0.346755,0.917191,-0.0378327,0.0529247,non-monotone / mixed
+Bwd Packet Length Std,bwd_size,5,0.454561,0.0516042,0.103668,1.56157,0.301982,0.198664,non-monotone / mixed
+SYN Flag Count,flags,6,0.274797,0.0311964,0.3395,0.0706671,-0.241891,0.888627,higher value -> toward attack
+Fwd Seg Size Min,header_length,7,0.262497,0.0298001,0.25664,0.280977,-0.146196,0.637742,higher value -> toward attack
+Flow IAT Min,timing,8,0.213123,0.0241949,0.243703,0.116651,-0.127124,-0.453701,non-monotone / mixed
+Bwd Packet Length Min,bwd_size,9,0.2049,0.0232613,0.209819,0.189382,-0.0281184,-0.733686,higher value -> toward benign
+Bwd Packet Length Mean,bwd_size,10,0.18334,0.0208137,0.15485,0.273218,-0.030296,-0.286708,non-monotone / mixed
+Fwd IAT Min,timing,11,0.150301,0.017063,0.142433,0.175125,-0.00551109,-0.484957,non-monotone / mixed
+ACK Flag Count,flags,12,0.128745,0.0146158,0.126508,0.135801,-0.0520438,-0.732566,higher value -> toward benign
+Fwd Packet Length Max,fwd_size,13,0.12206,0.0138569,0.105052,0.175718,-0.0194796,-0.867164,higher value -> toward benign
+FIN Flag Count,flags,14,0.118794,0.0134861,0.0661316,0.284933,0.0493185,-0.568931,higher value -> toward benign
+Packet Length Mean,pkt_size_both,15,0.116097,0.0131799,0.0823966,0.222414,-0.00787928,0.23885,non-monotone / mixed
+Total TCP Flow Time,timing,16,0.10152,0.0115251,0.0967019,0.116722,0.00368463,-0.695395,higher value -> toward benign
+Fwd Packet Length Std,fwd_size,17,0.0935976,0.0106257,0.0855064,0.119124,0.0646514,-0.717879,higher value -> toward benign
+Bwd Segment Size Avg,bwd_size,18,0.0707073,0.00802707,0.0651682,0.0881824,-0.0148365,-0.110828,non-monotone / mixed
+Bwd Packets/s,rates,19,0.0670954,0.00761703,0.0652528,0.0729087,-0.0631788,0.243142,non-monotone / mixed
+Down/Up Ratio,counts_direction,20,0.0661649,0.00751139,0.050971,0.114099,-0.0116043,-0.266208,non-monotone / mixed
+Total Length of Fwd Packet,fwd_size,21,0.0615996,0.00699311,0.039752,0.130525,0.0293075,-0.831497,higher value -> toward benign
+Active Min,timing,22,0.0587622,0.006671,0.0585584,0.0594053,-0.0157953,-0.555773,higher value -> toward benign
+FWD Init Win Bytes,tcp_window,23,0.058024,0.0065872,0.0633823,0.0411197,-0.0207309,0.270068,non-monotone / mixed
+Packet Length Max,pkt_size_both,24,0.0542804,0.00616219,0.0225708,0.154319,0.0383094,-0.158709,non-monotone / mixed
+Bwd IAT Total,timing,25,0.0534613,0.00606921,0.0577375,0.0399704,-0.0346884,-0.704293,higher value -> toward benign
+Subflow Bwd Bytes,bwd_size,26,0.0529897,0.00601567,0.0396828,0.0949705,-0.00341957,-0.0175069,non-monotone / mixed
+Total Length of Bwd Packet,bwd_size,27,0.0455397,0.00516991,0.0421025,0.0563835,-0.0333564,0.39261,non-monotone / mixed
+Fwd PSH Flags,flags,28,0.0436402,0.00495426,0.0452194,0.038658,-0.0157491,0.70391,higher value -> toward attack
+Fwd IAT Total,timing,29,0.0430924,0.00489207,0.0390698,0.0557828,0.0421489,-0.521954,higher value -> toward benign
+Packet Length Std,pkt_size_both,30,0.0365012,0.00414381,0.0243771,0.0747504,0.00274099,-0.112111,non-monotone / mixed
+Fwd Header Length,header_length,31,0.0359319,0.00407918,0.0358769,0.0361053,0.0339661,-0.511272,higher value -> toward benign
+PSH Flag Count,flags,32,0.034612,0.00392934,0.020946,0.0777261,0.0318234,-0.158781,non-monotone / mixed
+Flow IAT Mean,timing,33,0.0294472,0.003343,0.0247692,0.0442054,-0.00562554,-0.647379,higher value -> toward benign
+Flow IAT Max,timing,34,0.027958,0.00317394,0.021596,0.0480289,0.00317249,-0.671781,higher value -> toward benign
+Fwd Act Data Pkts,counts_direction,35,0.0227561,0.00258339,0.0179675,0.0378634,0.0170433,-0.719626,higher value -> toward benign
+Bwd IAT Min,timing,36,0.0207571,0.00235645,0.021477,0.0184859,-0.00738119,0.0680334,non-monotone / mixed
+Flow Packets/s,rates,37,0.0187233,0.00212557,0.0149186,0.0307267,0.0113956,0.864051,higher value -> toward attack
+Total Bwd packets,counts_direction,38,0.0175282,0.00198989,0.0198227,0.0102894,-0.0108593,-0.491605,non-monotone / mixed
+Flow Bytes/s,rates,39,0.0174451,0.00198045,0.0161227,0.0216169,0.00519635,0.0291495,non-monotone / mixed
+Flow IAT Std,timing,40,0.0161425,0.00183258,0.015864,0.0170213,-0.00362811,-0.254865,non-monotone / mixed
+Total Fwd Packet,counts_direction,41,0.0161368,0.00183193,0.01551,0.0181143,0.0112836,0.397176,non-monotone / mixed
+Bwd IAT Mean,timing,42,0.0157722,0.00179055,0.0050497,0.0495999,-0.0119217,-0.018142,non-monotone / mixed
+Packet Length Min,pkt_size_both,43,0.0151238,0.00171693,0.0186209,0.00409104,-0.00962699,-0.240761,non-monotone / mixed
+Bwd RST Flags,flags,44,0.0146127,0.00165891,0.0092796,0.0314378,-0.00593725,-0.378455,non-monotone / mixed
+Bwd Header Length,header_length,45,0.0138933,0.00157724,0.00774803,0.0332804,0.00550945,0.261092,non-monotone / mixed
+Fwd IAT Mean,timing,46,0.0129096,0.00146557,0.0116502,0.0168828,0.0052173,-0.446732,non-monotone / mixed
+Bwd IAT Std,timing,47,0.0117595,0.001335,0.0118023,0.0116244,-0.00688058,0.0796173,non-monotone / mixed
+Idle Min,timing,48,0.0107613,0.00122168,0.00972639,0.0140263,0.00865573,-0.530687,higher value -> toward benign
+Fwd Packet Length Min,fwd_size,49,0.0107389,0.00121913,0.0122043,0.00611588,0.00466838,0.665971,higher value -> toward attack
+Fwd Packets/s,rates,50,0.0104961,0.00119157,0.0107864,0.00957992,-0.00374611,0.773603,higher value -> toward attack
+Subflow Fwd Bytes,fwd_size,51,0.0102643,0.00116525,0.0113087,0.00696919,0.00187744,-0.137401,non-monotone / mixed
+Fwd IAT Max,timing,52,0.0102488,0.0011635,0.0109249,0.00811611,-0.00394713,-0.300907,non-monotone / mixed
+Active Mean,timing,53,0.00784908,0.000891069,0.00751619,0.0088993,-0.00217414,-0.282039,non-monotone / mixed
+Bwd Packet Length Max,bwd_size,54,0.00782144,0.000887931,0.00522603,0.0160095,-0.00196496,0.586359,higher value -> toward attack
+Fwd Packet Length Mean,fwd_size,55,0.00754207,0.000856215,0.00781901,0.00666838,0.00287964,0.67343,higher value -> toward attack
+Bwd IAT Max,timing,56,0.00736389,0.000835987,0.00607445,0.0114318,-0.00156844,-0.0279432,non-monotone / mixed
+Bwd Bytes/Bulk Avg,bwd_size,57,0.00685935,0.00077871,0.00829712,0.00232346,-0.00414213,-0.223184,non-monotone / mixed
+Idle Max,timing,58,0.00636092,0.000722125,0.00649832,0.00592746,-0.00343852,-0.16507,non-monotone / mixed
+Bwd Bulk Rate Avg,rates,59,0.00615791,0.000699079,0.00272599,0.016985,0.00225146,0.147421,non-monotone / mixed
+Active Std,timing,60,0.00614937,0.000698109,0.00604701,0.00647229,-0.00336946,-0.326046,non-monotone / mixed
+Fwd IAT Std,timing,61,0.00505626,0.000574013,0.00361522,0.00960251,0.00111512,0.062373,non-monotone / mixed
+Fwd Bytes/Bulk Avg,fwd_size,62,0.0043753,0.000496708,0.00429156,0.00463949,-0.00190152,0.0464144,non-monotone / mixed
+Protocol,protocol,63,0.00431165,0.000489481,0.00425637,0.00448603,0.00430548,0.638887,higher value -> toward attack
+Active Max,timing,64,0.00382858,0.00043464,0.00369563,0.00424801,0.000174743,-0.398651,non-monotone / mixed
+Idle Mean,timing,65,0.00314012,0.000356483,0.00228913,0.00582485,0.00189797,-0.462817,non-monotone / mixed
+Fwd Packet/Bulk Avg,counts_direction,66,0.00239205,0.000271558,0.00240572,0.00234889,-0.00123158,-0.00386213,non-monotone / mixed
+Fwd Bulk Rate Avg,rates,67,0.00168838,0.000191674,0.00178966,0.00136885,0.00144103,0.152638,non-monotone / mixed
+Idle Std,timing,68,0.00131311,0.000149072,0.0014371,0.000921951,-0.00073473,-0.191553,non-monotone / mixed
+Fwd RST Flags,flags,69,0.000128535,1.45919e-05,0.000156019,4.18255e-05,0.00011022,-0.684944,higher value -> toward benign
+Bwd Packet/Bulk Avg,counts_direction,70,5.55117e-05,6.30198e-06,4.93145e-05,7.50628e-05,-3.16405e-06,-0.618692,higher value -> toward benign
+Fwd URG Flags,flags,71,0,0,0,0,0,,non-monotone / mixed
+Packet Length Variance,pkt_size_both,72,0,0,0,0,0,,non-monotone / mixed
+URG Flag Count,flags,73,0,0,0,0,0,,non-monotone / mixed
+CWR Flag Count,flags,74,0,0,0,0,0,,non-monotone / mixed
+ECE Flag Count,flags,75,0,0,0,0,0,,non-monotone / mixed
+Average Packet Size,pkt_size_both,76,0,0,0,0,0,,non-monotone / mixed
+Fwd Segment Size Avg,fwd_size,77,0,0,0,0,0,,non-monotone / mixed
+Subflow Fwd Packets,counts_direction,78,0,0,0,0,0,,non-monotone / mixed
+Subflow Bwd Packets,counts_direction,79,0,0,0,0,0,,non-monotone / mixed
+ICMP Code,protocol,80,0,0,0,0,0,,non-monotone / mixed
+ICMP Type,protocol,81,0,0,0,0,0,,non-monotone / mixed

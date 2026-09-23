@@ -1,0 +1,4 @@
+daygroup,fp,distinct_vectors,distinct_scores,top1_vector_share,in_train_as_benign_only,in_train_as_attack_only,in_train_both,closest_family_profiles
+mon-wed,319,318,100,0.00626959,0,1,0,DoS Hulk (0.88); DDoS (0.87); DoS Slowloris (0.85)
+thursday,1800,373,52,0.0411111,20,0,0,Portscan (0.89); Infiltration - Portscan (0.76); FTP-Patator (0.75)
+friday,654,113,26,0.188073,0,0,0,Portscan (0.90); FTP-Patator (0.77); Infiltration - Portscan (0.75)

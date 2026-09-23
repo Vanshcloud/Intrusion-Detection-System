@@ -1,0 +1,127 @@
+{
+  "E2_benign_reverse_share": 0.0033593735301434267,
+  "E2_benign_score_q50_q99_q999": [
+    8.223958663005899e-07,
+    3.642817020689458e-05,
+    0.0007084150779526551
+  ],
+  "E2_fp": 121,
+  "E2_fp_reverse_share": 0.15702479338842976,
+  "E2_fpr_other": 0.0002139459178279875,
+  "E2_fpr_reverse": 0.011823273179838207,
+  "base_log_odds": -5.115658758373774,
+  "base_probability": 0.0059662133017643025,
+  "best_iteration": 162,
+  "booster_trees": 162,
+  "boot1000_spearman_median": 0.9987434910572787,
+  "boot1000_spearman_min": 0.9971700249037808,
+  "boot1000_top10_overlap_median": 1.0,
+  "boot1000_top10_overlap_min": 1.0,
+  "boot1000_top1_always": true,
+  "boot5000_spearman_median": 0.9995924835861443,
+  "boot5000_spearman_min": 0.9991623273715191,
+  "boot5000_top10_overlap_median": 1.0,
+  "boot5000_top10_overlap_min": 1.0,
+  "boot5000_top1_always": true,
+  "dep": {
+    "bwd_win_shap_gt1_rows": 727,
+    "bwd_win_shap_gt1_value_q05_q95": [
+      229.0,
+      237.0
+    ],
+    "duration_ge100us_shap_median": -0.23490547579061516,
+    "duration_lt100us_shap_median": 3.18905464374178,
+    "rst_0_shap_q05_q95": [
+      -3.192704046724983,
+      -1.2097731523828326
+    ],
+    "rst_ge1_shap_q05_q95": [
+      3.1045528727929828,
+      8.916197732677608
+    ]
+  },
+  "fp_both_lgbm_rf": 2598,
+  "fp_n_pairs": 105,
+  "fp_novel": 2752,
+  "fp_novel_vs_full_fp_top10_overlap": 1.0,
+  "fp_rf": 3119,
+  "fp_top10_features": [
+    "RST Flag Count",
+    "Flow Duration",
+    "Total TCP Flow Time",
+    "Fwd Seg Size Min",
+    "Bwd Init Win Bytes",
+    "Bwd PSH Flags",
+    "FWD Init Win Bytes",
+    "SYN Flag Count",
+    "Packet Length Mean",
+    "Bwd Packet Length Std"
+  ],
+  "fp_top15_pairs_share": 0.9545618463757664,
+  "fp_vs_tn_top10_overlap": 0.6,
+  "halves_spearman": 0.9999547203984605,
+  "halves_top10_overlap": 1.0,
+  "interaction_offdiag_share": 0.5224279653469608,
+  "n_model_inputs": 81,
+  "n_test": 629992,
+  "n_uniform": 5000,
+  "n_val": 290609,
+  "outcomes": {
+    "FN": 53,
+    "FP": 2773,
+    "TN": 475590,
+    "TP": 151576
+  },
+  "rf_sample_n": 6160,
+  "run_checks": {
+    "E1_lgbm_test_scores_equal_stored": true,
+    "E1_lgbm_val_scores_equal_stored": true,
+    "E2_lgbm_test_scores_equal_stored": true,
+    "interaction_rows_sum_to_shap_max_abs_diff": 8.526512829121202e-14,
+    "reload_bitwise_identical": true,
+    "shap_library_vs_native_max_abs_diff": 0.0
+  },
+  "stored_additivity_max_abs_prob_error": 1.3433698597964394e-14,
+  "stratified_group_counts": {
+    "FN": 53,
+    "FP": 2773,
+    "TN": 1500,
+    "TP": 1834
+  },
+  "threshold": 0.027597897248344987,
+  "timing_s": {
+    "E1_lgbm_interactions": 100.3,
+    "E1_lgbm_test": 168.9,
+    "E1_lgbm_val": 77.8,
+    "E1_rf_sample": 68.8,
+    "E2_lgbm_test": 372.9
+  },
+  "tn_top10_features": [
+    "RST Flag Count",
+    "Bwd PSH Flags",
+    "Bwd Init Win Bytes",
+    "SYN Flag Count",
+    "Fwd Seg Size Min",
+    "Flow IAT Min",
+    "Flow Duration",
+    "Bwd Packet Length Min",
+    "Bwd Packet Length Mean",
+    "Fwd IAT Min"
+  ],
+  "train_benign_reverse_share": {
+    "friday": 0.0,
+    "mon-wed": 0.0024459909977627052,
+    "thursday": 1.2330076138220153e-05
+  },
+  "val_fp_n": 192,
+  "val_fp_reverse_share": 0.21354166666666666,
+  "val_fp_top5": [
+    "RST Flag Count",
+    "Bwd Init Win Bytes",
+    "Total TCP Flow Time",
+    "Flow Duration",
+    "SYN Flag Count"
+  ],
+  "val_vs_test_fp_spearman": 0.9589540412044373,
+  "val_vs_test_fp_top10_overlap": 0.9
+}

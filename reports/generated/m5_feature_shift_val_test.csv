@@ -1,0 +1,49 @@
+feature,daygroup,rows,n_val,n_test,ks,val_median,test_median
+RST Flag Count,mon-wed,all benign,140655,303528,0.0175004,0,0
+RST Flag Count,mon-wed,non-reverse benign,139830,303395,0.0222861,0,0
+RST Flag Count,thursday,all benign,40286,87052,0.00709896,0,0
+RST Flag Count,thursday,non-reverse benign,40245,85261,0.0133949,0,0
+RST Flag Count,friday,all benign,40683,87783,0.0219083,0,0
+RST Flag Count,friday,non-reverse benign,40682,86601,0.00981561,0,0
+Flow Duration,mon-wed,all benign,140655,303528,0.0381949,60998,62074.5
+Flow Duration,mon-wed,non-reverse benign,139830,303395,0.0406475,60888,62038
+Flow Duration,thursday,all benign,40286,87052,0.0573211,71291,61217
+Flow Duration,thursday,non-reverse benign,40245,85261,0.0463174,71381,61875
+Flow Duration,friday,all benign,40683,87783,0.0353584,54500,59962
+Flow Duration,friday,non-reverse benign,40682,86601,0.0331653,54498,60013
+Total TCP Flow Time,mon-wed,all benign,140655,303528,0.0264784,0,0
+Total TCP Flow Time,mon-wed,non-reverse benign,139830,303395,0.0302697,0,0
+Total TCP Flow Time,thursday,all benign,40286,87052,0.0223965,0,0
+Total TCP Flow Time,thursday,non-reverse benign,40245,85261,0.0153535,0,0
+Total TCP Flow Time,friday,all benign,40683,87783,0.0249547,0,0
+Total TCP Flow Time,friday,non-reverse benign,40682,86601,0.0199679,0,0
+Fwd Seg Size Min,mon-wed,all benign,140655,303528,0.0203601,8,8
+Fwd Seg Size Min,mon-wed,non-reverse benign,139830,303395,0.0239223,8,8
+Fwd Seg Size Min,thursday,all benign,40286,87052,0.0168607,8,8
+Fwd Seg Size Min,thursday,non-reverse benign,40245,85261,0.0199947,8,8
+Fwd Seg Size Min,friday,all benign,40683,87783,0.0246674,8,8
+Fwd Seg Size Min,friday,non-reverse benign,40682,86601,0.0161734,8,8
+Bwd Init Win Bytes,mon-wed,all benign,140655,303528,0.028454,0,0
+Bwd Init Win Bytes,mon-wed,non-reverse benign,139830,303395,0.0269243,0,0
+Bwd Init Win Bytes,thursday,all benign,40286,87052,0.0187041,0,0
+Bwd Init Win Bytes,thursday,non-reverse benign,40245,85261,0.0299395,0,0
+Bwd Init Win Bytes,friday,all benign,40683,87783,0.0194393,0,0
+Bwd Init Win Bytes,friday,non-reverse benign,40682,86601,0.016688,0,0
+Bwd PSH Flags,mon-wed,all benign,140655,303528,0.0227481,0,0
+Bwd PSH Flags,mon-wed,non-reverse benign,139830,303395,0.0265849,0,0
+Bwd PSH Flags,thursday,all benign,40286,87052,0.037994,0,0
+Bwd PSH Flags,thursday,non-reverse benign,40245,85261,0.033544,0,0
+Bwd PSH Flags,friday,all benign,40683,87783,0.0324055,0,0
+Bwd PSH Flags,friday,non-reverse benign,40682,86601,0.0304411,0,0
+FWD Init Win Bytes,mon-wed,all benign,140655,303528,0.0203601,0,0
+FWD Init Win Bytes,mon-wed,non-reverse benign,139830,303395,0.0239223,0,0
+FWD Init Win Bytes,thursday,all benign,40286,87052,0.027125,0,0
+FWD Init Win Bytes,thursday,non-reverse benign,40245,85261,0.030866,0,0
+FWD Init Win Bytes,friday,all benign,40683,87783,0.0402238,0,0
+FWD Init Win Bytes,friday,non-reverse benign,40682,86601,0.0359495,0,0
+SYN Flag Count,mon-wed,all benign,140655,303528,0.0211322,0,0
+SYN Flag Count,mon-wed,non-reverse benign,139830,303395,0.0249072,0,0
+SYN Flag Count,thursday,all benign,40286,87052,0.00446539,0,0
+SYN Flag Count,thursday,non-reverse benign,40245,85261,0.0158963,0,0
+SYN Flag Count,friday,all benign,40683,87783,0.0285904,0,0
+SYN Flag Count,friday,non-reverse benign,40682,86601,0.0237316,0,0

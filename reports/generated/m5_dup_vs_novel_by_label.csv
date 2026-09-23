@@ -1,0 +1,5 @@
+label,n_novel,n_dup,mean_logit_novel,mean_logit_dup,median_logit_novel,median_logit_dup,mean_sum_abs_shap_novel,mean_sum_abs_shap_dup,flag_rate_novel,flag_rate_dup,top5_overlap,spearman
+BENIGN,424115,50653,-9.29667,-9.44859,-9.51057,-9.51057,6.70246,6.75011,0.00595593,0.000414586,0.6,0.94743
+Botnet - Attempted,321,899,-9.22414,-8.51712,-9.39859,-8.0218,11.7481,15.4723,0.00934579,0,0.8,0.940978
+Infiltration - Portscan,1538,19992,7.18318,8.392,8.38422,8.388,14.5139,15.8861,0.99935,1,0.6,0.951845
+Portscan,520,47200,4.8127,8.38423,6.34219,8.38598,14.786,14.5538,0.973077,1,0.4,0.925175

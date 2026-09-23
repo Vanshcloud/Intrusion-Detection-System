@@ -1,7 +1,7 @@
 # Project Plan — Explainable ML-Based Network Intrusion Detection (CIC-IDS2017)
 
-Status: **Milestone 4 complete (binary models trained and evaluated under protocol v1); awaiting review.** Results: `reports/MODEL_EVALUATION.md`. No SHAP, dashboard or multiclass work yet.
-Milestone record: M1 plan (this document) → M2 audit (`reports/DATA_AUDIT.md`, `reports/LEAKAGE_AUDIT.md`) → M3 protocol (`reports/EXPERIMENT_PROTOCOL.md`) → M4 models (`configs/model_selection_v1.json` addendum A, `configs/m4_frozen.json`, `reports/MODEL_EVALUATION.md`). Where later milestones changed an assumption below, a dated note says so; the authoritative current design is `reports/EXPERIMENT_PROTOCOL.md`.
+Status: **Milestone 5 complete (SHAP explanations and error analysis of the frozen Milestone 4 models; nothing retrained); approved 2026-09-23.** Results: `reports/MODEL_EVALUATION.md` (M4), `reports/EXPLAINABILITY_ANALYSIS.md` and `MODEL_CARD.md` (M5). No dashboard or multiclass work yet.
+Milestone record: M1 plan (this document) → M2 audit (`reports/DATA_AUDIT.md`, `reports/LEAKAGE_AUDIT.md`) → M3 protocol (`reports/EXPERIMENT_PROTOCOL.md`) → M4 models (`configs/model_selection_v1.json` addendum A, `configs/m4_frozen.json`, `reports/MODEL_EVALUATION.md`) → M5 explainability (`reports/EXPLAINABILITY_ANALYSIS.md`, `MODEL_CARD.md`). Where later milestones changed an assumption below, a dated note says so; the authoritative current design is `reports/EXPERIMENT_PROTOCOL.md`.
 Every numeric value in this document is either (a) quoted from a cited source, or (b) marked **TBD — determined after running the experiment**.
 
 Verification date for all web sources: 2026-09-22.

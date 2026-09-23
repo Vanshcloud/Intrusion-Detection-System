@@ -1,0 +1,5 @@
+population,top10_overlap,spearman,E1_top5,E2_top5,E1_mean_sum_abs,E2_mean_sum_abs
+all_test,0.9,0.857253,"RST Flag Count, Bwd PSH Flags, Flow Duration, Bwd Init Win Bytes, Bwd Packet Length Std","RST Flag Count, Bwd Packet Length Mean, Bwd Packet Length Std, Bwd PSH Flags, Fwd Seg Size Min",8.80861,13.2677
+benign,0.8,0.85135,"RST Flag Count, Bwd PSH Flags, Bwd Init Win Bytes, SYN Flag Count, Fwd Seg Size Min","RST Flag Count, Bwd Packet Length Mean, Bwd PSH Flags, Fwd Seg Size Min, Bwd Init Win Bytes",6.74448,10.2722
+attack,0.8,0.841985,"RST Flag Count, Bwd Packet Length Std, Flow Duration, Bwd PSH Flags, Bwd Init Win Bytes","RST Flag Count, Bwd Packet Length Std, Bwd Packet Length Mean, Flow Duration, Bwd Init Win Bytes",15.3206,22.7182
+FP,0.6,0.864989,"RST Flag Count, Flow Duration, Total TCP Flow Time, Fwd Seg Size Min, Bwd Init Win Bytes","RST Flag Count, Fwd Seg Size Min, Bwd Init Win Bytes, Bwd Packet Length Std, Bwd Packet Length Mean",17.7955,18.0178

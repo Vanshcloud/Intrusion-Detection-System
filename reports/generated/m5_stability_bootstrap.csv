@@ -1,0 +1,31 @@
+bootstrap_n,feature,census_rank,rank_p5,rank_median,rank_p95,top10_freq
+1000,RST Flag Count,1,1,1,1,1
+1000,Bwd PSH Flags,2,2,2,2,1
+1000,Flow Duration,3,3,3,5,1
+1000,Bwd Init Win Bytes,4,3,4,4.05,1
+1000,Bwd Packet Length Std,5,3,5,5,1
+1000,SYN Flag Count,6,6,6,7,1
+1000,Fwd Seg Size Min,7,6,7,7,1
+1000,Flow IAT Min,8,8,8,9,1
+1000,Bwd Packet Length Min,9,8,9,9,1
+1000,Bwd Packet Length Mean,10,10,10,10,1
+1000,Fwd IAT Min,11,11,11,11,0
+1000,ACK Flag Count,12,12,12,13,0
+1000,Fwd Packet Length Max,13,12,13,15,0
+1000,FIN Flag Count,14,13,14,15,0
+1000,Packet Length Mean,15,13,15,15,0
+5000,RST Flag Count,1,1,1,1,1
+5000,Bwd PSH Flags,2,2,2,2,1
+5000,Flow Duration,3,3,3,4,1
+5000,Bwd Init Win Bytes,4,3,4,4,1
+5000,Bwd Packet Length Std,5,5,5,5,1
+5000,SYN Flag Count,6,6,6,6,1
+5000,Fwd Seg Size Min,7,7,7,7,1
+5000,Flow IAT Min,8,8,8,9,1
+5000,Bwd Packet Length Min,9,8,9,9,1
+5000,Bwd Packet Length Mean,10,10,10,10,1
+5000,Fwd IAT Min,11,11,11,11,0
+5000,ACK Flag Count,12,12,12,12,0
+5000,Fwd Packet Length Max,13,13,13,14,0
+5000,FIN Flag Count,14,13,14,15,0
+5000,Packet Length Mean,15,14,15,15,0

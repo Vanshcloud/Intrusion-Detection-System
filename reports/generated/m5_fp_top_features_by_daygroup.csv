@@ -1,0 +1,31 @@
+daygroup,rank,feature,fp_mean_abs,fp_mean_signed,tn_mean_signed,fp_median_value,tn_median_value
+mon-wed,1,RST Flag Count,4.63056,4.23139,-1.78331,1,0
+mon-wed,2,SYN Flag Count,1.88005,-1.76123,-0.321443,0,0
+mon-wed,3,Bwd Init Win Bytes,1.31862,1.11397,-0.28391,235,0
+mon-wed,4,Bwd Packet Length Std,0.736762,0.516783,-0.0941392,1298.11,0
+mon-wed,5,Bwd PSH Flags,0.662144,0.510125,-0.274459,1,0
+mon-wed,6,Total TCP Flow Time,0.606739,-0.590325,-0.0263037,4.09703e+08,0
+mon-wed,7,FWD Init Win Bytes,0.395984,-0.379354,-0.0365878,0,0
+mon-wed,8,Fwd Seg Size Min,0.370389,-0.338786,-0.221026,0,8
+mon-wed,9,Bwd Packet Length Mean,0.365806,-0.239787,-0.128073,991.5,116
+mon-wed,10,FIN Flag Count,0.343368,0.281374,-0.00525785,1,0
+thursday,1,RST Flag Count,5.7292,5.57737,-1.93069,2,0
+thursday,2,Flow Duration,2.0579,2.04753,-0.215605,48,61890
+thursday,3,Fwd Seg Size Min,1.96415,-1.94719,-0.212199,20,8
+thursday,4,Total TCP Flow Time,1.92884,1.92483,-0.0181571,48,0
+thursday,5,Bwd Init Win Bytes,1.21682,-1.17689,-0.279147,1024,0
+thursday,6,Bwd PSH Flags,0.810816,0.80135,-0.188747,0,0
+thursday,7,FWD Init Win Bytes,0.671885,-0.671266,-0.0358779,0,0
+thursday,8,Packet Length Mean,0.330792,-0.329978,-0.073251,0,80.5
+thursday,9,SYN Flag Count,0.320214,-0.145566,-0.322771,2,0
+thursday,10,Fwd IAT Min,0.282491,0.276999,-0.0418648,48,3
+friday,1,RST Flag Count,6.22859,6.14266,-1.8063,1,0
+friday,2,Total TCP Flow Time,2.07129,2.06583,-0.0161051,2,0
+friday,3,Flow Duration,2.0148,1.98292,-0.213143,2,60273
+friday,4,Fwd Seg Size Min,1.77171,-1.76108,-0.230966,20,8
+friday,5,Bwd Init Win Bytes,1.43101,-1.30201,-0.293025,1024,0
+friday,6,Bwd PSH Flags,0.858625,0.824985,-0.217003,0,0
+friday,7,FWD Init Win Bytes,0.689353,-0.687711,-0.0315506,0,0
+friday,8,Packet Length Mean,0.31793,-0.31626,-0.0717539,0,78
+friday,9,Bwd Packet Length Std,0.212829,-0.172069,-0.094922,0,0
+friday,10,Fwd Packet Length Max,0.20649,0.198306,-0.0907746,0,46

@@ -1,0 +1,16 @@
+day,Src IP,Dst IP,fp,benign_test_rows,fpr_within_pair,reverse_of_attack,reverse_attack_labels,train_benign_rows,val_benign_rows,val_fp,top_dst_ports
+friday,192.168.10.50,172.16.0.1,629,1182,0.532149,True,"DDoS, Portscan",0,1,0,"51903:21, 36114:11, 42668:10"
+thursday,192.168.10.25,192.168.10.8,431,431,1,True,Infiltration - Portscan,0,0,0,"54031:97, 49846:96, 35515:68"
+thursday,192.168.10.51,192.168.10.8,266,266,1,True,Infiltration - Portscan,0,0,0,"51296:107, 43216:68, 63036:39"
+thursday,192.168.10.12,192.168.10.8,265,269,0.98513,True,Infiltration - Portscan,0,0,0,"61350:73, 64399:67, 42452:63"
+thursday,192.168.10.16,192.168.10.8,234,238,0.983193,True,Infiltration - Portscan,0,0,0,"45748:65, 34036:61, 38739:57"
+thursday,192.168.10.19,192.168.10.8,215,219,0.981735,True,Infiltration - Portscan,0,0,0,"61232:65, 61049:56, 50746:50"
+wednesday,172.16.0.1,192.168.10.50,212,1762,0.120318,False,,2717,700,30,80:212
+thursday,192.168.10.17,192.168.10.8,193,197,0.979695,True,Infiltration - Portscan,0,0,0,"51014:64, 65226:64, 54435:59"
+thursday,192.168.10.9,192.168.10.8,156,161,0.968944,True,Infiltration - Portscan,0,0,0,"39692:56, 45500:30, 63448:24"
+wednesday,192.168.10.17,111.93.223.135,10,10,1,False,,0,0,0,443:10
+thursday,172.16.0.1,192.168.10.50,9,617,0.0145867,False,,1118,284,17,"21:8, 80:1"
+thursday,192.168.10.25,205.174.165.73,9,14,0.642857,False,,6,6,5,444:9
+thursday,192.168.10.50,192.168.10.8,6,10,0.6,True,Infiltration - Portscan,0,0,0,"0:4, 3210:1, 51700:1"
+tuesday,192.168.10.8,192.168.10.50,6,64,0.09375,False,,105,33,1,22:6
+wednesday,192.168.10.9,117.27.232.35,6,33,0.181818,False,,0,0,0,80:6
